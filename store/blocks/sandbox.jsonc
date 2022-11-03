@@ -1,0 +1,23 @@
+{
+  "store.custom#sandbox": {
+    "blocks": ["flex-layout.row#sandbox"]
+  },
+
+  "flex-layout.row#sandbox": {
+    "title": "HTML content",
+    "children": ["sandbox#sandbox"],
+    "props": {
+      "blockclass": "textColumn",
+      "horizontalAlign": "center",
+      "fullWidth": "false"
+    }
+  },
+  "sandbox#sandbox": {
+    "props": {
+      "width": "1000px",
+      "height": "2000px",
+      "initialContent": "<h1 id='test'>home</h1>",
+      "allowCookies": true
+    }
+  }
+}

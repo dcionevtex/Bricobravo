@@ -1,0 +1,475 @@
+{
+  "store.search": {
+    "blocks": [
+      "search-result-layout",
+      "flex-layout.row#sectionSeo1",
+      "flex-layout.row#sectionSeo2",
+      "flex-layout.row#sectionSeo3",
+      "change-category-name"
+    ],
+    "props": {
+      "context": {
+        "skusFilter": "ALL",
+        "maxItemsPerPage": 12,
+        "hideUnavailableItems": true,
+        "simulationBehavior": "skip"
+      }
+    }
+  },
+  "store.not-found#search": {
+    "blocks": ["search-not-found-layout"]
+  },
+  "store.search#brand": {
+    "blocks": [
+      "search-result-layout",
+      "flex-layout.row#sectionSeo1",
+      "flex-layout.row#sectionSeo2",
+      "flex-layout.row#sectionSeo3"
+    ],
+    "props": {
+      "context": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 12,
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip"
+      }
+    }
+  },
+  "store.search#department": {
+    "blocks": [
+      "search-result-layout",
+      "flex-layout.row#sectionSeo1",
+      "flex-layout.row#sectionSeo2",
+      "flex-layout.row#sectionSeo3"
+    ],
+    "props": {
+      "context": {
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 12,
+        "hideUnavailableItems": true
+      },
+      "fullWidth": true
+    }
+  },
+  "store.search#category": {
+    "blocks": [
+      "search-result-layout",
+      "flex-layout.row#sectionSeo1",
+      "flex-layout.row#sectionSeo2",
+      "flex-layout.row#sectionSeo3"
+    ],
+    "props": {
+      "context": {
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 12,
+        "hideUnavailableItems": true
+      },
+      "fullWidth": true
+    }
+  },
+  "store.search#subcategory": {
+    "blocks": [
+      "search-result-layout",
+      "flex-layout.row#sectionSeo1",
+      "flex-layout.row#sectionSeo2",
+      "flex-layout.row#sectionSeo3"
+    ],
+    "props": {
+      "context": {
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 12,
+        "hideUnavailableItems": true
+      },
+      "fullWidth": true
+    }
+  },
+  "search-result-layout": {
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "search-result-layout.desktop": {
+    "title": "Categoria Desktop",
+    "children": [
+      "flex-layout.row#searchbread",
+      "flex-layout.row#searchTitle",
+      "flex-layout.row#searchinfo",
+      "flex-layout.row#searchLayout",
+      "back-to-top-button"
+    ],
+    "props": {
+      "pagination": "infiniteScroll",
+      "preventRouteChange": true,
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "fullWidth": true
+    }
+  },
+  "back-to-top-button": {
+    "props": {
+      "displayThreshold": 600,
+      "display": "caret-icon"
+    }
+  },
+
+  "flex-layout.row#searchTitle": {
+    "children": ["flex-layout.col#search-title"],
+    "props": {
+      "blockClass": "title-container"
+    }
+  },
+  "flex-layout.col#search-title": {
+    "children": ["search-title.v2", "collapse-text"]
+  },
+  "collapse-text": {
+    "props": {
+      "htmlId": "Category text seo",
+      "text": "magna ac, gravida sagittis dolor. Suspendisse vitae risus non quam commodo varius. Maecenas semper iaculis dui ut volutpat. Pellentesque imperdiet egestas dui, vel volutpat lectus laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.Nunc magna ex, euismod vitae magna ac, gravida sagittis dolor. Suspendisse vitae risus non quam commodo varius. Maecenas semper iaculis dui ut volutpat. Pellentesque imperdiet egestas dui, vel volutpat lectus laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt..",
+      "expandText": "Leggi tutto",
+      "contractText": "Leggi meno",
+      "collapseLength": 300
+    }
+  },
+  "sidebar-close-button": {
+    "props": {
+      "size": 20
+    }
+  },
+  "flex-layout.row#searchLayout": {
+    "children": ["flex-layout.row#filter", "flex-layout.col#pageContent"],
+    "props": {
+      "fullWidth": true,
+      "preventHorizontalStretch": false,
+      "blockClass": "searchLayout"
+    }
+  },
+  "flex-layout.col#pageContent": {
+    "title": "Categoria Prodotto",
+    "children": ["flex-layout.col#search-content"],
+    "props": {
+      "blockClass": "pageContent",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "width": "75%"
+    }
+  },
+  "flex-layout.col#search-content": {
+    "children": [
+      "image#banner-sponsored",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#products",
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "paddingLeft": 5
+    }
+  },
+  "image#banner-sponsored": {
+    "title": "Categoria Banner",
+    "props": {
+      "src": "https://via.placeholder.com/1273x200/ccc/fff",
+      "alt": "banner-sponsored",
+      "blockClass": "banner-sponsored"
+    }
+  },
+
+  "flex-layout.row#searchbread": {
+    "children": ["breadcrumb.search#default"],
+    "props": {
+      "blockClass": ["searchbread"],
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "breadcrumb.search#default": {
+    "props": {
+      "blockClass": ["default"],
+      "showOnMobile": true,
+      "homeIconSize": 18
+    }
+  },
+  "flex-layout.row#sectionSeo1": {
+    "title": "Categoria seo testo 1",
+    "children": ["flex-layout.col#CategorySeo1"],
+    "props": {
+      "blockClass": "container-seo"
+    }
+  },
+  "flex-layout.row#sectionSeoContent1": {
+    "children": ["flex-layout.col#CategorySeo1"]
+  },
+  "flex-layout.col#CategorySeo1": {
+    "children": ["rich-text#CategoryTitleSeo1", "rich-text#CategoryTextSeo1"],
+    "props": {
+      "blockClass": "category-seo"
+    }
+  },
+  "rich-text#CategoryTitleSeo1": {
+    "props": {
+      "text": "### Heading two",
+      "blockClass": "titleSeo",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#CategoryTextSeo1": {
+    "props": {
+      "text": "Nunc magna ex, euismod vitae magna ac, gravida sagittis dolor. Suspendisse vitae risus non quam commodo varius. Maecenas semper iaculis dui ut volutpat. Pellentesque imperdiet egestas dui, vel volutpat lectus laoreet vel. Vivamus dignissim sed purus at blandit. Nam venenatis augue et ipsum interdum mollis nec ut justo. In at tincidunt ligula. Vestibulum eget nisl commodo lacus viverra egestas. Sed congue nibh velit, nec commodo tortor sodales quis. Ut rutrum turpis eu fermentum porttitor. Vestibulum nisi ligula, condimentum eget sagittis eget, faucibus at velit. Proin commodo mauris non tellus blandit imperdiet.",
+      "blockClass": "textSeo",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  // ----------- //
+  "flex-layout.row#sectionSeo2": {
+    "title": "Categoria seo testo 2",
+    "children": ["flex-layout.col#CategorySeo2"],
+    "props": {
+      "blockClass": "container-seo2"
+    }
+  },
+  "flex-layout.col#CategorySeo2": {
+    "children": ["rich-text#CategoryTitleSeo2", "rich-text#CategoryTextSeo2"]
+  },
+  "rich-text#CategoryTitleSeo2": {
+    "props": {
+      "text": "### Heading two",
+      "blockClass": "titleSeo",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#CategoryTextSeo2": {
+    "props": {
+      "text": "Nunc magna ex, euismod vitae magna ac, gravida sagittis dolor. Suspendisse vitae risus non quam commodo varius. Maecenas semper iaculis dui ut volutpat. Pellentesque imperdiet egestas dui, vel volutpat lectus laoreet vel. Vivamus dignissim sed purus at blandit. Nam venenatis augue et ipsum interdum mollis nec ut justo. In at tincidunt ligula. Vestibulum eget nisl commodo lacus viverra egestas. Sed congue nibh velit, nec commodo tortor sodales quis. Ut rutrum turpis eu fermentum porttitor. Vestibulum nisi ligula, condimentum eget sagittis eget, faucibus at velit. Proin commodo mauris non tellus blandit imperdiet.",
+      "blockClass": "textSeo",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  // ----------- //
+  "flex-layout.row#sectionSeo3": {
+    "title": "Categoria seo testo 3",
+    "children": ["flex-layout.col#CategorySeo3"],
+    "props": {
+      "blockClass": "container-seo3"
+    }
+  },
+  "flex-layout.col#CategorySeo3": {
+    "children": ["rich-text#CategoryTitleSeo3", "rich-text#CategoryTextSeo3"]
+  },
+  "rich-text#CategoryTitleSeo3": {
+    "props": {
+      "text": "### Heading two",
+      "blockClass": "titleSeo",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#CategoryTextSeo3": {
+    "props": {
+      "text": "Curabitur ullamcorper viverra nibh, sodales mollis nunc tempus vulputate. Morbi sed augue ante. Pellentesque volutpat ultrices pulvinar. Mauris lacinia sit amet arcu eget pharetra. Integer vel consequat tortor. Donec viverra bibendum dui, sit amet tincidunt leo volutpat et. Integer et sem sapien. Nam luctus pulvinar lectus id malesuada. Sed sit amet pellentesque lacus, vel ornare nibh. Nam id lobortis mi, sed consequat mauris. Curabitur et magna eu nibh euismod condimentum vitae quis nibh. Fusce sapien augue, elementum accumsan libero quis, laoreet euismod orci. Vestibulum pharetra, nisi eleifend luctus egestas, dui dolor aliquam dui, efficitur commodo quam erat eget odio. Donec varius, diam quis pharetra feugiat, turpis metus euismod mi, mattis posuere sem nunc at magna. \\ Sed fringilla nisl a vehicula lobortis. Quisque fringilla mi in purus feugiat, venenatis cursus mi rutrum. Curabitur leo nisi, luctus dignissim mauris id, dapibus feugiat sem. Nullam maximus ligula ac neque aliquam consectetur. Aliquam faucibus condimentum turpis, a pulvinar elit porta sollicitudin. Curabitur venenatis vitae mauris aliquam blandit. Phasellus vehicula sodales mollis. Nulla nisl massa, interdum a massa eget, tincidunt commodo augue. Nunc quis condimentum nisl. Nam quis sodales elit. Vestibulum tortor urna, facilisis a magna quis, vulputate finibus tortor. Nam commodo mi at velit blandit lacinia. Phasellus convallis nulla tempus hendrerit tempor. Cras sit amet lobortis dui. Nullam efficitur lorem mauris, ut finibus justo dapibus facilisis. Mauris fringilla lorem et magna ullamcorper, in.",
+      "blockClass": "textSeo",
+      "textAlignment": "CENTER"
+    }
+  },
+  "flex-layout.row#filter": {
+    "children": ["flex-layout.col#filter"],
+    "props": {
+      "blockClass": "filterRow"
+    }
+  },
+  "flex-layout.col#filter": {
+    "children": [
+      "filter-navigator.v3",
+      "show-clear-filter-button"
+    ],
+    "props": {
+      "blockClass": "filterCol"
+    }
+  },
+  "filter-navigator.v3": {
+    "blocks": ["sidebar-close-button"],
+    "props": {
+      "truncateFilters": true,
+      "showClearAllFiltersOnDesktop": true
+    }
+  },
+  "flex-layout.row#searchinfo": {
+    "children": [
+      "hide-filter",
+      "search-products-count-per-page",
+      "order-by.v2"
+    ],
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "searchHeadInfo"
+    }
+  },
+  "flex-layout.row#fetchprevious": {
+    "props": {
+      "marginBottom": 3
+    },
+    "children": ["search-fetch-previous"]
+  },
+  "flex-layout.row#fetchmore": {
+    "props": {
+      "marginTop": 7,
+      "blockClass": "fetchmore"
+    },
+    "children": ["search-fetch-more"]
+  },
+  "flex-layout.row#products": {
+    "children": ["search-content"]
+  },
+  "search-content": {
+    "blocks": ["gallery", "not-found"]
+  },
+  "search-content#mobile": {
+    "blocks": ["gallery#mobile", "not-found"]
+  },
+  "search-result-layout.mobile": {
+    "title": "Categoria Mobile",
+    "children": [
+      "flex-layout.row#searchbread",
+      "flex-layout.row#searchTitle",
+      "flex-layout.row#searchControlsMobile",
+      "flex-layout.row#fetchprevious",
+      "image#banner-sponsored-mobile",
+      "flex-layout.row#contentmobile",
+      "flex-layout.row#fetchmore",
+      "back-to-top-button"
+      //"infinite-scroll"
+    ],
+    "props": {
+      "pagination": "infiniteScroll",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      }
+    }
+  },
+
+  "image#banner-sponsored-mobile": {
+    "props": {
+      "src": "https://via.placeholder.com/360x281/ccc/fff",
+      "alt": "banner-sponsored",
+      "maxWidth": "360px",
+      "blockClass": "banner-sponsored"
+    }
+  },
+
+  "flex-layout.row#contentmobile": {
+    "children": ["search-content#mobile"],
+    "props": {
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.row#searchControlsMobile": {
+    "children": [
+      "search-products-count-per-page",
+      "order-by.v2",
+      "filter-navigator.v3#mobile"
+    ],
+    "props": {
+      "preventHorizontalStretch": false,
+      "blockClass": "searchControlsMobile"
+    }
+  },
+
+  "flex-layout.row#productCountMobile": {
+    "children": ["total-products.v2"],
+    "props": {
+      "blockClass": "productCountMobileRow"
+    }
+  },
+  "filter-navigator.v3#mobile": {
+    "blocks": ["sidebar-close-button"],
+    "props": {
+      "showFilterSelectedOnMobile": true,
+      "layout": "responsive",
+      "truncateFilters": true,
+      "blockClass": "filterMobile",
+      "navigationTypeOnMobile": "collapsible",
+      "initiallyCollapsed": false,
+      "fullWidthOnMobile": true,
+      "updateOnFilterSelectionOnMobile": false,
+      "preventRouteChange": true,
+      "totalProductsOnMobile": "show"
+    }
+  },
+  "search-not-found-layout": {
+    "children": ["flex-layout.row#notfound"]
+  },
+  "flex-layout.row#notfound": {
+    "children": ["flex-layout.col#not-found"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#not-found": {
+    "children": [
+      "responsive-layout.desktop#not-found",
+      "responsive-layout.mobile#not-found"
+    ]
+  },
+  "responsive-layout.desktop#not-found": {
+    "children": ["flex-layout.row#searchbread", "flex-layout.row#mainNotFound"]
+  },
+  "responsive-layout.mobile#not-found": {
+    "children": ["flex-layout.row#searchbread", "flex-layout.row#mainNotFound"]
+  },
+  "flex-layout.row#mainNotFound": {
+    "children": ["flex-layout.col#mainNotFound"]
+  },
+  "flex-layout.col#mainNotFound": {
+    "title": "pagina non trovata",
+    "children": ["image#notFound", "not-found", "link#notfoundToHome"],
+    "props": {
+      "blockClass": "notfound-containerMain"
+    }
+  },
+  "image#notFound": {
+    "props": {
+      "src": "assets/images/notfound.svg"
+    }
+  },
+  "link#notfoundToHome": {
+    "props": {
+      "label": "VAI ALLA HOMEPAGE",
+      "href": "/",
+      "blockClass": "notfound-btnLinkBack"
+    }
+  },
+  "breadcrumb": {
+    "props": {
+      "showOnMobile": true
+    }
+  },
+  "gallery": {
+    "props": {
+      "layouts": [
+        {
+          "name": "Desktop",
+          "component": "Desktop",
+          "itemsPerRow": 3
+        }
+      ],
+      "Desktop": "product-summary.shelf#normal"
+    }
+  },
+  "gallery#mobile": {
+    "blocks": ["product-summary.shelf#normal"]
+  }
+}

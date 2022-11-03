@@ -1,0 +1,53 @@
+.menuContainer {
+  &--sidebar-containerMenus {
+    display: flex;
+    flex-direction: column;
+    line-height: 35px;
+  }
+  .menuItem {
+    .styledLinkContainer {
+      padding: 0;
+
+      .styledLinkContent {
+        padding: 0;
+        font-weight: 400;
+        font-size: 1rem;
+        color: #111;
+
+        // &:hover {
+        //   color: #e30613;
+        // }
+      }
+      .styledLinkContent--drawer-menu-item {
+        margin: 0.5rem 0;
+      }
+    }
+
+    &--isOpen {
+      border: none;
+      .styledLinkContainer {
+        position: relative;
+        border: none;
+        // .styledLinkContent--has-submenu {
+        //   color: #e30613;
+        //   border: none;
+        // }
+      }
+    }
+
+    .submenuContainer {
+      left: 0;
+      width: 100%;
+      position: absolute;
+
+      .submenuWrapper {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.menuContainerNav--header-drawer-menu {
+  width: 100%;
+  padding: 0 24px;
+}

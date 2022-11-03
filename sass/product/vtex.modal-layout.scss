@@ -1,0 +1,204 @@
+@import '../_variables.scss';
+@import '../_media-queries.scss';
+
+.paper {
+  &--availability-modal,
+  &--pdp-faq {
+    width: 100%;
+    max-width: 40rem;
+
+    @include breakpoint('mobile') {
+      margin: 1rem;
+    }
+  }
+
+  &--pdp-premium-shipping,
+  &--pdp-secure-payment {
+    width: 100%;
+    max-width: 26.5rem;
+
+    @include breakpoint('mobile') {
+      margin: 1rem;
+    }
+  }
+}
+
+.headerContainer {
+  &--availability-modal-header {
+    border: none;
+  }
+}
+
+.triggerContainer {
+  &--availability-modal {
+    margin-bottom: 10px;
+
+    @include breakpoint('mobile') {
+      display: flex;
+    }
+  }
+
+  &--pdp-premium-shipping {
+    :global(.vtex-flex-layout-0-x-flexRowContent--productSpecificationItem) {
+      :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+        &:first-child {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--availability-modal-content {
+    :global(.vtex-store-components-3-x-subscriberContainer) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 1rem;
+
+      @include breakpoint('mobile') {
+        margin: 0;
+      }
+    }
+
+    :global(.vtex-store-components-3-x-title) {
+      font-size: 0;
+      text-align: center;
+      margin-bottom: 2.5rem;
+      max-width: 26.5rem;
+
+      @include breakpoint('mobile') {
+        margin-bottom: 1.25rem;
+      }
+
+      &::before {
+        content: 'Ricevi aggiornamenti quando questo prodotto tornerà disponibile';
+        color: $primary-default;
+        font-size: $headline-h3;
+        font-weight: 500;
+        line-height: 26px;
+        text-align: center;
+
+        @include breakpoint('mobile') {
+          font-size: $headline-h4;
+          line-height: 1.5rem;
+        }
+      }
+    }
+
+    :global(.vtex-store-components-3-x-subscribeLabel) {
+      display: none;
+    }
+
+    :global(.vtex-store-components-3-x-form) {
+      max-width: 26.5rem;
+      width: 100%;
+      margin: 0;
+
+      :global(.vtex-store-components-3-x-content) {
+        margin: 0;
+        max-width: 26.5rem;
+
+        :global(.vtex-store-components-3-x-input) {
+          :global(.vtex-input-prefix__group) {
+            border: none;
+            height: auto;
+
+            :global(.vtex-styleguide-9-x-input) {
+              border: 1px solid #dfdfdf;
+              border-radius: 3px;
+              height: 2.75rem;
+            }
+          }
+
+          :global(.vtex-input__error) {
+            height: 0;
+            margin: 0;
+          }
+        }
+
+        :global(.vtex-store-components-3-x-inputName) {
+          display: none;
+        }
+
+        :global(.vtex-store-components-3-x-inputEmail) {
+          margin-bottom: 2rem;
+
+          @include breakpoint('mobile') {
+            margin-bottom: 1.75rem;
+          }
+        }
+
+        :global(.vtex-store-components-3-x-submit) {
+          margin-bottom: 1rem;
+
+          :global(.vtex-button) {
+            border-radius: 2px;
+            padding: 0.75rem 0;
+            border: none;
+            background-color: #2b126b;
+
+            &:hover {
+              background-color: #1b0e41;
+            }
+
+            :global(.vtex-button__label) {
+              padding: none;
+              font-size: 0;
+
+              &::after {
+                content: 'CONFERMA';
+                text-transform: uppercase;
+                font-size: $cta-medium;
+                font-weight: 500;
+                line-height: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .closeButton {
+    padding: 0;
+    width: 100%;
+    max-width: 424px;
+    border: 1px solid $blue-active;
+    border-radius: 2px;
+    background-color: $white;
+    color: $blue-active;
+    font-size: $cta-medium;
+    font-weight: 500;
+    line-height: 1rem;
+    margin-bottom: 1rem;
+
+    &:hover {
+      background-color: $blue-hover;
+      color: $white;
+    }
+  }
+}
+
+.closeButton {
+  &--availability-modal-header {
+    padding: 1.75rem 1.75rem 0 0;
+    max-width: 26.5rem;
+    width: 100%;
+  }
+
+  &--modal-close {
+    max-width: 19.75rem;
+    width: 100%;
+
+    @include breakpoint('mobile') {
+      max-width: 16.25rem;
+    }
+  }
+}

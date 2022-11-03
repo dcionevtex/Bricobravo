@@ -1,0 +1,26 @@
+@mixin logo {
+  .logo {
+    &Link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      min-width: 223px;
+      .size {
+        &Mobile,
+        &Desktop {
+          padding: 0;
+          max-height: none;
+          min-width: auto;
+          max-width: 100%;
+        }
+      }
+    }
+    &Container,
+    &Image {
+      display: block;
+      overflow: hidden;
+      float: left;
+    }
+  }
+}

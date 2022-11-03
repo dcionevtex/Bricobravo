@@ -1,0 +1,155 @@
+@import '../_variables.scss';
+@import '../_media-queries.scss';
+
+.savings {
+  &--savingPercentage {
+    position: absolute;
+    top: 7px;
+    left: 1px;
+    font-size: 0;
+    height: 20px;
+    width: 38px !important;
+
+    @include mobile {
+      left: -3px;
+    }
+
+    &::before {
+      content: url("/arquivos/tag_saving.svg");
+      display: block;
+      color: $white;
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+
+  &--pdp {
+    height: 1.25rem;
+    color: #4320a8;
+    font-size: $headline-h4;
+    font-weight: bold;
+    line-height: 1.25rem;
+    align-self: flex-end;
+    margin-bottom: 0.5rem;
+
+    @include breakpoint('mobile') {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 0.125rem;
+      height: 1.25rem;
+      font-size: $paragraph-large-regular;
+      line-height: 1.25rem;
+    }
+  }
+}
+
+.sellingPriceValue {
+  &--pdp {
+    height: 2.5rem;
+    font-size: $headline-h1;
+    font-weight: 900;
+    line-height: 2.5rem;
+    color: $blue-dark;
+
+    @include breakpoint('mobile') {
+      height: 1.5rem;
+      font-size: $headline-h3;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+.sellingPrice {
+  &--pdp {
+    margin: 0 2rem 0 0;
+
+    @include breakpoint('mobile') {
+      display: flex;
+      align-items: flex-end;
+      margin-right: 1.25rem;
+    }
+  }
+}
+
+.listPriceValue {
+  &--pdp {
+    height: 100%;
+    color: $primary-default;
+    font-size: $paragraph-medium-regular;
+    line-height: 1rem;
+    display: flex;
+    align-items: flex-end;
+
+    @include breakpoint('mobile') {
+      height: 14px;
+      font-size: $paragraph-small-regular;
+      line-height: 14px;
+    }
+  }
+}
+
+.listPrice {
+  &--pdp {
+    margin: 0 1.25rem 0.5rem 0;
+
+    @include breakpoint('mobile') {
+      margin-bottom: 0.25rem;
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+}
+
+.sellerNameContainer {
+  font-size: $paragraph-small-medium;
+  font-weight: 500;
+  line-height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $darkgrey-medium;
+
+  @include mobile() {
+    line-height: 2rem;
+  }
+
+  :global(.vtex-product-price-1-x-sellerName) {
+    margin-left: 2px;
+  }
+
+  &--isDefaultSeller {
+    display: inline-block;
+    line-height: 18px;
+    //@debug: 1rem 0;
+    font-weight: 300;
+    margin: 0;
+    font-size: 14px;
+    color: #33232c;
+    .sellerName {
+      //color: $primary-pink;
+      font-weight: 500;
+    }
+  }
+}
+
+.installments {
+  &--pdp {
+    margin: 0;
+    height: 1.25rem;
+    color: $primary-default;
+    font-size: 16px;
+    line-height: 1.25rem;
+
+    @include breakpoint('mobile') {
+      height: 1rem;
+      font-size: $paragraph-medium-regular;
+      line-height: 1rem;
+    }
+  }
+
+  .currencyContainer {
+    &--pdp {
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "flex-layout.row#pdp-price-and-installments": {
+    "children": ["flex-layout.col#pdp-price-and-installments"],
+    "props": {
+      "blockClass": "pdp-price-and-installments",
+      "preventVerticalStretch": true,
+      "width": "100%"
+    }
+  },
+  "flex-layout.col#pdp-price-and-installments": {
+    "children": [
+      "flex-layout.row#pdp-price",
+      "flex-layout.row#pdp-installments"
+    ],
+    "props": {
+      "blockClass": "pdp-price-and-installments",
+      "preventVerticalStretch": true,
+      "width": "100%"
+    }
+  },
+
+  "flex-layout.row#pdp-price": {
+    "children": [
+      "product-selling-price#pdp",
+      "product-list-price#pdp",
+      "product-price-savings#pdp"
+    ],
+    "props": {
+      "blockClass": "pdp-price",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": false,
+      "colGap": 0,
+      "colSizing": "auto",
+      "horizontalAlign": "left"
+    }
+  },
+  "product-selling-price#pdp": {
+    "props": {
+      "blockClass": "pdp"
+    }
+  },
+  "product-list-price#pdp": {
+    "props": {
+      "blockClass": "pdp"
+    }
+  },
+  "product-price-savings#pdp": {
+    "props": {
+      "markers": ["savingsPercentage"],
+      "message": "{savingsPercentage} di sconto",
+      "blockClass": "pdp"
+    }
+  },
+
+  "flex-layout.row#pdp-installments": {
+    "children": [
+      "product-installments#pdp"
+      //  "image#pdp-scalapay-logo"
+    ],
+    "props": {
+      "blockClass": "pdp-installments",
+      "preventVerticalStretch": true,
+      "width": "100%"
+    }
+  },
+  "product-installments#pdp": {
+    "props": {
+      "blockClass": "pdp",
+      "message": "o {installmentsNumber} rate da {installmentValue} senza interessi. {paymentSystemName}"
+    }
+  }
+  // "image#pdp-scalapay-logo": {
+  //   "props": {
+  //     "src": "https://via.placeholder.com/90x18/E30613/fff",
+  //     "alt": "scalapay",
+  //     "blockClass": "pdp-scalapay-logo"
+  //   }
+  // },
+}

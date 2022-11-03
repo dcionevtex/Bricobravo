@@ -1,0 +1,26 @@
+{
+  "drawer#orderBy": {
+    "blocks": ["drawer-trigger#orderBy"],
+    "children": ["order-by.v2"],
+    "props": {
+      "blockClass": "orderByDrawer",
+      "maxWidth": 312,
+      "isFullWidth": true,
+      "slideDirection": "rightToLeft"
+    }
+  },
+  "drawer-trigger#orderBy": {
+    "children": ["rich-text#orderByTriggerText"],
+    "props": {
+      "blockClass": "orderByDrawerTrigger"
+    }
+  },
+  "rich-text#orderByTriggerText": {
+    "props": {
+      "text": "Ordenar por",
+      "blockClass": "orderByTriggerText",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  }
+}

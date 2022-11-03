@@ -1,0 +1,60 @@
+.carousel {
+  width: 40.6rem;
+  position: absolute;
+  overflow-x: hidden;
+  left: 1.25rem;
+}
+
+.inner {
+  display: flex;
+  height: 12.5rem;
+  white-space: nowrap;
+  transition: transform 0.3s;
+}
+
+.carouselItem {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 12.5rem;
+  margin-right: 3.1rem;
+}
+
+.indicators {
+  width: 10.6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.indicatorDots {
+  border: none;
+  border-radius: 100px;
+  width: 7px;
+  height: 7px;
+  margin: 0 5px;
+  vertical-align: bottom;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 0.4;
+  border: 1px solid #000;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.indicatorDots:checked {
+  opacity: 1;
+  border: 1px solid #402493;
+  background-color: 402493;
+  width: 9px;
+  height: 9px;
+}
+
+.indicatorDots.indicatorDotsActive:focus {
+  outline: 0;
+  opacity: 1;
+  border: 1px solid #402493;
+  background-color: 402493;
+  width: 9px;
+  height: 9px;
+}

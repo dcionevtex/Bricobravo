@@ -1,0 +1,17 @@
+{
+  "store.custom#rich-text": {
+    "blocks": ["flex-layout.row#rich-text"]
+  },
+  "flex-layout.row#rich-text": {
+    "title": "Rich Text Content",
+    "children": ["rich-text#rich-text"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "rich-text#rich-text": {
+    "props": {
+      "text": "teste default"
+    }
+  }
+}

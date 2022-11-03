@@ -1,0 +1,59 @@
+{
+  "name": "bricobravo.store-theme",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "lint": "yarn lint:js && yarn lint:css",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json}\"",
+    "start": "concurrently -n SASS,VTEX \"yarn start:css\" \"vtex link --clean --verbose\"",
+    "start:css": "yarn build:css && yarn build:css -w",
+    "build:css": "node-sass ./sass --output ./styles/css",
+    "lint:js": "eslint --ext js,jsx,ts,tsx .",
+    "lint:css": "stylelint ./sass/**/* -q",
+    "minify": "imagemin-lint-staged ./assets/**/*.{png,jpeg,jpg,gif,svg}"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js,tsx,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,graphql,gql}": [
+      "prettier --write"
+    ],
+    "*.{png,jpeg,jpg,gif,svg}": [
+      "imagemin-lint-staged"
+    ],
+    "*.{scss,sass}": [
+      "stylelint --fix"
+    ],
+    "*.{json,jsonc}": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@vtex/prettier-config": "^0.3.6",
+    "concurrently": "^6.0.1",
+    "eslint": "^7.12.1",
+    "eslint-config-vtex": "^12.3.2",
+    "eslint-config-vtex-react": "^6.3.2",
+    "husky": "^4.2.3",
+    "imagemin-lint-staged": "^0.4.0",
+    "lint-staged": "^10.1.1",
+    "node-sass": "^5.0.0",
+    "prettier": "^2.2.1",
+    "sass": "^1.54.8",
+    "stylelint": "^13.12.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-prettier": "^1.2.0",
+    "stylelint-scss": "^3.19.0",
+    "typescript": "^3.8.3"
+  },
+  "version": "0.0.0-beta.0"
+}

@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 8px;
+  @media screen and (max-width: 48rem) {
+    padding: 0;
+  }
+}
+
+.backToTopButtonActive {
+  transform: translateY(-40px);
+
+    :global(.vtex-button) {
+        height: 45px;
+        width: 45px;
+    }
+    :global(.vtex-button__label) {
+        content: "";
+        &::after {
+            content: url(/arquivos/back-up-icon.svg);
+            transform: translate(-4px, 1px);
+            height: 45px;
+            width: 45px;
+        }
+    }
+
+}
+
+
+

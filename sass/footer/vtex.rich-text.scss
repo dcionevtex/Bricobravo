@@ -1,0 +1,174 @@
+@import '../_media-queries.scss';
+@import '../_variables.scss';
+
+.paragraph {
+  &--footer-paymentMethodText {
+    margin: 0 24px 0 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #111;
+
+    @include breakpoint('mobile') {
+      margin: 0 auto;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+
+  &--footer-PaymentMethodsTitle,
+  &--footer-PaymentMethodsDescription {
+    color: $white;
+    padding: 10px 15px 10px 0;
+    @include breakpoint('mobile') {
+      padding-inline: 0;
+    }
+  }
+
+  &--footer-PaymentMethodsDescription {
+    font-size: 13px;
+    @include breakpoint('mobile') {
+      border-top: 1px solid $white;
+      padding-top: 20px;
+    }
+  }
+
+
+  &--footer-PaymentMethodsTitle {
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+
+    @include breakpoint('mobile') {
+      margin: 0 0 5px;
+    }
+    &::after {
+      content: '';
+      width: 33px;
+      height: 33px;
+      display: inline-block;
+      margin-left: 20px;
+      background-repeat: no-repeat;
+      background-size: 30px;
+      background-image: url("data:image/svg+xml,%3Csvg width='20' height='22' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.8346056 7.19908467h6.6157761v-2.3409611c0-.95652174-.3180662-1.75362319-.9541985-2.39130435-.63613231-.63768116-1.4206955-.95652174-2.35368956-.95652174s-1.71755725.31884058-2.35368957.95652174c-.63613231.63768116-.95419847 1.43478261-.95419847 2.39130435v2.3409611Zm5.2671756 13.94508013H1.52671756c-.39016116 0-.74215437-.1552251-1.05597965-.4656751C.15691264 20.3680397 0 20.0198322 0 19.6338673V8.70938215c0-.38596491.15691264-.73417239.47073791-1.04462242.31382528-.31045004.66581849-.46567506 1.05597965-.46567506h1.78117048v-2.3409611c0-1.35926773.46649703-2.50877193 1.39949109-3.44851259C5.6403732.46987033 6.78541137 0 8.14249364 0c1.35708227 0 2.50212046.46987033 3.43511446 1.40961098.9329941.93974066 1.3994911 2.08924486 1.3994911 3.44851259v2.3409611h1.7811705c.3901612 0 .7421544.15522502 1.0559797.46567506.3138252.31045003.4707379.65865751.4707379 1.04462242v2.18993135c-.2205259-.0503432-.4495335-.0839054-.6870229-.1006865-.2374894-.0167811-.5173876-.0251716-.8396947-.0251716V8.70938215H1.52671756V19.6338673h7.65903308c.1187447.2852784.24597116.5411899.38167939.7677345.13570822.2265447.31382527.4740656.53435117.742563Zm4.9872773-8.8604119c1.3401188 0 2.4936387.4782608 3.4605598 1.4347826C19.5165394 14.6750572 20 15.8161709 20 17.1418764c0 1.3257056-.4834606 2.4668193-1.4503817 3.423341C17.5826972 21.5217391 16.4291773 22 15.0890585 22c-1.3401187 0-2.4936387-.4782609-3.4605598-1.4347826-.9669211-.9565217-1.4503817-2.0976354-1.4503817-3.423341 0-1.3257055.4834606-2.4668192 1.4503817-3.4233409.9669211-.9565218 2.1204411-1.4347826 3.4605598-1.4347826Zm2.6724273 2.3829138-3.7536657 4.493617-1.7693059-2.1180851-.4203324.5031915 2.1896383 2.6212766 4.1739981-4.9968085-.4203324-.5031915Z' fill='%23FFF' fill-rule='nonzero'/%3E%3C/svg%3E");
+    }
+  }
+
+  &--footer-aboutUs {
+    color: $white;
+    font-size: 13px;
+  }
+
+  &--footer-upperFooterTitle {
+    font-size: 20px;
+    font-weight: 500;
+    color: $white;
+
+    @include breakpoint('mobile') {
+      margin: 0;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &--footerMenuTitle {
+    font-size: 1rem;
+    margin: 0 0 32px;
+    font-weight: 400;
+    color: #111;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+
+    @include breakpoint('mobile') {
+      margin-bottom: 16px;
+    }
+  }
+
+  &--middleFooterCol4Title {
+    @include breakpoint('mobile') {
+      display: none;
+    }
+  }
+
+  &--middleFooterSubtitle {
+    margin: 12px 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+    line-height: 18px;
+    max-width: 215.16px;
+
+    @include breakpoint('mobile') {
+      display: none;
+    }
+  }
+
+  &--newsSubTitle {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+    color: $white;
+    line-height: 21px;
+    max-width: 316px;
+    @include breakpoint('mobile') {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+
+  &--footerInfoOne {
+    margin: 0 0 4px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+  &--footerInfoTwo {
+    margin: 0;
+    font-size: 12px;
+    line-height: 16px;
+    color: #999;
+    font-weight: 400;
+
+    @include breakpoint('mobile') {
+      text-align: center;
+    }
+  }
+
+  &--bottomFooterText {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-right: 12px;
+  }
+
+  &--newsTitle {
+    font-size: 24px;
+    margin: 0 0 8px;
+    font-weight: 500;
+    color: $white;
+    line-height: 28px;
+    text-align: center;
+
+    @include breakpoint('mobile') {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.heading {
+  &--upperFooterTitle {
+    color: #111;
+    font-size: 24px;
+    font-weight: 300;
+
+    @include breakpoint('mobile') {
+      margin: 0;
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+}

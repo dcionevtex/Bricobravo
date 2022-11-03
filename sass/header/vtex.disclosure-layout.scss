@@ -1,0 +1,108 @@
+@import '../_variables.scss';
+
+.trigger--pre-header-secondCol-search {
+  border: none;
+  background: none;
+  margin-left: 40px;
+
+  @media screen and (max-width: 768px) {
+    margin-left: auto;
+    max-width: max-content;
+    padding-right: 16px;
+  }
+}
+
+.trigger--header-disclosureTrigger {
+  border: none;
+  background-color: transparent;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  :global(.vtex-rich-text-0-x-container) {
+    color: $white;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+}
+
+.content--header-disclosureContent {
+  padding: 42px 0;
+  width: 100%;
+  :global(.vtex-rich-text-0-x-container) {
+    position: absolute;
+    left: 0;
+    //padding: 10px;
+    top: 40px;
+    color: $white;
+    font-size: 14px;
+    max-width: 1313px;
+    text-align: center;
+    overflow: hidden;
+
+    :global(.vtex-rich-text-0-x-paragraph) {
+      margin-top: 2px;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.content--pre-header-secondCol-search {
+  left: 0;
+  top: 50%;
+  padding: 0 16px;
+  max-width: 100%;
+  position: absolute;
+  background-color: #fff;
+
+  :global(.vtex-input-prefix__group) {
+    flex-direction: row-reverse;
+    :global(.vtex-store-components-3-x-searchBarIcon--search) {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      align-self: center;
+      padding-bottom: 8px;
+      &::before {
+        content: "";
+        width: 1.2rem;
+        height: 1.2rem;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M0 0h40v40H0z'/%3E%3Cg transform='translate(10 10)' stroke='%235D5D5D'%3E%3Cellipse cx='8.02848517' cy='8.01835004' rx='7.52848517' ry='7.51835004'/%3E%3Cpath stroke-linecap='round' d='m13.5480687 13.5309657 5.0178033 5.0113029'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        background-size: 2.2rem;
+        background-position: -8px -7px;
+      }
+      :global(.vtex-store-components-3-x-searchIcon) {
+        overflow: visible;
+        padding: 0;
+        width: 12px;
+        position: absolute;
+        top: 35%;
+        transform: translateY(-61%);
+        display: none;
+      }
+    }
+  }
+
+  &::before {
+    left: 0;
+    top: 100%;
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: absolute;
+    background: #00000040;
+  }
+
+  .trigger--pre-header-secondCol-search-close {
+    top: 55%;
+    right: 7%;
+    z-index: 3;
+    border: none;
+    background: none;
+    position: absolute;
+    transform: translateY(-55%);
+  }
+}

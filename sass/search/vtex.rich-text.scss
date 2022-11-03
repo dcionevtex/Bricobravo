@@ -1,0 +1,125 @@
+@import '../_variables.scss';
+@import '../_media-queries.scss';
+
+.paragraph--description-title-search {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #111;
+  margin: 0 0 20px;
+
+  @media screen and (max-width: 768px) {
+    max-height: 57px;
+    overflow: hidden;
+    margin: 0 0 12px;
+  }
+}
+.paragraph--readCompleteTitleDescription {
+  margin: 0 0 32px;
+  .link--readCompleteTitleDescription {
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #2B126B;
+  }
+}
+
+.container--search-instructionRangePrice {
+  padding: 0 28px;
+  position: relative;
+  bottom: 130px;
+  font-size: 12px;
+  font-weight: 400;
+  color: $primary-default;
+  .strong--search-instructionRangePrice {
+    color: $secondary-default;
+    font-weight: 400;
+  }
+}
+
+.wrapper--findYourProduct {
+  margin: 0 auto;
+  @media screen and (max-width: 768px) {
+    margin: 0 auto 16px;
+  }
+}
+.heading--findYourProduct {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.heading--titleSeo {
+  margin-block: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+  line-height: 19px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 16px;
+    color: #111;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 19px;
+  }
+}
+
+.paragraph--textSeo {
+  margin-top: 19px;
+  line-height: 19px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #111;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: #111;
+    font-weight: 400;
+    line-height: 19px;
+  }
+}
+
+.paragraph--linkSeo {
+  @media screen and (max-width: 768px) {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    padding: 0 2rem;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.link--linkSeo {
+  @media screen and (max-width: 768px) {
+    text-decoration: none;
+    color: #e30613;
+  }
+}
+
+.paragraph--readCompleteTextLink-seo {
+  margin-block: 0;
+  @media screen and (max-width: 768px) {
+    padding: 0 2rem;
+  }
+}
+
+.link--readCompleteTextLink-seo {
+  text-decoration: none;
+  color: #e30613;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+}

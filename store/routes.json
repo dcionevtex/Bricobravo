@@ -1,0 +1,18 @@
+{
+  "store.custom#editorial": {
+    "path": "/editorial",
+    "isSitemapEntry": true
+  },
+  "store.custom#our-stores": {
+    "path": "/our-stores",
+    "isSitemapEntry": true
+  },
+  "store.custom#rich-text": {
+    "path": "/rich-text",
+    "isSitemapEntry": true
+  },
+  "store.custom#sandbox": {
+    "path": "/sandbox",
+    "isSitemapEntry": true
+  }
+}

@@ -1,0 +1,18 @@
+@import '_media-queries.scss';
+@import '_variables.scss';
+
+.stackItem--savingsStack--first {
+    @include breakpoint('mobile') {
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+    }
+    
+  }
+
+  .stackItem--savingsStack {
+    @include breakpoint('desktop') {
+        height: 204px;
+    }
+    
+  }

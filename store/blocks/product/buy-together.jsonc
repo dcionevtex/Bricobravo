@@ -1,0 +1,65 @@
+{
+  "flex-layout.row#buy-together": {
+    "children": ["buy-together"],
+    "props": {
+      "blockClass": "buyTogether"
+    }
+  },
+  "buy-together": {
+    "blocks": [
+      "product-summary.shelf#buyTogether",
+      "add-to-cart-button#buyTogether"
+    ],
+    "props": {
+      "title": "Compre junto",
+      "label": "economize {discount}"
+    }
+  },
+  "product-summary.shelf#buyTogether": {
+    "children": ["flex-layout.row#buyTogetherCard"],
+    "props": {
+      "blockClass": "buyTogetherCard"
+    }
+  },
+  "flex-layout.row#buyTogetherCard": {
+    "children": [
+      "product-summary-image#buyTogether",
+      "flex-layout.col#buyTogetherCard"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "preservalLayoutOnMobile": true,
+      "blockClass": "buyTogetherCardRow",
+      "colGap": {
+        "desktop": 6,
+        "mobile": 5
+      }
+    }
+  },
+  "product-summary-image#buyTogether": {
+    "props": {
+      "showBadge": false,
+      "width": 96,
+      "height": 96,
+      "aspectRatio": "1:1"
+    }
+  },
+  "flex-layout.col#buyTogetherCard": {
+    "children": ["product-summary-name", "product-selling-price"],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "buyTogetherCardCol",
+      "verticalAlign": "middle",
+      "rowGap": {
+        "desktop": 5,
+        "mobile": 5
+      }
+    }
+  },
+  "add-to-cart-button#buyTogether": {
+    "props": {
+      "blockClass": "buyTogether",
+      "text": "Comprar Todos"
+    }
+  }
+}

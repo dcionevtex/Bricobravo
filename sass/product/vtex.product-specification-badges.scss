@@ -1,0 +1,168 @@
+@import '../_variables.scss';
+@import '../_media-queries.scss';
+
+.groupContainer--productPage-specificationsBenefits {
+  display: flex;
+  flex-flow: column;
+  max-height: 150px;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+
+  @include breakpoint("mobile"){
+    max-height: 500px;
+  }
+
+  .badgeContainer--tamanho:nth-child(odd) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $lightgrey-lighter;
+    border-radius: 10px;
+    padding: 4rem 5rem;
+    align-self: center;
+    text-align: center;
+    max-height: 10.5rem;
+    max-width: 20rem;
+
+    @include breakpoint("mobile"){
+      padding: 4rem 4rem;
+      max-height: 11rem;
+      max-width: 5rem;
+    }
+    
+    .badgeText--productPage-specificationsBenefits {
+      color: $primary-default;
+      font-size: 30px;
+      font-weight: 300;
+    }
+  }
+
+  .badgeContainer--resolucao-maxima:nth-child(odd) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $lightgrey-lighter;
+    border-radius: 10px;
+    align-self: center;
+    padding: 4rem 5rem;
+    text-align: center;
+    max-height: 10.5rem;
+    max-width: 20rem;
+    white-space: nowrap;
+    
+    @include breakpoint("mobile"){
+      padding: 5rem 4rem;
+      max-height: 11rem;
+      max-width: 5rem;
+      white-space: normal;
+    }
+    
+    .badgeText--productPage-specificationsBenefits {
+      color: $primary-default;
+      font-size: 30px;
+      font-weight: 300;
+    }
+  }
+
+  .badgeContainer--hdmi:nth-child(odd) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $lightgrey-lighter;
+    border-radius: 10px;
+    padding: 4rem 5rem;
+    align-self: center;
+    text-align: center;
+    max-height: 10.5rem;
+    max-width: 20rem;
+
+    @include breakpoint("mobile"){
+      padding: 5rem 4rem;
+      max-height: 11rem;
+      max-width: 5rem;
+    }
+
+    .badgeText--productPage-specificationsBenefits {
+      color: $primary-default;
+      font-size: 30px;
+      font-weight: 300;
+    }
+  }
+
+  .badgeContainer--usb:nth-child(odd) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid $lightgrey-lighter;
+    border-radius: 10px;
+    padding: 4rem 5rem;
+    align-self: center;
+    text-align: center;
+    max-height: 10.5rem;
+    max-width: 20rem;
+
+    @include breakpoint("mobile"){
+      padding: 5rem 4rem;
+      max-height: 10.5rem;
+      max-width: 5rem;
+    }
+
+    .badgeText--productPage-specificationsBenefits {
+      color: $primary-default;
+      font-size: 30px;
+      font-weight: 300;
+    }
+  }
+  .badgeContainer--tamanho:nth-child(even) {
+    position: relative;
+    color: $darkgrey-medium;
+    font-size: 30px;
+    max-width: 1px;
+    right: 11rem;
+    top: 8rem;
+
+    @include breakpoint("mobile"){
+      top: -3rem;
+      left: 2.5rem;
+    }
+  }
+  .badgeContainer--resolucao-maxima:nth-child(even) {
+    position: relative;
+    color: $darkgrey-medium;
+    font-size: 30px;
+    max-width: 1px;
+    white-space: nowrap;
+    right: 16rem;
+    top: 8rem;
+    @include breakpoint("mobile"){
+      top: -3.5rem;
+      left: 2.3rem;
+      white-space: normal;
+    }
+  }
+  .badgeContainer--hdmi:nth-child(even) {
+    position: relative;
+    color: $darkgrey-medium;
+    font-size: 20px;
+    max-width: 1px;
+    right: 9.5rem;
+    top: 8rem;
+
+    @include breakpoint("mobile"){
+      top: -3rem;
+      left: 3rem;
+    }
+  }
+  .badgeContainer--usb:nth-child(even) {
+    position: relative;
+    color: $darkgrey-medium;
+    font-size: 2rem;
+    max-width: 1px;
+    right: 9rem;
+    top: 8rem;
+    @include breakpoint("mobile"){
+      top: -3rem;
+      left: 4rem;
+    }
+  }
+}

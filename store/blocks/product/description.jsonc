@@ -1,0 +1,76 @@
+{
+  "flex-layout.row#descriptionSpecification": {
+    "title": "Descrizione",
+    "children": ["flex-layout.col#descriptionSpecification"],
+    "props": {
+      // "blockClass": "product-main-descSpec"
+      "htmlId": "descriptionSpecification",
+      "blockClass": ["anchorDescriptionSpecification", "product-main-descSpec"]
+    }
+  },
+  "flex-layout.col#descriptionSpecification": {
+    "children": [
+      "rich-text#product-details",
+      "flex-layout.row#product-details"
+    ],
+    "props": {
+      "blockClass": "product-main-descSpec"
+    }
+  },
+  "flex-layout.row#product-details": {
+    "children": [
+      "flex-layout.row#description",
+      "flex-layout.row#specification"
+    ],
+    "props": {
+      "blockClass": "product-details"
+    }
+  },
+  "rich-text#product-details": {
+    "title": "Descrizione nome",
+    "props": {
+      "text": "Dettagli del prodotto",
+      "blockClass": "product-details"
+    }
+  },
+
+  "flex-layout.row#description": {
+    "children": ["flex-layout.row#product-description"],
+    "props": {
+      "blockClass": "productDescription"
+    }
+  },
+  "flex-layout.row#description--mobile": {
+    "children": ["disclosure-layout-group#descriptionGroup"],
+    "props": {
+      "blockClass": "productDescriptionMobile"
+    }
+  },
+  "flex-layout.row#product-description": {
+    "children": ["flex-layout.col#product-description"],
+    "props": {
+      "blockClass": "product-description"
+    }
+  },
+  "flex-layout.col#product-description": {
+    "children": [
+      "rich-text#anchor-complete-description",
+      "product-description"
+    ],
+    "props": {
+      "blockClass": "product-description"
+    }
+  },
+  "rich-text#anchor-complete-description": {
+    "props": {
+      "htmlId": "completeDescription",
+      "blockClass": "anchorCompleteDescription"
+    }
+  },
+  "product-description": {
+    "props": {
+      "title": "Descrizione",
+      "blockClass": "pdp"
+    }
+  }
+}

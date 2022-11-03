@@ -1,0 +1,270 @@
+{
+  "flex-layout.row#faq": {
+    "title":"FAQ",
+    "children": ["flex-layout.col#faq"],
+    "props": { "blockClass": "pdp-faq" }
+  },
+  "flex-layout.col#faq": {
+    "children": [
+      "rich-text#pdp-faq-title",
+      "flex-layout.row#pdp-faq-disclousure-layout"
+      // As próximas duas linhas estão comentadas porque a app custom que utiliza elas será implementada no futuro.
+      // "rich-text#pdp-faq-ask-more",
+      // "modal-trigger#pdp-faq"
+    ],
+    "props": { "blockClass": "pdp-faq" }
+  },
+
+  "rich-text#pdp-faq-title": {
+    "props": {
+      "text": "## Domande e risposte",
+      "blockClass": "pdp-faq-title"
+    }
+  },
+
+  "rich-text#pdp-faq-ask-more": {
+    "props": {
+      "text": "Desideri ulteriori informazioni sul prodotto? ",
+      "blockClass": "pdp-faq-ask-more"
+    }
+  },
+
+  "link#pdp-faq-ask-more": {
+    "props": {
+      "label": "Fai una domanda",
+      "blockClass": "pdp-faq-ask-more"
+    }
+  },
+
+  "flex-layout.row#pdp-faq-disclousure-layout": {
+    "children": ["disclosure-layout-group#pdp-faq"],
+    "props": { "blockClass": "pdp-faq-disclousure-layout" }
+  },
+  "disclosure-layout-group#pdp-faq": {
+    "children": [
+      "disclosure-layout#pdp-faq-1",
+      "disclosure-layout#pdp-faq-2",
+      "disclosure-layout#pdp-faq-3",
+      "disclosure-layout#pdp-faq-4"
+    ],
+    "props": {
+      "blockClass": "pdp-faq"
+    }
+  },
+
+  "disclosure-layout#pdp-faq-1": {
+    "children": [
+      "disclosure-trigger#pdp-faq-1",
+      "disclosure-content#pdp-faq-1"
+    ],
+    "props": { "blockClass": "pdp-faq" }
+  },
+  "disclosure-trigger#pdp-faq-1": {
+    "children": [
+      "rich-text#pdp-faq-1-trigger",
+      "disclosure-state-indicator#pdp-faq"
+    ],
+    "props": { "blockClass": "pdp-faq-trigger" }
+  },
+  "disclosure-content#pdp-faq-1": {
+    "children": ["rich-text#pdp-faq-1-content"],
+    "props": { "blockClass": "pdp-faq-content" }
+  },
+  "rich-text#pdp-faq-1-trigger": {
+    "props": {
+      "text": "Come posso acquistare un prodotto?",
+      "blockClass": "pdp-faq-trigger"
+    }
+  },
+  "rich-text#pdp-faq-1-content": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit nam elitquisque maximus. <br/>Nemo enim ipsam voluptatem quia voluptas sit ",
+      "blockClass": "pdp-faq-content"
+    }
+  },
+
+  "disclosure-layout#pdp-faq-2": {
+    "children": [
+      "disclosure-trigger#pdp-faq-2",
+      "disclosure-content#pdp-faq-2"
+    ],
+    "props": { "blockClass": "pdp-faq" }
+  },
+  "disclosure-trigger#pdp-faq-2": {
+    "children": [
+      "rich-text#pdp-faq-2-trigger",
+      "disclosure-state-indicator#pdp-faq"
+    ],
+    "props": { "blockClass": "pdp-faq-trigger" }
+  },
+  "disclosure-content#pdp-faq-2": {
+    "children": ["rich-text#pdp-faq-2-content"],
+    "props": { "blockClass": "pdp-faq-content" }
+  },
+  "rich-text#pdp-faq-2-trigger": {
+    "props": {
+      "text": "Morbi hendrerit eget turpis ac feugiat?",
+      "blockClass": "pdp-faq-trigger"
+    }
+  },
+  "rich-text#pdp-faq-2-content": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit nam elitquisque maximus. <br/>Nemo enim ipsam voluptatem quia voluptas sit ",
+      "blockClass": "pdp-faq-content"
+    }
+  },
+
+  "disclosure-layout#pdp-faq-3": {
+    "children": [
+      "disclosure-trigger#pdp-faq-3",
+      "disclosure-content#pdp-faq-3"
+    ],
+    "props": { "blockClass": "pdp-faq" }
+  },
+  "disclosure-trigger#pdp-faq-3": {
+    "children": [
+      "rich-text#pdp-faq-3-trigger",
+      "disclosure-state-indicator#pdp-faq"
+    ],
+    "props": { "blockClass": "pdp-faq-trigger" }
+  },
+  "disclosure-content#pdp-faq-3": {
+    "children": ["rich-text#pdp-faq-3-content"],
+    "props": { "blockClass": "pdp-faq-content" }
+  },
+  "rich-text#pdp-faq-3-trigger": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet?",
+      "blockClass": "pdp-faq-trigger"
+    }
+  },
+  "rich-text#pdp-faq-3-content": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit nam elitquisque maximus. <br/>Nemo enim ipsam voluptatem quia voluptas sit ",
+      "blockClass": "pdp-faq-content"
+    }
+  },
+
+  "disclosure-layout#pdp-faq-4": {
+    "children": [
+      "disclosure-trigger#pdp-faq-4",
+      "disclosure-content#pdp-faq-4"
+    ],
+    "props": { "blockClass": "pdp-faq" }
+  },
+  "disclosure-trigger#pdp-faq-4": {
+    "children": [
+      "rich-text#pdp-faq-4-trigger",
+      "disclosure-state-indicator#pdp-faq"
+    ],
+    "props": { "blockClass": "pdp-faq-trigger" }
+  },
+  "disclosure-content#pdp-faq-4": {
+    "children": ["rich-text#pdp-faq-4-content"],
+    "props": { "blockClass": "pdp-faq-content" }
+  },
+  "rich-text#pdp-faq-4-trigger": {
+    "props": {
+      "text": "Morbi hendrerit eget turpis ac feugiat?",
+      "blockClass": "pdp-faq-trigger"
+    }
+  },
+  "rich-text#pdp-faq-4-content": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit nam elitquisque maximus. <br/>Nemo enim ipsam voluptatem quia voluptas sit ",
+      "blockClass": "pdp-faq-content"
+    }
+  },
+
+  "disclosure-state-indicator#pdp-faq": {
+    "props": {
+      "Show": "image#faq-icon-down",
+      "Hide": "image#faq-icon-up",
+      "blockClass": "pdp-faq"
+    }
+  },
+  "image#faq-icon-down": {
+    "props": {
+      "src": "assets/icons/faq-down.svg",
+      "width": "16px"
+    }
+  },
+  "image#faq-icon-up": {
+    "props": {
+      "src": "assets/icons/faq-up.svg",
+      "width": "16px"
+    }
+  },
+
+  "modal-trigger#pdp-faq": {
+    "props": {
+      "blockClass": "pdp-faq"
+    },
+    "children": ["link#pdp-faq-ask-more", "modal-layout#pdp-faq"]
+  },
+
+  "modal-layout#pdp-faq": {
+    "children": ["modal-header#availability", "modal-content#pdp-faq"],
+    "props": {
+      "blockClass": "pdp-faq"
+    }
+  },
+  "modal-content#pdp-faq": {
+    "children": ["rich-text#pdp-faq", "flex-layout.row#faq-form"],
+    "props": {
+      "blockClass": "pdp-faq"
+    }
+  },
+  "rich-text#pdp-faq": {
+    "props": {
+      "text": "Fai una domanda su questo prodotto",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "pdp-faq"
+    }
+  },
+  "flex-layout.row#faq-form": {
+    "children": ["flex-layout.col#faq-form"],
+    "props": {
+      "blockClass": "pdp-faq-form"
+    }
+  },
+  "flex-layout.col#faq-form": {
+    "children": ["form#pdp-faq"],
+    "props": {
+      "blockClass": "pdp-faq-form"
+    }
+  },
+  "form#pdp-faq": {
+    "children": [
+      "form-input.dropdown#pdp-faq-topic",
+      "form-input.text#pdp-faq-question",
+      "form-submit#faq-question"
+    ],
+    "props": {
+      "blockClass": "pdp-faq-form",
+      "entity": "FrequentlyAskedQuestions",
+      "schema": "FrequentlyAskedQuestions"
+    }
+  },
+  "form-input.dropdown#pdp-faq-topic": {
+    "props": {
+      "pointer": "#/properties/topic",
+      "label": "",
+      "blockClass": "pdp-faq"
+    }
+  },
+  "form-input.text#pdp-faq-question": {
+    "props": {
+      "pointer": "#/properties/question",
+      "label": "Inserisci qui la tua domanda",
+      "blockClass": "pdp-faq"
+    }
+  },
+  "form-submit#faq-question": {
+    "props": {
+      "label": "CONFERMA",
+      "blockClass": "pdp-faq"
+    }
+  }
+}

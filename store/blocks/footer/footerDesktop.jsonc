@@ -1,0 +1,405 @@
+{
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#newsletter",
+      "flex-layout.row#FooterLinksDesktop",
+      "flex-layout.row#footerPaymentMethods",
+      "flex-layout.row#bottomFooterDesktop"
+    ],
+    "props": {
+      "htmlId": "Footer layout Desktop"
+    },
+    "title": "Footer layout Desktop"
+  },
+  "flex-layout.row#FooterLinksDesktop": {
+    "children": [
+      "flex-layout.col#upperFooterCol1",
+      "flex-layout.col#upperFooterCol2",
+      "flex-layout.col#upperFooterCol4",
+      "flex-layout.row#upperFooterCol3"
+    ],
+    "props": {
+      "blockClass": "footer-upperFooterDesktop",
+      "htmlId": "Footer links"
+    },
+    "title": "Footer links"
+  },
+
+  "flex-layout.col#upperFooterCol1": {
+    "children": [
+      "rich-text#upperFooterTitleCol1",
+      "flex-layout.row#upperFooterLinksCol1"
+    ],
+    "props": {
+      "blockClass": "footer-upperFooterCol1",
+      "width": "25%"
+    }
+  },
+
+  "rich-text#upperFooterTitleCol1": {
+    "props": {
+      "text": "Assistenza clienti",
+      "blockClass": "footer-upperFooterTitle"
+    }
+  },
+
+  "flex-layout.row#upperFooterLinksCol1": {
+    "children": [
+      "flex-layout.col#upperFooterLinksCol1-1",
+      "flex-layout.col#upperFooterLinksCol1-2"
+    ]
+  },
+
+  "flex-layout.col#upperFooterLinksCol1-1": {
+    "children": [
+      "link#upperFooterCol1Link1",
+      "link#upperFooterCol1Link2",
+      "link#upperFooterCol1Link3",
+      "link#upperFooterCol1Link4",
+      "link#upperFooterCol1Link5"
+    ]
+  },
+  "flex-layout.col#upperFooterLinksCol1-2": {
+    "children": [
+      "link#upperFooterCol1Link6",
+      "link#upperFooterCol1Link7",
+      "link#upperFooterCol1Link8",
+      "link#upperFooterCol1Link9"
+    ]
+  },
+  "link#upperFooterCol1Link1": {
+    "props": {
+      "label": "Dov'è il mio ordine?",
+      "href": "#"
+    }
+  },
+  "link#upperFooterCol1Link2": {
+    "props": {
+      "label": "Effettuare un reso",
+      "href": "#"
+    }
+  },
+  "link#upperFooterCol1Link3": {
+    "props": {
+      "label": "Pagamenti",
+      "href": "#"
+    }
+  },
+  "link#upperFooterCol1Link4": {
+    "props": {
+      "label": "Spedizione e consegna",
+      "href": "#"
+    }
+  },
+  "link#upperFooterCol1Link5": {
+    "props": {
+      "label": "FAQ",
+      "href": "#"
+    }
+  },
+  "link#upperFooterCol1Link6": {
+    "props": {
+      "href": "#",
+      "label": "Garanzia legale"
+    }
+  },
+  "link#upperFooterCol1Link7": {
+    "props": {
+      "href": "#",
+      "label": "Condizioni generali di vendita"
+    }
+  },
+  "link#upperFooterCol1Link8": {
+    "props": {
+      "href": "#",
+      "label": "Cookie policy"
+    }
+  },
+  "link#upperFooterCol1Link9": {
+    "props": {
+      "href": "#",
+      "label": "Privacy policy"
+    }
+  },
+
+  "flex-layout.col#upperFooterCol2": {
+    "children": [
+      "rich-text#upperFooterTitleCol2",
+      "flex-layout.col#upperFooterLinksCol2"
+    ],
+    "props": {
+      "width": "55%",
+      "preventVerticalStretch": true,
+      "blockClass": "footer-upperFooterCol2"
+    }
+  },
+
+  "rich-text#upperFooterTitleCol2": {
+    "props": {
+      "text": "Chi siamo",
+      "blockClass": "footer-upperFooterTitle"
+    }
+  },
+  "flex-layout.col#upperFooterLinksCol2": {
+    "children": [
+      "link#upperFooterCol2Link1",
+      "link#upperFooterCol2Link2",
+      "link#upperFooterCol2Link3"
+    ]
+  },
+  "link#upperFooterCol2Link1": {
+    "props": {
+      "href": "#",
+      "label": "l´azienda"
+    }
+  },
+  "link#upperFooterCol2Link2": {
+    "props": {
+      "href": "#",
+      "label": "Dove siamo"
+    }
+  },
+  "link#upperFooterCol2Link3": {
+    "props": {
+      "href": "#",
+      "label": "Contatti"
+    }
+  },
+
+  "flex-layout.row#upperFooterCol3": {
+    "children": ["image#Congratulations1", "image#Congratulations2"],
+    "props": {
+      "blockClass": "footer-upperFooterCol3"
+    }
+  },
+  "image#Congratulations1": {
+    "props": {
+      "src": "",
+      "width": "100px",
+      "blockClass": "footer-congratulationsImage"
+    }
+  },
+  "image#Congratulations2": {
+    "props": {
+      "src": "",
+      "width": "100px",
+      "blockClass": "footer-congratulationsImage"
+    }
+  },
+
+  "flex-layout.col#upperFooterCol4": {
+    "children": ["link#upperFooterCol4Link1", "link#upperFooterCol4Link2"],
+    "props": {
+      "blockClass": "footer-upperFooterCol4"
+    }
+  },
+  "link#upperFooterCol4Link1": {
+    "props": {
+      "href": "/rich-text",
+      "label": "rich-text"
+    }
+  },
+  "link#upperFooterCol4Link2": {
+    "props": {
+      "href": "/sandbox",
+      "label": "sandbox"
+    }
+  },
+
+  "flex-layout.row#footerPaymentMethods": {
+    "children": ["flex-layout.col#footerPaymentMethods"],
+    "props": {
+      "blockClass": "footer-PaymentMethods",
+      "htmlId": "Footer modalità di pagamento"
+    },
+    "title": "Footer modalità di pagamento"
+  },
+  "flex-layout.col#footerPaymentMethods": {
+    "children": [
+      "flex-layout.row#footerPaymentMethodsRow1",
+      "flex-layout.row#footerPaymentMethodsRow2",
+      "flex-layout.row#footerPaymentMethodsRow3"
+    ]
+  },
+
+  "flex-layout.row#footerPaymentMethodsRow1": {
+    "children": ["rich-text#footerPaymentMethodsRow1Title"],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "footer-PaymentMethodsRow"
+    }
+  },
+
+  "rich-text#footerPaymentMethodsRow1Title": {
+    "props": {
+      "text": "Pagamenti sicuri",
+      "blockClass": "footer-PaymentMethodsTitle"
+    }
+  },
+
+  "flex-layout.row#footerPaymentMethodsRow2": {
+    "children": [
+      "image#payment1",
+      "image#payment2",
+      "image#payment3",
+      "image#payment4",
+      "image#payment5",
+      "image#payment6",
+      "image#payment7",
+      "image#payment8"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": ["footer-PaymentImagesRow"]
+    }
+  },
+  "image#payment1": {
+    "props": {
+      "src": "assets/icons/payments/visa.png",
+      "width": "58px",
+      "maxHeight": "40px"
+    }
+  },
+  "image#payment2": {
+    "props": {
+      "src": "assets/icons/payments/mastercard.png",
+      "width": "58px",
+      "maxHeight": "40px"
+    }
+  },
+  "image#payment3": {
+    "props": {
+      "src": "assets/icons/payments/maestro.png",
+      "width": "58px",
+      "maxHeight": "40px"
+    }
+  },
+  "image#payment4": {
+    "props": {
+      "src": "assets/icons/payments/amex.png",
+      "width": "58px",
+      "maxHeight": "40px"
+    }
+  },
+  "image#payment5": {
+    "props": {
+      "src": "assets/icons/payments/paypal.png",
+      "width": "58px",
+      "maxHeight": "40px"
+    }
+  },
+  "image#payment6": {
+    "props": {
+      "src": "assets/icons/payments/postepay.png",
+      "width": "58px",
+      "maxHeight": "40px"
+    }
+  },
+  "image#payment7": {
+    "props": {
+      "src": "assets/icons/payments/contrassegno.png",
+      "width": "58px",
+      "maxHeight": "40px"
+    }
+  },
+  "image#payment8": {
+    "props": {
+      "src": "assets/icons/payments/bonifico.png",
+      "width": "58px",
+      "maxHeight": "40px"
+    }
+  },
+
+  "flex-layout.row#footerPaymentMethodsRow3": {
+    "props": {
+      "blockClass": "footer-PaymentMethodsRow"
+    },
+    "children": ["rich-text#textPaymentMethods"]
+  },
+  "rich-text#textPaymentMethods": {
+    "props": {
+      "text": "Nel 1959 eravamo un negozio di ferramenta a conduzione familiare. Oggi BricoBravo è un punto di riferimento nel settore del bricolage e del fai da te oltre ad essere anche un ecommerce online dove dare sfogo alla tua passione per la casa, la decorazione e il giardinaggio. Qualunque sia il tuo progetto, da noi puoi trovare facilmente ed acquistare online gli strumenti per realizzarlo: dagli utensili, gli oggetti per il fai da te e la manutenzione, fino ai mobili, i complementi per l’arredamento, il riscaldamento con stufe e caminetti e la climatizzazione di piccoli e grandi spazi con condizionatori fissi e portatili. Oltre ad offriti tante idee per gli interni, da BricoBravo ti proponiamo anche soluzioni per attrezzare gli spazi esterni con tutte le comodità che desideri: piscine, gazebo o casette e box. E siccome abbiamo a cuore proprio tutte le tue passioni, qui troverai anche prodotti per prenderti cura della tua auto e della tua moto. Realizza i tuoi progetti con le offerte e le promozioni di BricoBravo e approfitta dei consigli e dell’assistenza dei nostri esperti.",
+      "blockClass": "footer-PaymentMethodsDescription"
+    }
+  },
+
+  "flex-layout.col#footerSocialMedia": {
+    "children": ["rich-text#footerSocialMedia", "social-networks"],
+    "props": {
+      "blockClass": "footerSocialMedia",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#footerSocialMedia": {
+    "props": {
+      "text": "Siga-nos",
+      "blockClass": "paymentMethodText",
+      "htmlId": "Social Media"
+    },
+    "title": "Social Media"
+  },
+
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        {
+          "url": "https://twitter.com/foo",
+          "name": "Instagram"
+        },
+        {
+          "url": "https://facebook.com/foo",
+          "name": "Facebook"
+        },
+        {
+          "url": "https://twitter.com/foo",
+          "name": "Youtube"
+        }
+      ]
+    }
+  },
+
+  "flex-layout.row#bottomFooterDesktop": {
+    "children": [
+      "flex-layout.col#bottomFooter1",
+      "flex-layout.col#bottomFooter2"
+    ],
+    "props": {
+      "blockClass": "bottomFooterDesktop",
+      "fullWidth": true,
+      "htmlId": "Footer inferiore"
+    },
+    "title": "Footer inferiore"
+  },
+
+  "flex-layout.col#bottomFooter1": {
+    "children": ["rich-text#bricoBravoInfo1"],
+    "props": {
+      "width": "85%",
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle",
+      "blockClass": "bottomFooter2"
+    }
+  },
+  "rich-text#bricoBravoInfo1": {
+    "props": {
+      "text": "BBO Srl - Sede operativa: Via Galla Placidia 28 - 00159 ROMA (RM) Italia | Capitale sociale versato: 10.000€ | P.Iva IT10135840964 | REA 2508431 | Copyright © 2022. All Rights Reserved",
+      "blockClass": "footer-aboutUs"
+    }
+  },
+
+  "flex-layout.col#bottomFooter2": {
+    "children": ["image#bottomFooterTechnologyImage"],
+    "props": {
+      "width": "9%",
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle",
+      "blockClass": "bottomFooter1"
+    }
+  },
+  "image#bottomFooterTechnologyImage": {
+    "props": {
+      "src": "assets/icons/vtexWhiteLogo.svg"
+    }
+  }
+}

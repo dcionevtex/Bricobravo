@@ -1,0 +1,70 @@
+.hideFilterLeft {
+    width: 0 !important;
+    display: none;
+}
+
+.hideFilterRight {
+    width: 100% !important;
+}
+
+.hideFilterRight .vtex-search-result-3-x-galleryItem--Desktop {
+    width: 25% !important;
+    max-width: 25% !important;
+}
+
+.hideFilterRight .vtex-product-summary-2-x-container--summaryComplete:hover {
+    left: 14px;
+}
+
+/* .hideFilterRight .vtex-search-result-3-x-gallery--Desktop {
+    padding-left: 0;
+} */
+
+.hide, .hide::after, .hide::before {
+    display: none !important;
+}
+
+/* Estilização botão */
+
+.hideFilterButton {
+    background-color: #fff;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #4320A8;
+    font-weight: 500;
+    width: 277px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.showFilterButton {
+    background-color: #fff;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #4320A8;
+    font-weight: 500;
+    padding-right: 4px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.hideFilterButton::after{
+    content:url("https://bricobravo.vteximg.com.br/arquivos/icon_close_purple.svg");
+    padding-left: 185px;
+}
+
+/* Filtro Hide */
+.showFilterButton::before{
+    content:url("https://bricobravo.vteximg.com.br/arquivos/icon_filter_purple.svg");
+    padding-right: 10px;
+    padding-right: 0;
+}
+.showFilterButton::after{
+    content:url("");
+    padding-left: 0;
+}

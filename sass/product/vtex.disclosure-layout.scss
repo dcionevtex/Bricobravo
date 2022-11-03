@@ -1,0 +1,51 @@
+@import '../_variables.scss';
+@import '../_media-queries.scss';
+
+.trigger {
+  &--pdp-faq-trigger {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    padding: 0;
+
+    &--hidden {
+      :global(.vtex-rich-text-0-x-paragraph--pdp-faq-trigger) {
+        height: 1.25rem;
+        color: $primary-default;
+        font-size: $headline-h4;
+        font-weight: 400;
+        line-height: 1.25rem;
+
+        @include breakpoint('mobile') {
+          font-size: $paragraph-large-regular;
+        }
+      }
+    }
+
+    &--visible {
+      :global(.vtex-rich-text-0-x-paragraph--pdp-faq-trigger) {
+        height: 1.25rem;
+        color: $primary-default;
+        font-size: $headline-h4;
+        font-weight: 500;
+        line-height: 1.25rem;
+
+        @include breakpoint('mobile') {
+          font-size: $paragraph-large-regular;
+        }
+      }
+    }
+
+    :global(.vtex-store-components-3-x-imageElement) {
+      @include breakpoint('mobile') {
+        width: auto !important;
+      }
+    }
+  }
+}

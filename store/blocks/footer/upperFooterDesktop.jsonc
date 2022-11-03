@@ -1,0 +1,803 @@
+{
+  "flex-layout.row#homeBottomSectionDesktop": {
+    "children": ["flex-layout.col#homeBottomSectionCol"],
+    "props": {
+      "blockClass": "homeBottomSectionDesktop",
+      "htmlId": "Sezione inferiore"
+    },
+    "title": "Sezione inferiore"
+  },
+
+  "flex-layout.col#homeBottomSectionCol": {
+    "children": [
+      "flex-layout.row#homeBottomSectionBrands",
+      "flex-layout.row#homeBottomSectionCategories"
+    ],
+    "props": {
+      "blockClass": "homeBottomSectionCol",
+      "width": "100%"
+    }
+  },
+
+  "flex-layout.row#homeBottomSectionBrands": {
+    "children": ["flex-layout.col#homeBottomSectionBrands"],
+    "props": {
+      "blockClass": "homeBottomSectionBrands",
+      "htmlId": "Vetrina del brands"
+    },
+    "title": "Vetrina del brands"
+  },
+  "flex-layout.col#homeBottomSectionBrands": {
+    "children": [
+      "rich-text#homeBottomSectionBrandsTitle",
+      "slider-layout#homeBottomSectionBrands"
+    ],
+    "props": {
+      "blockClass": "homeBottomSectionBrands"
+    }
+  },
+  "rich-text#homeBottomSectionBrandsTitle": {
+    "props": {
+      "text": "I migliori marchi, a portata di click",
+      "blockClass": "homeBottomSectionBrandsMainTitle",
+      "htmlId": "Titolo di vetrina del brands"
+    },
+    "title": "Titolo di vetrina del brands"
+  },
+  "slider-layout#homeBottomSectionBrands": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 8,
+        "tablet": 3,
+        "phone": 3
+      },
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
+      "autoplay": false,
+      "infinity": false,
+      "navigationStep": 1,
+      "fullWidth": true,
+      "blockClass": "homeBottomSectionBrands"
+    },
+    "children": [
+      "image#homeBottomSectionBrands01",
+      "image#homeBottomSectionBrands02",
+      "image#homeBottomSectionBrands03",
+      "image#homeBottomSectionBrands04",
+      "image#homeBottomSectionBrands05",
+      "image#homeBottomSectionBrands06",
+      "image#homeBottomSectionBrands07",
+      "image#homeBottomSectionBrands08",
+      "image#homeBottomSectionBrands09"
+    ]
+  },
+  "image#homeBottomSectionBrands01": {
+    "props": {
+      "src": "https://dummyimage.com/131x90/ffffff/333c32&text=Brand01",
+      "blockClass": "homeBottomSectionBrands"
+    }
+  },
+  "image#homeBottomSectionBrands02": {
+    "props": {
+      "src": "https://dummyimage.com/131x90/ffffff/333c32&text=Brand02",
+      "blockClass": "homeBottomSectionBrands"
+    }
+  },
+  "image#homeBottomSectionBrands03": {
+    "props": {
+      "src": "https://dummyimage.com/131x90/ffffff/333c32&text=Brand03",
+      "blockClass": "homeBottomSectionBrands"
+    }
+  },
+  "image#homeBottomSectionBrands04": {
+    "props": {
+      "src": "https://dummyimage.com/131x90/ffffff/333c32&text=Brand04",
+      "blockClass": "homeBottomSectionBrands"
+    }
+  },
+  "image#homeBottomSectionBrands05": {
+    "props": {
+      "src": "https://dummyimage.com/131x90/ffffff/333c32&text=Brand05",
+      "blockClass": "homeBottomSectionBrands"
+    }
+  },
+  "image#homeBottomSectionBrands06": {
+    "props": {
+      "src": "https://dummyimage.com/131x90/ffffff/333c32&text=Brand06",
+      "blockClass": "homeBottomSectionBrands"
+    }
+  },
+  "image#homeBottomSectionBrands07": {
+    "props": {
+      "src": "https://dummyimage.com/131x90/ffffff/333c32&text=Brand07",
+      "blockClass": "homeBottomSectionBrands"
+    }
+  },
+  "image#homeBottomSectionBrands08": {
+    "props": {
+      "src": "https://dummyimage.com/131x90/ffffff/333c32&text=Brand08",
+      "blockClass": "homeBottomSectionBrands"
+    }
+  },
+  "image#homeBottomSectionBrands09": {
+    "props": {
+      "src": "https://dummyimage.com/131x90/ffffff/333c32&text=Brand09",
+      "blockClass": "homeBottomSectionBrands"
+    }
+  },
+
+  "flex-layout.row#homeBottomSectionCategories": {
+    "children": ["flex-layout.col#homeBottomSectionCategories"],
+    "props": {
+      "blockClass": "homeBottomSectionCategories",
+      "htmlId": "Vetrina di categorie"
+    },
+    "title": "Vetrina di categorie"
+  },
+  "flex-layout.col#homeBottomSectionCategories": {
+    "children": [
+      "rich-text#homeBottomSectionCategoriesTitle",
+      "slider-layout#homeBottomSectionCategories"
+    ],
+    "props": {
+      "blockClass": "homeBottomSectionCategories"
+    }
+  },
+  "rich-text#homeBottomSectionCategoriesTitle": {
+    "props": {
+      "text": "Esplora le nostre categorie",
+      "blockClass": "homeBottomSectionCategoriesMainTitle",
+      "htmlId": "Titolo di vetrina di categorie"
+    },
+    "title": "Titolo di vetrina di categorie"
+  },
+  "slider-layout#homeBottomSectionCategories": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 3,
+        "phone": 3
+      },
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
+      //"usePagination": false,
+      "autoplay": false,
+      "infinity": false,
+      "navigationStep": 1,
+      "fullWidth": true,
+      "blockClass": "homeBottomSectionCategories"
+    },
+    "children": [
+      "flex-layout.col#homeBottomSectionCategoriesPool",
+      "flex-layout.col#homeBottomSectionCategoriesGardenFurniture",
+      "flex-layout.col#homeBottomSectionCategoriesAC",
+      "flex-layout.col#homeBottomSectionCategoriesBeach",
+      "flex-layout.col#homeBottomSectionCategoriesDIY",
+      "flex-layout.col#homeBottomSectionCategoriesFitness",
+      "flex-layout.col#homeBottomSectionCategoriesFitness2"
+    ]
+  },
+
+  "flex-layout.col#homeBottomSectionCategoriesPool": {
+    "children": [
+      "rich-text#homeBottomSectionCategoriesPool",
+      "vtex.menu@2.x:menu#homeBottomSectionCategoriesPool"
+    ],
+    "props": {
+      "blockClass": "homeBottomSectionCategoriesPool"
+    }
+  },
+  "rich-text#homeBottomSectionCategoriesPool": {
+    "props": {
+      "text": "Piscine e accessori",
+      "blockClass": "homeBottomSectionCategoriesTitle"
+    }
+  },
+  "vtex.menu@2.x:menu#homeBottomSectionCategoriesPool": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "homeBottomSectionMenu",
+      "items": [
+        {
+          "id": "footer-item-1",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Piscine bambini",
+            "text": "Piscine bambini"
+          }
+        },
+        {
+          "id": "footer-item-2",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Piscine idromassaggio",
+            "text": "Piscine idromassaggio"
+          }
+        },
+        {
+          "id": "footer-item-3",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Piscine fuori terra",
+            "text": "Piscine fuori terra"
+          }
+        },
+        {
+          "id": "footer-item-4",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Accessori per piscine",
+            "text": "Accessori per piscine"
+          }
+        },
+        {
+          "id": "footer-item-5",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Trattamento acqua",
+            "text": "Trattamento acqua"
+          }
+        }
+      ]
+    }
+  },
+
+  "flex-layout.col#homeBottomSectionCategoriesGardenFurniture": {
+    "children": [
+      "rich-text#homeBottomSectionCategoriesGardenFurniture",
+      "vtex.menu@2.x:menu#homeBottomSectionCategoriesGardenFurniture"
+    ],
+    "props": {
+      "blockClass": "homeBottomSectionCategoriesGardenFurniture"
+    }
+  },
+  "rich-text#homeBottomSectionCategoriesGardenFurniture": {
+    "props": {
+      "text": "Arredo giardino",
+      "blockClass": "homeBottomSectionCategoriesTitle"
+    }
+  },
+  "vtex.menu@2.x:menu#homeBottomSectionCategoriesGardenFurniture": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "homeBottomSectionMenu",
+      "items": [
+        {
+          "id": "footer-item-1",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Ombrelloni e basi",
+            "text": "Ombrelloni e basi"
+          }
+        },
+        {
+          "id": "footer-item-2",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Barbecue",
+            "text": "Barbecue"
+          }
+        },
+        {
+          "id": "footer-item-3",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Giochi da giardino",
+            "text": "Giochi da giardino"
+          }
+        },
+        {
+          "id": "footer-item-4",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Dondoli",
+            "text": "Dondoli"
+          }
+        },
+        {
+          "id": "footer-item-5",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Gazebo da giardino",
+            "text": "Gazebo da giardino"
+          }
+        }
+      ]
+    }
+  },
+
+  "flex-layout.col#homeBottomSectionCategoriesAC": {
+    "children": [
+      "rich-text#homeBottomSectionCategoriesAC",
+      "vtex.menu@2.x:menu#homeBottomSectionCategoriesAC"
+    ],
+    "props": {
+      "blockClass": "homeBottomSectionCategoriesAC"
+    }
+  },
+  "rich-text#homeBottomSectionCategoriesAC": {
+    "props": {
+      "text": "Climatizzazione",
+      "blockClass": "homeBottomSectionCategoriesTitle"
+    }
+  },
+  "vtex.menu@2.x:menu#homeBottomSectionCategoriesAC": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "homeBottomSectionMenu",
+      "items": [
+        {
+          "id": "footer-item-1",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Condizionatori fissi",
+            "text": "Condizionatori fissi"
+          }
+        },
+        {
+          "id": "footer-item-2",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Condizionatori portatili",
+            "text": "Condizionatori portatili"
+          }
+        },
+        {
+          "id": "footer-item-3",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Ventilatori a piantana",
+            "text": "Ventilatori a piantana"
+          }
+        },
+        {
+          "id": "footer-item-4",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Ventilatori a colonna",
+            "text": "Ventilatori a colonna"
+          }
+        },
+        {
+          "id": "footer-item-5",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Deumidificatori",
+            "text": "Deumidificatori"
+          }
+        }
+      ]
+    }
+  },
+
+  "flex-layout.col#homeBottomSectionCategoriesBeach": {
+    "children": [
+      "rich-text#homeBottomSectionCategoriesBeach",
+      "vtex.menu@2.x:menu#homeBottomSectionCategoriesBeach"
+    ],
+    "props": {
+      "blockClass": "homeBottomSectionCategoriesBeach"
+    }
+  },
+  "rich-text#homeBottomSectionCategoriesBeach": {
+    "props": {
+      "text": "Mare e spiaggia",
+      "blockClass": "homeBottomSectionCategoriesTitle"
+    }
+  },
+  "vtex.menu@2.x:menu#homeBottomSectionCategoriesBeach": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "homeBottomSectionMenu",
+      "items": [
+        {
+          "id": "footer-item-1",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Borse frigo",
+            "text": "Borse frigo"
+          }
+        },
+        {
+          "id": "footer-item-2",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Ombrelloni da spiaggia",
+            "text": "Ombrelloni da spiaggia"
+          }
+        },
+        {
+          "id": "footer-item-3",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Lettini da spiaggia",
+            "text": "Lettini da spiaggia"
+          }
+        },
+        {
+          "id": "footer-item-4",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Gonfiabili",
+            "text": "Gonfiabili"
+          }
+        },
+        {
+          "id": "footer-item-5",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Sedie da spiaggia",
+            "text": "Sedie da spiaggia"
+          }
+        }
+      ]
+    }
+  },
+
+  "flex-layout.col#homeBottomSectionCategoriesDIY": {
+    "children": [
+      "rich-text#homeBottomSectionCategoriesDIY",
+      "vtex.menu@2.x:menu#homeBottomSectionCategoriesDIY"
+    ],
+    "props": {
+      "blockClass": "homeBottomSectionCategoriesDIY"
+    }
+  },
+  "rich-text#homeBottomSectionCategoriesDIY": {
+    "props": {
+      "text": "Bricolage e Fai da te",
+      "blockClass": "homeBottomSectionCategoriesTitle"
+    }
+  },
+  "vtex.menu@2.x:menu#homeBottomSectionCategoriesDIY": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "homeBottomSectionMenu",
+      "items": [
+        {
+          "id": "footer-item-1",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Elettroutensili",
+            "text": "Elettroutensili"
+          }
+        },
+        {
+          "id": "footer-item-2",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Pitture e accessori",
+            "text": "Pitture e accessori"
+          }
+        },
+        {
+          "id": "footer-item-3",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Ferramenta",
+            "text": "Ferramenta"
+          }
+        },
+        {
+          "id": "footer-item-4",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Idraulica",
+            "text": "Idraulica"
+          }
+        },
+        {
+          "id": "footer-item-5",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Zanzariere e repellenti",
+            "text": "Zanzariere e repellenti"
+          }
+        }
+      ]
+    }
+  },
+
+  "flex-layout.col#homeBottomSectionCategoriesFitness": {
+    "children": [
+      "rich-text#homeBottomSectionCategoriesFitness",
+      "vtex.menu@2.x:menu#homeBottomSectionCategoriesFitness"
+    ],
+    "props": {
+      "blockClass": "homeBottomSectionCategoriesFitness"
+    }
+  },
+  "rich-text#homeBottomSectionCategoriesFitness": {
+    "props": {
+      "text": "Fitness e benessere",
+      "blockClass": "homeBottomSectionCategoriesTitle"
+    }
+  },
+  "vtex.menu@2.x:menu#homeBottomSectionCategoriesFitness": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "homeBottomSectionMenu",
+      "items": [
+        {
+          "id": "footer-item-1",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Attrezzi sportivi",
+            "text": "Attrezzi sportivi"
+          }
+        },
+        {
+          "id": "footer-item-2",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Tapis roulant",
+            "text": "Tapis roulant"
+          }
+        },
+        {
+          "id": "footer-item-3",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Cyclette",
+            "text": "Cyclette"
+          }
+        },
+        {
+          "id": "footer-item-4",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Bilancieri e pesi",
+            "text": "Bilancieri e pesi"
+          }
+        },
+        {
+          "id": "footer-item-5",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Panche addominali",
+            "text": "Panche addominali"
+          }
+        }
+      ]
+    }
+  },
+
+  "flex-layout.col#homeBottomSectionCategoriesFitness2": {
+    "children": [
+      "rich-text#homeBottomSectionCategoriesFitness2",
+      "vtex.menu@2.x:menu#homeBottomSectionCategoriesFitness2"
+    ],
+    "props": {
+      "blockClass": "homeBottomSectionCategoriesFitness2"
+    }
+  },
+  "rich-text#homeBottomSectionCategoriesFitness2": {
+    "props": {
+      "text": "Fitness e benessere",
+      "blockClass": "homeBottomSectionCategoriesTitle"
+    }
+  },
+  "vtex.menu@2.x:menu#homeBottomSectionCategoriesFitness2": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "homeBottomSectionMenu",
+      "items": [
+        {
+          "id": "footer-item-1",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Attrezzi sportivi",
+            "text": "Attrezzi sportivi"
+          }
+        },
+        {
+          "id": "footer-item-2",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Tapis roulant",
+            "text": "Tapis roulant"
+          }
+        },
+        {
+          "id": "footer-item-3",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Cyclette",
+            "text": "Cyclette"
+          }
+        },
+        {
+          "id": "footer-item-4",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Bilancieri e pesi",
+            "text": "Bilancieri e pesi"
+          }
+        },
+        {
+          "id": "footer-item-5",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Panche addominali",
+            "text": "Panche addominali"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,218 @@
+@import '../_media-queries.scss';
+@import '../_variables.scss';
+
+.container {
+  &--home-blog-subtitle {
+    @include breakpoint('mobile') {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &--home-section-title,
+  &--home-section04-title {
+    justify-content: start;
+  }
+
+  &--home-section-title {
+    display: flex;
+    justify-content: flex-start;
+    @include breakpoint('mobile') {
+      justify-content: center;
+    }
+
+  }
+
+  .heading {
+    &--first-section-title {
+      margin: 64px 0 96px;
+      font-size: 48px;
+      line-height: 56px;
+      font-weight: 300;
+      color: #fff;
+      letter-spacing: 0.01em;
+
+      @media screen and (max-width: 768px) {
+        padding: 0 50px;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 32px;
+        text-align: center;
+        margin: 24px auto 0;
+      }
+    }
+
+    &--home-section-title {
+      display: flex;
+      justify-content: flex-start;
+      font-size: 32px;
+      font-weight: 500;
+      @media screen and (max-width: 768px) {
+        font-size: 28px;
+        line-height: 32px;
+      }
+    }
+    &--home-section04-title {
+      text-align: center;
+      height: 1rem;
+      color: #332c32;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 1rem;
+
+      @include breakpoint('mobile') {
+        height: 1.5rem;
+        color: #332c32;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.5rem;
+      }
+    }
+  }
+
+  .paragraph {
+    &--first-section-subtitle {
+      color: #fff;
+      line-height: 120%;
+      font-size: 20px;
+      font-weight: 300;
+      max-width: 290px;
+      margin: 64px 0 96px;
+
+      .strong {
+        font-weight: 300;
+        background-color: #e30613;
+      }
+
+      @media screen and (max-width: 768px) {
+        padding: 0 30px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        margin: 32px auto 40px;
+      }
+    }
+
+    &--home-services-text {
+      height: 2.25rem;
+      max-width: 12.5rem;
+      color: #332c32;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 18px;
+      text-align: center;
+      margin: 1rem 0 0.75rem;
+      @include breakpoint('mobile') {
+        text-align: center;
+        margin: 0 0 0.5rem 0;
+      }
+    }
+
+    &--home-blog-subtitle {
+      height: 3rem;
+      color: #332c32;
+      font-size: 18px;
+      line-height: 1.5rem;
+      max-width: 25rem;
+      margin: 30px 0;
+      @include breakpoint('mobile') {
+        margin: 30px 16px 0;
+        text-align: center;
+        font-size: 16px;
+
+      }
+    }
+
+
+    &--home-blog-title {
+      margin: 1rem 0 0 0.5rem;
+      height: 1.5rem;
+      color: #232946;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.5rem;
+
+      @include breakpoint('mobile') {
+        margin: 0 0 1.25rem 1.5rem;
+      }
+    }
+
+    &--home-blog-text {
+      color: #232946;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22px;
+      max-width: 12.5rem;
+      width: 100%;
+      margin: 0.75rem 0 0;
+    }
+
+    &--homeBottomSectionCategoriesMainTitle,
+    &--homeBottomSectionBrandsMainTitle {
+      height: 33px;
+      color: #332c32;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 33px;
+      margin: 1.25rem 0;
+
+      @include breakpoint('mobile') {
+        height: 1.5rem;
+        font-size: 20px;
+        line-height: 1.5rem;
+        margin: 0 0 1.5rem;
+      }
+    }
+
+    &--homeBottomSectionCategoriesTitle {
+      height: 1.5rem;
+      color: #291660;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+      margin: 0 0 0.75rem;
+      @include breakpoint('mobile') {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .wrapper {
+    &--home-section-title {
+      @include breakpoint('mobile') {
+        margin: 0 1rem;
+        .heading--home-section-title {
+          font-size: 24px;
+          color: #332c32;
+        }
+      }
+    }
+  }
+
+  .headingLevel2 {
+    margin: 26px 0 40px;
+    &--home-section-title {
+      @include breakpoint('mobile') {
+        margin: 20px 0 40px;
+      }
+    }
+  }
+}
+
+.headingLevel2--product-shelf-1-title,
+.headingLevel2--product-shelf-2-title,
+.headingLevel2--product-shelf-3-title {
+  font-size: 24px;
+
+  @include mobile {
+    font-size: 20px;
+    margin-left: 16px !important;
+    margin-bottom: 30px !important;
+  }
+}
+
+.strong--home-blog-subtitle {
+  @include mobile {
+    font-weight: normal;
+  }
+}

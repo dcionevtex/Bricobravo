@@ -1,0 +1,510 @@
+{
+  "store.custom#editorial": {
+    "blocks": ["flex-layout.row#editorial"]
+  },
+  "flex-layout.row#editorial": {
+    "props": {
+      "width": "100%",
+      "htmlId": "Editorial"
+    },
+    "title": "Editorial",
+    "children": ["flex-layout.row#main-container"]
+  },
+  "flex-layout.row#main-container": {
+    "props": {
+      "blockClass": "editorial-main",
+      "width": "100%",
+      "htmlId": "Contenitore principale"
+    },
+    "title": "Contenitore principale",
+    "children": [
+      // "flex-layout.col#spacer",
+      "flex-layout.col#container-about-us"
+    ]
+  },
+  "flex-layout.col#container-about-us": {
+    "children": [
+      "flex-layout.row#breadcrumb",
+      "flex-layout.col#about-title",
+      "flex-layout.row#about-banner-2",
+      "flex-layout.row#about-banner-3",
+      "flex-layout.row#about-banners-section",
+      "flex-layout.row#about-banners-and-video",
+      "responsive-layout.desktop#lastBanners",
+      "responsive-layout.mobile#lastBanners"
+    ],
+    "props": {
+      "blockClass": "editorial-main",
+      "preventVerticalStretch": true,
+      "width": "100%"
+    }
+  },
+  "flex-layout.col#about-title": {
+    "children": [
+      "image#firstBanner",
+      "rich-text#about-title",
+      "rich-text#about-subTitle"
+    ],
+    "props": {
+      "blockClass": "editorial-aboutTitle"
+    }
+  },
+  "image#firstBanner": {
+    "props": {
+      "src": "https://dummyimage.com/1312x540/"
+    }
+  },
+  "rich-text#about-title": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": "editorial-title",
+      "htmlId": "Circa - titolo"
+    },
+    "title": "Circa - titolo"
+  },
+  "rich-text#about-subTitle": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis bibendum venenatis vulputate. Nam sed velit felis. Cras ultricies congue mauris id scelerisque. Maecenas ut scelerisque quam. In hac habitasse platea dictumst. Nullam a urna a lorem imperdiet eleifend quis a nunc.Fusce eget magna a eros pulvinar commodo. Proin aliquam, velit quis tempus congue, felis ipsum lobortis purus, a maximus turpis tortor ut ipsum. Curabitur congue quam sit amet dui posuere, at feugiat leo feugiat. Nunc eu sagittis odio. Sed non libero dolor. Sed lobortis sem sed mauris sollicitudin consectetur. Maecenas eu nulla et odio ultricies consequat eu vulputate neque. Mauris vitae lacus vestibulum, placerat lectus vitae, volutpat ipsum.",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": "editorial-subTitle",
+      "htmlId": "Circa - sottotitolo"
+    },
+    "title": "Circa - sottotitolo"
+  },
+  "flex-layout.row#about-banner-2": {
+    "children": ["image#about-banner-2", "flex-layout.col#about-banner2"],
+    "props": {
+      "blockClass": "editorial-containerBanner2",
+      "htmlId": "Circa - banner 2"
+    },
+    "title": "Circa - banner 2"
+  },
+  "image#about-banner-2": {
+    "props": {
+      "src": "https://dummyimage.com/648x360/",
+      "width": "648",
+      "height": "360"
+    }
+  },
+  "flex-layout.col#about-banner2": {
+    "children": [
+      "rich-text#about-banner2-title",
+      "rich-text#about-banner2-description",
+      "link#scopriDiPiu"
+    ],
+    "props": {
+      "blockClass": "editorial-containerTextAboutBanner2"
+    }
+  },
+  "rich-text#about-banner2-title": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "editorial-titleSection",
+      "htmlId": "Circa - banner 2 - titolo"
+    },
+    "title": "Circa - banner 2 - titolo"
+  },
+  "rich-text#about-banner2-description": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis bibendum venenatis vulputate. Nam sed velit felis. Cras ultricies congue mauris id scelerisque. Maecenas ut scelerisque quam. In hac habitasse platea dictumst. Nullam a urna a lorem imperdiet eleifend quis a nunc.",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "editorial-paragraph",
+      "htmlId": "Circa - banner 2 - descrizione"
+    },
+    "title": "Circa - banner 2 - descrizione"
+  },
+  "flex-layout.row#about-banner-3": {
+    "children": ["flex-layout.col#about-banner-3", "image#about-banner-3"],
+    "props": {
+      "blockClass": "editorial-containerBanner3",
+      "htmlId": "Circa - banner 3"
+    },
+    "title": "Circa - banner 3"
+  },
+  "image#about-banner-3": {
+    "props": {
+      "src": "https://dummyimage.com/648x360/",
+      "width": "648",
+      "height": "360"
+    }
+  },
+  "flex-layout.col#about-banner-3": {
+    "props": {
+      "blockClass": "editorial-containerTextAboutBanner3"
+    },
+    "children": [
+      "rich-text#about-banner-3-title",
+      "rich-text#about-banner-3-description",
+      "link#scopriDiPiu"
+    ]
+  },
+  "rich-text#about-banner-3-title": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "editorial-titleSection",
+      "htmlId": "Circa - banner 3 - titolo"
+    },
+    "title": "Circa - banner 3 - titolo"
+  },
+  "rich-text#about-banner-3-description": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis bibendum venenatis vulputate. Nam sed velit felis. Cras ultricies congue mauris id scelerisque. Maecenas ut scelerisque quam. In hac habitasse platea dictumst. Nullam a urna a lorem imperdiet eleifend quis a nunc.",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "editorial-paragraph",
+      "htmlId": "Circa - banner 3 - descrizione"
+    },
+    "title": "Circa - banner 3 - descrizione"
+  },
+  "flex-layout.row#about-banners-section": {
+    "children": [
+      "flex-layout.col#about-banner-4",
+      "flex-layout.col#about-banner-5"
+    ],
+    "props": {
+      "blockClass": "editorial-sectionBanners4and5",
+      "htmlId": "Circa - banners - sezione"
+    },
+    "title": "Circa - banners - sezione"
+  },
+  "flex-layout.col#about-banner-4": {
+    "children": [
+      "image#about-banner-4",
+      "rich-text#about-banner-4-title",
+      "rich-text#about-banner-4-description",
+      "link#scopriDiPiu"
+    ],
+    "props": {
+      "blockClass": "editorial-containerAboutBanner4"
+    }
+  },
+  "image#about-banner-4": {
+    "props": {
+      "src": "https://dummyimage.com/866x360/",
+      "width": "866",
+      "height": "360"
+    }
+  },
+  "rich-text#about-banner-4-title": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+      "blockClass": "editorial-titleSection",
+      "htmlId": "Circa - banner 4 - titolo"
+    },
+    "title": "Circa - banner 4 - titolo"
+  },
+  "rich-text#about-banner-4-description": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis bibendum venenatis vulputate. Nam sed velit felis. Cras ultricies congue mauris id scelerisque. ",
+      "blockClass": "editorial-paragraph",
+      "htmlId": "Circa - banner 4 - descrizione"
+    },
+    "title": "Circa - banner 4 - descrizione"
+  },
+  "flex-layout.col#about-banner-5": {
+    "children": [
+      "image#about-banner-5",
+      "rich-text#about-banner-5-title",
+      "rich-text#about-banner-5-description",
+      "link#scopriDiPiu"
+    ],
+    "props": {
+      "blockClass": "editorial-containerAboutBanner5"
+    }
+  },
+  "image#about-banner-5": {
+    "props": {
+      "src": "https://dummyimage.com/426x360/",
+      "width": "426",
+      "height": "360"
+    }
+  },
+  "rich-text#about-banner-5-title": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+      "blockClass": "editorial-titleSection",
+      "htmlId": "Circa - banner 5 - titolo"
+    },
+    "title": "Circa - banner 5 - titolo"
+  },
+  "rich-text#about-banner-5-description": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+      "blockClass": "editorial-paragraph",
+      "htmlId": "Circa - banner 5 - descrizione"
+    },
+    "title": "Circa - banner 5 - descrizione"
+  },
+  "flex-layout.row#about-banners-and-video": {
+    "props": {
+      "blockClass": "editorial-sectionBannersAndVideo",
+      "htmlId": "Circa - banner e video"
+    },
+    "children": [
+      "flex-layout.col#about-banner-6",
+      "flex-layout.col#about-banner-7",
+      "flex-layout.col#about-video"
+    ],
+    "title": "Circa - banner e video"
+},
+  "flex-layout.col#about-banner-6": {
+    "children": [
+      "image#about-banner-6",
+      "rich-text#about-banner-6-title",
+      "rich-text#about-banner-6-description"
+    ],
+    "props": {
+      "blockClass": "editorial-containerAboutBanner6"
+    }
+  },
+  "image#about-banner-6": {
+    "props": {
+      "src": "https://dummyimage.com/314x360/",
+      "width": "314",
+      "height": "360"
+    }
+  },
+  "rich-text#about-banner-6-title": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+      "blockClass": "editorial-titleSection",
+      "htmlId": "Circa - banner 6 - titolo"
+    },
+    "title": "Circa - banner 6 - titolo"
+  },
+  "rich-text#about-banner-6-description": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis bibendum venenatis vulputate. Nam sed velit felis. Cras ultricies congue mauris id scelerisque. ",
+      "blockClass": "editorial-paragraph",
+      "htmlId": "Circa - banner 6 - descrizione"
+    },
+    "title": "Circa - banner 6 - descrizione"
+  },
+  "flex-layout.col#about-banner-7": {
+    "children": [
+      "image#about-banner-7",
+      "rich-text#about-banner-7-title",
+      "rich-text#about-banner-7-description"
+    ],
+    "props": {
+      "blockClass": "editorial-containerAboutBanner7"
+    }
+  },
+  "image#about-banner-7": {
+    "props": {
+      "src": "https://dummyimage.com/314x360/",
+      "width": "314",
+      "height": "360"
+    }
+  },
+  "rich-text#about-banner-7-title": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+      "blockClass": "editorial-titleSection",
+      "htmlId": "Circa - banner 7 - titolo"
+    },
+    "title": "Circa - banner 7 - titolo"
+  },
+  "rich-text#about-banner-7-description": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis bibendum venenatis vulputate. Nam sed velit felis. Cras ultricies congue mauris id scelerisque. ",
+      "blockClass": "editorial-paragraph",
+      "htmlId": "Circa - banner 7 - descrizione"
+    },
+    "title": "Circa - banner 7 - descrizione"
+  },
+  "flex-layout.col#about-video": {
+    "children": ["video#banner6", "rich-text#about-video"],
+    "props": {
+      "blockClass": "editorial-containerAboutVideo"
+    }
+  },
+  "video#banner6": {
+    "props": {
+      "src": "https://www.youtube.com/watch?v=wygFqZXMIco",
+      "width": "314",
+      "height": "360",
+      "loop": false,
+      "autoPlay": true,
+      "muted": false
+    }
+  },
+  "rich-text#about-video": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis bibendum venenatis vulputate. Nam sed velit felis. Cras ultricies congue mauris id scelerisque. ",
+      "blockClass": "editorial-paragraph",
+      "htmlId": "Circa - video"
+    },
+    "title": "Circa - video"
+  },
+  "responsive-layout.desktop#lastBanners": {
+    "children": ["flex-layout.row#last-banners-section"]
+  },
+  "flex-layout.row#last-banners-section": {
+    "props": {
+      "blockClass": "editorial-sectionLastBanners",
+      "htmlId": "Ultima sezione banner"
+    },
+    "children": ["flex-layout.col#last-banners-container"],
+    "title": "Ultima sezione banner"
+  },
+  "flex-layout.col#last-banners-container": {
+    "children": ["rich-text#last-banner-title", "flex-layout.row#last-banners"]
+  },
+  "rich-text#last-banner-title": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+      "blockClass": ["editorial-titleSection", "editorial-carroselTitle"],
+      "htmlId": "Ultimo banner - titolo"
+    },
+    "title": "Ultimo banner - titolo"
+  },
+  "flex-layout.row#last-banners": {
+    "children": [
+      "flex-layout.col#about-banner-8",
+      "flex-layout.col#about-banner-9",
+      "flex-layout.col#about-banner-10"
+    ],
+    "props": {
+      "htmlId": "Ultimi banners"
+    },
+    "title": "Ultimi banners"
+  },
+  "flex-layout.col#about-banner-8": {
+    "children": [
+      "image#about-banner-8",
+      "rich-text#about-banner-8-title",
+      "rich-text#about-banner-8-description",
+      "link#scopriDiPiu"
+    ],
+    "props": {
+      "blockClass": "editorial-containerAboutBanner8"
+    }
+  },
+  "image#about-banner-8": {
+    "props": {
+      "src": "https://dummyimage.com/426x360/",
+      "width": "426",
+      "height": "360"
+    }
+  },
+  "rich-text#about-banner-8-title": {
+    "props": {
+      "text": "LABEL",
+      "blockClass": "editorial-labelText",
+      "htmlId": "Circa - banner 8 - titolo"
+    },
+    "title": "Circa - banner 8 - titolo"
+  },
+  "rich-text#about-banner-8-description": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+      "blockClass": "editorial-titleSection",
+      "htmlId": "Circa - banner 8 - descrizione"
+    },
+    "title": "Circa - banner 8 - descrizione"
+  },
+  "flex-layout.col#about-banner-9": {
+    "children": [
+      "image#about-banner-9",
+      "rich-text#about-banner-9-title",
+      "rich-text#about-banner-9-description",
+      "link#scopriDiPiu"
+    ],
+    "props": {
+      "blockClass": "editorial-containerAboutBanner9"
+    }
+  },
+  "image#about-banner-9": {
+    "props": {
+      "src": "https://dummyimage.com/426x360/",
+      "width": "426",
+      "height": "360"
+    }
+  },
+  "rich-text#about-banner-9-title": {
+    "props": {
+      "text": "LABEL",
+      "blockClass": "editorial-labelText",
+      "htmlId": "Circa - banner 9 - titolo"
+    },
+    "title": "Circa - banner 9 - titolo"
+  },
+  "rich-text#about-banner-9-description": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+      "blockClass": "editorial-titleSection",
+      "htmlId": "Circa - banner 9 - descrizione"
+    },
+    "title": "Circa - banner 9 - descrizione"
+  },
+  "flex-layout.col#about-banner-10": {
+    "children": [
+      "image#about-banner-10",
+      "rich-text#about-banner-10-title",
+      "rich-text#about-banner-10-description",
+      "link#scopriDiPiu"
+    ],
+    "props": {
+      "blockClass": "editorial-containerAboutBanner10"
+    }
+  },
+  "image#about-banner-10": {
+    "props": {
+      "src": "https://dummyimage.com/426x360/",
+      "width": "426",
+      "height": "360"
+    }
+  },
+  "rich-text#about-banner-10-title": {
+    "props": {
+      "text": "LABEL",
+      "blockClass": "editorial-labelText",
+      "htmlId": "Circa - banner 10 - titolo"
+    },
+    "title": "Circa - banner 10 - titolo"
+  },
+  "rich-text#about-banner-10-description": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit",
+      "blockClass": "editorial-titleSection",
+      "htmlId": "Circa - banner 10 - descrizione"
+    },
+    "title": "Circa - banner 10 - descrizione"
+  },
+  "link#scopriDiPiu": {
+    "props": {
+      "label": "Scopri di più",
+      "href": "#",
+      "blockClass": "editorial-scopridipiu"
+    }
+  },
+  "responsive-layout.mobile#lastBanners": {
+    "children": ["slider-layout#lastBanners"]
+  },
+  "slider-layout#lastBanners": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "mobileOnly",
+      "blockClass": "editorial-carroselLastBanners"
+    },
+    "children": [
+      "flex-layout.col#about-banner-8",
+      "flex-layout.col#about-banner-9",
+      "flex-layout.col#about-banner-10"
+    ]
+  }
+}

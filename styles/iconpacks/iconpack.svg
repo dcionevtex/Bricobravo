@@ -1,0 +1,11 @@
+<svg class="dn" height="0" version="1.1" width="0"
+  xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <g id="nav-caret--down">
+      <path d="M1.25.75l7.46 7.5 7.54-7.5" stroke="#111" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="nav-caret--up">
+      <path d="M.75 7.25l7.5-6.5 7.5 6.5" stroke="#111" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </defs>
+</svg>

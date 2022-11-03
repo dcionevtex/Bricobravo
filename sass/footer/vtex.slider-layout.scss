@@ -1,0 +1,55 @@
+@import '../_media-queries.scss';
+@import '../_variables.scss';
+
+.sliderLayoutContainer {
+
+  &--home-main-slider-images {
+    border-radius: 0;
+  }
+
+  .sliderArrows {
+    &.sliderLeftArrow {
+      &--home-main-slider-images {
+        top: 0;
+        bottom: 0;
+        left: 28px;
+        position: absolute;
+      }
+    }
+
+    &.sliderRightArrow {
+      &--home-main-slider-images {
+        top: 0;
+        bottom: 0;
+        right: 50px;
+        position: absolute;
+      }
+    }
+
+    .caretIcon {
+      &--home-main-slider-images,
+      &--quemSomos-carrosel {
+        width: 16px !important;
+        height: 16px;
+        display: flex;
+        overflow: visible;
+      }
+      &--shelf-also-view{
+        display: none;
+      }
+    }
+  }
+
+  .paginationDot {
+    &--home-main-slider-images {
+      min-width: 2rem;
+      min-height: 4px;
+      max-width: 8rem;
+      max-height: 4px;
+
+      @media screen and (max-width: 64rem) {
+        max-width: 2.5rem;
+      }
+    }
+  }
+}

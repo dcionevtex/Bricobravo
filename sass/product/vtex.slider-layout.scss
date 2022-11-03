@@ -1,0 +1,159 @@
+@import '../_variables.scss';
+@import '../_media-queries.scss';
+
+// Home main banner start
+
+.sliderLayoutContainer--main-banner {
+  @include breakpoint('mobile') {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 328px;
+  }
+  .sliderTrackContainer--main-banner {
+    border-radius: 16px;
+  }
+  .sliderArrows--main-banner {
+    padding: 0;
+    margin: 0 26px;
+    color: $white;
+  }
+  .paginationDotsContainer--main-banner {
+    bottom: 56px;
+  }
+}
+// Home main banner end
+
+// slider category start
+// .sliderLayoutContainer {
+//   border-radius: 16px;
+//   overflow: hidden;
+// }
+
+// Home brands banner start
+
+.sliderLayoutContainer--brands-banners {
+  overflow: visible;
+  .sliderArrows--brands-banners {
+    margin: 0;
+    padding: 0;
+    color: $primary-pink;
+
+    &.sliderRightArrow--brands-banners {
+      right: -35px;
+    }
+    &.sliderLeftArrow--brands-banners {
+      left: -35px;
+    }
+  }
+  .paginationDotsContainer--brands-banners {
+    bottom: -25px;
+  }
+}
+
+// Home brands banner end
+
+// ShelfStyle Start
+.sliderLayoutContainer--shelfStyle {
+  margin-bottom: 2rem;
+  padding-bottom: 3rem;
+  overflow: inherit;
+}
+.paginationDot--shelfStyle--isActive {
+  background-color: $secondary-default;
+}
+.sliderRightArrow--shelfStyle {
+  right: -3rem;
+}
+.sliderLeftArrow--shelfStyle {
+  left: -3rem;
+}
+.caretIcon--shelfStyle {
+  color: $primary-pink;
+}
+// ShelfStyle End
+
+.paginationDotsContainer {
+  bottom: 25px;
+
+  &--home-main-slider-images {
+    display: flex;
+    gap: 12px;
+
+    @media screen and (max-width: 64rem) {
+      transform: translateY(70px);
+    }
+  }
+}
+.paginationDot {
+  background-color: $lightgrey-light;
+  border-radius: 500px;
+  height: 4px !important;
+  padding: 0;
+  width: 128px !important;
+}
+.paginationDot--dotsCustom--isActive {
+  background-color: $secondary-default;
+}
+.paginationDot--isActive {
+  background-color: $secondary-default;
+}
+// slider category End
+
+//PDP Slider Start
+
+.sliderTrack {
+  &--shelf-also-view {
+    display: flex;
+    align-items: flex-start;
+    padding: 5px 5px 20px 5px;
+
+    @include breakpoint("desktop") {
+      column-gap: 16px;
+    }
+  }
+}
+
+.sliderLayoutContainer--shelf-also-view {
+  overflow: inherit;
+  padding-bottom: 0;
+  height: 480px;
+  align-items: baseline;
+}
+.paginationDotsContainer--shelf-also-view {
+  bottom: 0;
+  display: flex;
+  gap: 12px;
+
+  .paginationDot--shelf-also-view {
+    @include desktop() {
+      width: 128px !important;
+    }
+  }
+}
+.sliderLeftArrow {
+  &--shelf-also-view {
+    position: absolute;
+    top: -68px;
+    right: 32px;
+    left: auto;
+  }
+}
+.sliderRightArrow {
+  &--shelf-also-view {
+    position: absolute;
+    top: -68px;
+  }
+}
+.caretIcon {
+  &--shelf-also-view {
+    height: 16px;
+    color: $blue-dark;
+  }
+}
+
+.slide--shelf-also-view {
+  @include breakpoint("mobile") {
+    margin-inline: 8px;
+  }
+}
+//PDP Slider End

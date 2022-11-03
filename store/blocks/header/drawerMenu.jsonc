@@ -1,0 +1,2137 @@
+{
+  // "menu#drawer-mobile": {
+  //   "title": "Menu Drawer desktop",
+  //   "children": ["flex-layout.row#header-menu"],
+  //   "props": {
+  //     "orientation": "rightToLeft",
+  //     "blockClass": "header-drawer-menu",
+  //     "maxWidth": 364
+  //   }
+  // },
+
+  // "flex-layout.row#header-menu": {
+  //   "title": "Linha: Menu Container",
+  //   "children": ["flex-layout.col#header-menu"],
+  //   "props": {
+  //     "blockClass": "header-drawer-menu",
+  //     "isFullWidth": true
+  //   }
+  // },
+
+  // "flex-layout.col#header-menu": {
+  //   "title": "COL: Menu Container",
+  //   "children": [
+  //     "flex-layout.col#menuLateral"
+  //   ],
+  //   "props": {
+  //     "blockClass": "header-drawer-menu-col"
+  //   }
+  // },
+
+  // "flex-layout.col#menuLateral": {
+  //   "children": [
+  //     "vtex.menu@2.x:menu#categories",
+  //     "rich-text#titleLinkUtili",
+  //     "link#storeLocator",
+  //     "link#doveIlMio",
+  //     "link#effetuareUnReso",
+  //     "link#FAQ"
+  //   ],
+  //   "props": {
+  //     "blockClass": "drawer-menu-departments",
+  //     "preventVerticalStretch": false
+  //   }
+  // },
+  // "vtex.menu@2.x:menu#categories": {
+  //   "children": [
+  //     "menu-item#giardinaggio",
+  //     "menu-item#piscine&acess",
+  //     "menu-item#arredoGiar",
+  //     "menu-item#climatizzazione",
+  //     "menu-item#casette&box",
+  //     "menu-item#bricolage",
+  //     "menu-item#arredoCasa",
+  //     "menu-item#sport",
+  //     "menu-item#antinfortunistica",
+  //     "menu-item#illuminazione",
+  //     "menu-item#riscaldamento",
+  //     "menu-item#giocattoli",
+  //     "menu-item#animali",
+  //     "menu-item#elettrodomestici",
+  //     "menu-item#auto"
+  //   ],
+  //   "props": {
+  //     "blockClass": "sidebar-containerMenus"
+  //   }
+  // },
+  // "menu-item#giardinaggio": {
+  //   "props": {
+  //     "id": "menu-item",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "#",
+  //       "noFollow": false,
+  //       "tagTitle": "giardinaggio",
+  //       "text": "Jardinagem"
+  //     }
+  //   },
+  //   "blocks": ["vtex.menu@2.x:submenu#giardinaggio"]
+  // },
+  // "vtex.menu@2.x:submenu#giardinaggio": {
+  //   "children": ["vtex.menu@2.x:menu#giardinaggio"]
+  // },
+  // "vtex.menu@2.x:menu#giardinaggio": {
+  //   "children": ["flex-layout.row#subGiardinaggio"]
+  // },
+  // "flex-layout.row#subGiardinaggio": {
+  //   "props": {
+  //     "blockClass": "",
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "flex-layout.col#subGiardinaggio-submenu-1"
+  //   ]
+  // },
+  // "flex-layout.col#subGiardinaggio-submenu-1": {
+  //   "props": {
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "rich-text#subGiardinaggio-submenu-1",
+  //     "vtex.menu@2.x:menu#subGiardinaggio-submenu-1"
+  //   ]
+  // },
+  // "rich-text#subGiardinaggio-submenu-1": {
+  //   "props": {
+  //     "text": ""
+  //   }
+  // },
+  // "vtex.menu@2.x:menu#subGiardinaggio-submenu-1": {
+  //   "props": {
+  //     "orientation": "horizontal",
+  //     "blockClass": "menu-item-tab",
+  //     "items": [
+  //       {
+  //         "id": "header-row-2-item-2",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Especiais",
+  //           "text": "Especiais"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-3",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Original - Rolha",
+  //           "text": "Original - Rolha"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-4",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Chocolate",
+  //           "text": "Chocolate"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-5",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Cremosa",
+  //           "text": "Cremosa"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-6",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Zero",
+  //           "text": "Zero"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Mastigáveis",
+  //           "text": "Mastigáveis"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Pamonha",
+  //           "text": "Pamonha"
+  //         }
+  //       }
+  //     ]
+  //   }
+  // },
+  // "menu-item#piscine&acess": {
+  //   "props": {
+  //     "id": "menu-item",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "#",
+  //       "noFollow": false,
+  //       "tagTitle": "Piscina e Acessórios",
+  //       "text": "Piscina e Acessórios"
+  //     }
+  //   },
+  //   "blocks": ["vtex.menu@2.x:submenu#piscine&acess"]
+  // },
+  // "vtex.menu@2.x:submenu#piscine&acess": {
+  //   "children": ["vtex.menu@2.x:menu#subPiscine&acess"]
+  // },
+  // "vtex.menu@2.x:menu#subPiscine&acess": {
+  //   "children": ["flex-layout.row#subPiscine"]
+  // },
+  // "flex-layout.row#subPiscine": {
+  //   "props": {
+  //     "blockClass": "",
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "flex-layout.col#subPiscine-submenu-1"
+  //   ]
+  // },
+  // "flex-layout.col#subPiscine-submenu-1": {
+  //   "props": {
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "rich-text#subPiscine-submenu-1",
+  //     "vtex.menu@2.x:menu#subPiscine-submenu-1"
+  //   ]
+  // },
+  // "rich-text#subPiscine-submenu-1": {
+  //   "props": {
+  //     "text": ""
+  //   }
+  // },
+  // "vtex.menu@2.x:menu#subPiscine-submenu-1": {
+  //   "props": {
+  //     "orientation": "vertical",
+  //     "blockClass": "menu-item-tab",
+  //     "items": [
+  //       {
+  //         "id": "header-row-2-item-2",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Especiais",
+  //           "text": "Especiais"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-3",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Original - Rolha",
+  //           "text": "Original - Rolha"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-4",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Chocolate",
+  //           "text": "Chocolate"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-5",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Cremosa",
+  //           "text": "Cremosa"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-6",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Zero",
+  //           "text": "Zero"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Mastigáveis",
+  //           "text": "Mastigáveis"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Pamonha",
+  //           "text": "Pamonha"
+  //         }
+  //       }
+  //     ]
+  //   }
+  // },
+  // "menu-item#arredoGiar": {
+  //   "props": {
+  //     "id": "menu-item",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "#",
+  //       "noFollow": false,
+  //       "tagTitle": "Arredo giardino",
+  //       "text": "Móveis de jardim"
+  //     }
+  //   },
+  //   "blocks": ["vtex.menu@2.x:submenu#arredoGiar"]
+  // },
+  // "vtex.menu@2.x:submenu#arredoGiar": {
+  //   "children": ["vtex.menu@2.x:menu#subArredoGiar"]
+  // },
+  // "vtex.menu@2.x:menu#subArredoGiar": {
+  //   "children": ["flex-layout.row#subArredoGiar"]
+  // },
+  // "flex-layout.row#subArredoGiar": {
+  //   "props": {
+  //     "blockClass": "",
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "flex-layout.col#subArredoGiar-submenu-1"
+  //   ]
+  // },
+  // "flex-layout.col#subArredoGiar-submenu-1": {
+  //   "props": {
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "rich-text#subArredoGiar-submenu-1",
+  //     "vtex.menu@2.x:menu#subArredoGiar-submenu-1"
+  //   ]
+  // },
+  // "rich-text#subArredoGiar-submenu-1": {
+  //   "props": {
+  //     "text": ""
+  //   }
+  // },
+  // "vtex.menu@2.x:menu#subArredoGiar-submenu-1": {
+  //   "props": {
+  //     "orientation": "vertical",
+  //     "blockClass": "menu-item-tab",
+  //     "items": [
+  //       {
+  //         "id": "header-row-2-item-2",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Especiais",
+  //           "text": "Especiais"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-3",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Original - Rolha",
+  //           "text": "Original - Rolha"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-4",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Chocolate",
+  //           "text": "Chocolate"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-5",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Cremosa",
+  //           "text": "Cremosa"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-6",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Zero",
+  //           "text": "Zero"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Mastigáveis",
+  //           "text": "Mastigáveis"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Pamonha",
+  //           "text": "Pamonha"
+  //         }
+  //       }
+  //     ]
+  //   }
+  // },
+  // "menu-item#climatizzazione": {
+  //   "props": {
+  //     "id": "menu-item",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "#",
+  //       "noFollow": false,
+  //       "tagTitle": "Climatizzazione",
+  //       "text": "Ar condicionado"
+  //     }
+  //   },
+  //   "blocks": ["vtex.menu@2.x:submenu#climatizzazione"]
+  // },
+  // "vtex.menu@2.x:submenu#climatizzazione": {
+  //   "children": ["vtex.menu@2.x:menu#subClimatizzazione"]
+  // },
+  // "vtex.menu@2.x:menu#subClimatizzazione": {
+  //   "children": ["flex-layout.row#subClimatizzazione"]
+  // },
+  // "flex-layout.row#subClimatizzazione": {
+  //   "props": {
+  //     "blockClass": "",
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "flex-layout.col#subClimatizzazione-submenu-1"
+  //   ]
+  // },
+  // "flex-layout.col#subClimatizzazione-submenu-1": {
+  //   "props": {
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "rich-text#subClimatizzazione-submenu-1",
+  //     "vtex.menu@2.x:menu#subClimatizzazione-submenu-1"
+  //   ]
+  // },
+  // "rich-text#subClimatizzazione-submenu-1": {
+  //   "props": {
+  //     "text": ""
+  //   }
+  // },
+  // "vtex.menu@2.x:menu#subClimatizzazione-submenu-1": {
+  //   "props": {
+  //     "orientation": "vertical",
+  //     "blockClass": "menu-item-tab",
+  //     "items": [
+  //       {
+  //         "id": "header-row-2-item-2",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Especiais",
+  //           "text": "Especiais"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-3",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Original - Rolha",
+  //           "text": "Original - Rolha"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-4",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Chocolate",
+  //           "text": "Chocolate"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-5",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Cremosa",
+  //           "text": "Cremosa"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-6",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Zero",
+  //           "text": "Zero"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Mastigáveis",
+  //           "text": "Mastigáveis"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Pamonha",
+  //           "text": "Pamonha"
+  //         }
+  //       }
+  //     ]
+  //   }
+  // },
+  // "menu-item#casette&box": {
+  //   "props": {
+  //     "id": "menu-item",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "#",
+  //       "noFollow": false,
+  //       "tagTitle": "casette e box",
+  //       "text": "Casas e caixas"
+  //     }
+  //   },
+  //   "blocks": ["vtex.menu@2.x:submenu#casette&box"]
+  // },
+  // "vtex.menu@2.x:submenu#casette&box": {
+  //   "children": ["vtex.menu@2.x:menu#subCasette&box"]
+  // },
+  // "vtex.menu@2.x:menu#subCasette&box": {
+  //   "children": ["flex-layout.row#subCasette"]
+  // },
+  // "flex-layout.row#subCasette": {
+  //   "props": {
+  //     "blockClass": "",
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "flex-layout.col#subCasette-submenu-1"
+  //   ]
+  // },
+  // "flex-layout.col#subCasette-submenu-1": {
+  //   "props": {
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "rich-text#subCasette-submenu-1",
+  //     "vtex.menu@2.x:menu#subCasette-submenu-1"
+  //   ]
+  // },
+  // "rich-text#subCasette-submenu-1": {
+  //   "props": {
+  //     "text": ""
+  //   }
+  // },
+  // "vtex.menu@2.x:menu#subCasette-submenu-1": {
+  //   "props": {
+  //     "orientation": "vertical",
+  //     "blockClass": "menu-item-tab",
+  //     "items": [
+  //       {
+  //         "id": "header-row-2-item-2",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Especiais",
+  //           "text": "Especiais"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-3",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Original - Rolha",
+  //           "text": "Original - Rolha"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-4",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Chocolate",
+  //           "text": "Chocolate"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-5",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Cremosa",
+  //           "text": "Cremosa"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-6",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Zero",
+  //           "text": "Zero"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Mastigáveis",
+  //           "text": "Mastigáveis"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Pamonha",
+  //           "text": "Pamonha"
+  //         }
+  //       }
+  //     ]
+  //   }
+  // },
+  // "menu-item#bricolage": {
+  //   "props": {
+  //     "id": "menu-item",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "#",
+  //       "noFollow": false,
+  //       "tagTitle": "Bricolage e Fai da te",
+  //       "text": "Bricolagem e faça você mesmo"
+  //     }
+  //   },
+  //   "blocks": ["vtex.menu@2.x:submenu#bricolage"]
+  // },
+  // "vtex.menu@2.x:submenu#bricolage": {
+  //   "children": ["vtex.menu@2.x:menu#subBricolage"]
+  // },
+  // "vtex.menu@2.x:menu#subBricolage": {
+  //   "children": ["flex-layout.row#subBricolage"]
+  // },
+  // "flex-layout.row#subBricolage": {
+  //   "props": {
+  //     "blockClass": "",
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "flex-layout.col#subBricolage-submenu-1"
+  //   ]
+  // },
+  // "flex-layout.col#subBricolage-submenu-1": {
+  //   "props": {
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "rich-text#subBricolage-submenu-1",
+  //     "vtex.menu@2.x:menu#subBricolage-submenu-1"
+  //   ]
+  // },
+  // "rich-text#subBricolage-submenu-1": {
+  //   "props": {
+  //     "text": ""
+  //   }
+  // },
+  // "vtex.menu@2.x:menu#subBricolage-submenu-1": {
+  //   "props": {
+  //     "orientation": "vertical",
+  //     "blockClass": "menu-item-tab",
+  //     "items": [
+  //       {
+  //         "id": "header-row-2-item-2",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Especiais",
+  //           "text": "Especiais"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-3",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Original - Rolha",
+  //           "text": "Original - Rolha"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-4",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Chocolate",
+  //           "text": "Chocolate"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-5",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Cremosa",
+  //           "text": "Cremosa"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-6",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Zero",
+  //           "text": "Zero"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Mastigáveis",
+  //           "text": "Mastigáveis"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Pamonha",
+  //           "text": "Pamonha"
+  //         }
+  //       }
+  //     ]
+  //   }
+  // },
+  // "menu-item#arredoCasa": {
+  //   "props": {
+  //     "id": "menu-item",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "#",
+  //       "noFollow": false,
+  //       "tagTitle": "Arredo casa",
+  //       "text": "Mobiliário doméstico"
+  //     }
+  //   },
+  //   "blocks": ["vtex.menu@2.x:submenu#arredoCasa"]
+  // },
+  // "vtex.menu@2.x:submenu#arredoCasa": {
+  //   "children": ["vtex.menu@2.x:menu#subArredoCasa"]
+  // },
+  // "vtex.menu@2.x:menu#subArredoCasa": {
+  //   "children": ["flex-layout.row#subArredoCasa"]
+  // },
+  // "flex-layout.row#subArredoCasa": {
+  //   "props": {
+  //     "blockClass": "",
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "flex-layout.col#subArredoCasa-submenu-1"
+  //   ]
+  // },
+  // "flex-layout.col#subArredoCasa-submenu-1": {
+  //   "props": {
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "rich-text#subArredoCasa-submenu-1",
+  //     "vtex.menu@2.x:menu#subArredoCasa-submenu-1"
+  //   ]
+  // },
+  // "rich-text#subArredoCasa-submenu-1": {
+  //   "props": {
+  //     "text": ""
+  //   }
+  // },
+  // "vtex.menu@2.x:menu#subArredoCasa-submenu-1": {
+  //   "props": {
+  //     "orientation": "vertical",
+  //     "blockClass": "menu-item-tab",
+  //     "items": [
+  //       {
+  //         "id": "header-row-2-item-2",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Especiais",
+  //           "text": "Especiais"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-3",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Original - Rolha",
+  //           "text": "Original - Rolha"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-4",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Chocolate",
+  //           "text": "Chocolate"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-5",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Cremosa",
+  //           "text": "Cremosa"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-6",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Zero",
+  //           "text": "Zero"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Mastigáveis",
+  //           "text": "Mastigáveis"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Pamonha",
+  //           "text": "Pamonha"
+  //         }
+  //       }
+  //     ]
+  //   }
+  // },
+  // "menu-item#sport": {
+  //   "props": {
+  //     "id": "menu-item",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "#",
+  //       "noFollow": false,
+  //       "tagTitle": "Sport e tempo libero",
+  //       "text": "Esporte e tempo livre"
+  //     }
+  //   },
+  //   "blocks": ["vtex.menu@2.x:submenu#sport"]
+  // },
+  // "vtex.menu@2.x:submenu#sport": {
+  //   "children": ["vtex.menu@2.x:menu#subSport"]
+  // },
+  // "vtex.menu@2.x:menu#subSport": {
+  //   "children": ["flex-layout.row#subSport"]
+  // },
+  // "flex-layout.row#subSport": {
+  //   "props": {
+  //     "blockClass": "",
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "flex-layout.col#subSport-submenu-1"
+  //   ]
+  // },
+  // "flex-layout.col#subSport-submenu-1": {
+  //   "props": {
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "rich-text#subSport-submenu-1",
+  //     "vtex.menu@2.x:menu#subSport-submenu-1"
+  //   ]
+  // },
+  // "rich-text#subSport-submenu-1": {
+  //   "props": {
+  //     "text": ""
+  //   }
+  // },
+  // "vtex.menu@2.x:menu#subSport-submenu-1": {
+  //   "props": {
+  //     "orientation": "vertical",
+  //     "blockClass": "menu-item-tab",
+  //     "items": [
+  //       {
+  //         "id": "header-row-2-item-2",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Especiais",
+  //           "text": "Especiais"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-3",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Original - Rolha",
+  //           "text": "Original - Rolha"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-4",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Chocolate",
+  //           "text": "Chocolate"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-5",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Cremosa",
+  //           "text": "Cremosa"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-6",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Zero",
+  //           "text": "Zero"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Mastigáveis",
+  //           "text": "Mastigáveis"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Pamonha",
+  //           "text": "Pamonha"
+  //         }
+  //       }
+  //     ]
+  //   }
+  // },
+  // "menu-item#antinfortunistica": {
+  //   "props": {
+  //     "id": "menu-item",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "#",
+  //       "noFollow": false,
+  //       "tagTitle": "Antinfortunistica",
+  //       "text": "prevenção de Acidentes"
+  //     }
+  //   },
+  //   "blocks": ["vtex.menu@2.x:submenu#antinfortunistica"]
+  // },
+  // "vtex.menu@2.x:submenu#antinfortunistica": {
+  //   "children": ["vtex.menu@2.x:menu#subAntinfortunistica"]
+  // },
+  // "vtex.menu@2.x:menu#subAntinfortunistica": {
+  //   "children": ["flex-layout.row#subAntinfortunistica"]
+  // },
+  // "flex-layout.row#subAntinfortunistica": {
+  //   "props": {
+  //     "blockClass": "",
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "flex-layout.col#subAntinfortunistica-submenu-1"
+  //   ]
+  // },
+  // "flex-layout.col#subAntinfortunistica-submenu-1": {
+  //   "props": {
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "rich-text#subAntinfortunistica-submenu-1",
+  //     "vtex.menu@2.x:menu#subAntinfortunistica-submenu-1"
+  //   ]
+  // },
+  // "rich-text#subAntinfortunistica-submenu-1": {
+  //   "props": {
+  //     "text": ""
+  //   }
+  // },
+  // "vtex.menu@2.x:menu#subAntinfortunistica-submenu-1": {
+  //   "props": {
+  //     "orientation": "vertical",
+  //     "blockClass": "menu-item-tab",
+  //     "items": [
+  //       {
+  //         "id": "header-row-2-item-2",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Especiais",
+  //           "text": "Especiais"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-3",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Original - Rolha",
+  //           "text": "Original - Rolha"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-4",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Chocolate",
+  //           "text": "Chocolate"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-5",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Cremosa",
+  //           "text": "Cremosa"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-6",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Zero",
+  //           "text": "Zero"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Mastigáveis",
+  //           "text": "Mastigáveis"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Pamonha",
+  //           "text": "Pamonha"
+  //         }
+  //       }
+  //     ]
+  //   }
+  // },
+  // "menu-item#illuminazione": {
+  //   "props": {
+  //     "id": "menu-item",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "#",
+  //       "noFollow": false,
+  //       "tagTitle": "Illuminazione",
+  //       "text": "Iluminação"
+  //     }
+  //   },
+  //   "blocks": ["vtex.menu@2.x:submenu#illuminazione"]
+  // },
+  // "vtex.menu@2.x:submenu#illuminazione": {
+  //   "children": ["vtex.menu@2.x:menu#subIlluminazione"]
+  // },
+  // "vtex.menu@2.x:menu#subIlluminazione": {
+  //   "children": ["flex-layout.row#subIlluminazione"]
+  // },
+  // "flex-layout.row#subIlluminazione": {
+  //   "props": {
+  //     "blockClass": "",
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "flex-layout.col#subIlluminazione-submenu-1"
+  //   ]
+  // },
+  // "flex-layout.col#subIlluminazione-submenu-1": {
+  //   "props": {
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "rich-text#subIlluminazione-submenu-1",
+  //     "vtex.menu@2.x:menu#subIlluminazione-submenu-1"
+  //   ]
+  // },
+  // "rich-text#subIlluminazione-submenu-1": {
+  //   "props": {
+  //     "text": ""
+  //   }
+  // },
+  // "vtex.menu@2.x:menu#subIlluminazione-submenu-1": {
+  //   "props": {
+  //     "orientation": "vertical",
+  //     "blockClass": "menu-item-tab",
+  //     "items": [
+  //       {
+  //         "id": "header-row-2-item-2",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Especiais",
+  //           "text": "Especiais"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-3",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Original - Rolha",
+  //           "text": "Original - Rolha"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-4",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Chocolate",
+  //           "text": "Chocolate"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-5",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Cremosa",
+  //           "text": "Cremosa"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-6",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Zero",
+  //           "text": "Zero"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Mastigáveis",
+  //           "text": "Mastigáveis"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Pamonha",
+  //           "text": "Pamonha"
+  //         }
+  //       }
+  //     ]
+  //   }
+  // },
+  // "menu-item#riscaldamento": {
+  //   "props": {
+  //     "id": "menu-item",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "#",
+  //       "noFollow": false,
+  //       "tagTitle": "riscaldamento",
+  //       "text": "Aquecimento"
+  //     }
+  //   },
+  //   "blocks": ["vtex.menu@2.x:submenu#riscaldamento"]
+  // },
+  // "vtex.menu@2.x:submenu#riscaldamento": {
+  //   "children": ["vtex.menu@2.x:menu#subRiscaldamento"]
+  // },
+  // "vtex.menu@2.x:menu#subRiscaldamento": {
+  //   "children": ["flex-layout.row#subRiscaldamento"]
+  // },
+  // "flex-layout.row#subRiscaldamento": {
+  //   "props": {
+  //     "blockClass": "",
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "flex-layout.col#subRiscaldamento-submenu-1"
+  //   ]
+  // },
+  // "flex-layout.col#subRiscaldamento-submenu-1": {
+  //   "props": {
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "rich-text#subRiscaldamento-submenu-1",
+  //     "vtex.menu@2.x:menu#subRiscaldamento-submenu-1"
+  //   ]
+  // },
+  // "rich-text#subRiscaldamento-submenu-1": {
+  //   "props": {
+  //     "text": ""
+  //   }
+  // },
+  // "vtex.menu@2.x:menu#subRiscaldamento-submenu-1": {
+  //   "props": {
+  //     "orientation": "vertical",
+  //     "blockClass": "menu-item-tab",
+  //     "items": [
+  //       {
+  //         "id": "header-row-2-item-2",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Especiais",
+  //           "text": "Especiais"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-3",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Original - Rolha",
+  //           "text": "Original - Rolha"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-4",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Chocolate",
+  //           "text": "Chocolate"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-5",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Cremosa",
+  //           "text": "Cremosa"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-6",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Zero",
+  //           "text": "Zero"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Mastigáveis",
+  //           "text": "Mastigáveis"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Pamonha",
+  //           "text": "Pamonha"
+  //         }
+  //       }
+  //     ]
+  //   }
+  // },
+  // "menu-item#giocattoli": {
+  //   "props": {
+  //     "id": "menu-item",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "#",
+  //       "noFollow": false,
+  //       "tagTitle": "Giocattoli",
+  //       "text": "Brinquedos"
+  //     }
+  //   },
+  //   "blocks": ["vtex.menu@2.x:submenu#giocattoli"]
+  // },
+  // "vtex.menu@2.x:submenu#giocattoli": {
+  //   "children": ["vtex.menu@2.x:menu#subGiocattoli"]
+  // },
+  // "vtex.menu@2.x:menu#subGiocattoli": {
+  //   "children": ["flex-layout.row#subGiocattoli"]
+  // },
+  // "flex-layout.row#subGiocattoli": {
+  //   "props": {
+  //     "blockClass": "",
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "flex-layout.col#subGiocattoli-submenu-1"
+  //   ]
+  // },
+  // "flex-layout.col#subGiocattoli-submenu-1": {
+  //   "props": {
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "rich-text#subGiocattoli-submenu-1",
+  //     "vtex.menu@2.x:menu#subGiocattoli-submenu-1"
+  //   ]
+  // },
+  // "rich-text#subGiocattoli-submenu-1": {
+  //   "props": {
+  //     "text": ""
+  //   }
+  // },
+  // "vtex.menu@2.x:menu#subGiocattoli-submenu-1": {
+  //   "props": {
+  //     "orientation": "vertical",
+  //     "blockClass": "menu-item-tab",
+  //     "items": [
+  //       {
+  //         "id": "header-row-2-item-2",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Especiais",
+  //           "text": "Especiais"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-3",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Original - Rolha",
+  //           "text": "Original - Rolha"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-4",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Chocolate",
+  //           "text": "Chocolate"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-5",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Cremosa",
+  //           "text": "Cremosa"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-6",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Zero",
+  //           "text": "Zero"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Mastigáveis",
+  //           "text": "Mastigáveis"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Pamonha",
+  //           "text": "Pamonha"
+  //         }
+  //       }
+  //     ]
+  //   }
+  // },
+  // "menu-item#animali": {
+  //   "props": {
+  //     "id": "menu-item",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "#",
+  //       "noFollow": false,
+  //       "tagTitle": "animali",
+  //       "text": "Animais"
+  //     }
+  //   },
+  //   "blocks": ["vtex.menu@2.x:submenu#animali"]
+  // },
+  // "vtex.menu@2.x:submenu#animali": {
+  //   "children": ["vtex.menu@2.x:menu#subAnimali"]
+  // },
+  // "vtex.menu@2.x:menu#subAnimali": {
+  //   "children": ["flex-layout.row#subAnimali"]
+  // },
+  // "flex-layout.row#subAnimali": {
+  //   "props": {
+  //     "blockClass": "",
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "flex-layout.col#subAnimali-submenu-1"
+  //   ]
+  // },
+  // "flex-layout.col#subAnimali-submenu-1": {
+  //   "props": {
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "rich-text#subAnimali-submenu-1",
+  //     "vtex.menu@2.x:menu#subAnimali-submenu-1"
+  //   ]
+  // },
+  // "rich-text#subAnimali-submenu-1": {
+  //   "props": {
+  //     "text": ""
+  //   }
+  // },
+  // "vtex.menu@2.x:menu#subAnimali-submenu-1": {
+  //   "props": {
+  //     "orientation": "vertical",
+  //     "blockClass": "menu-item-tab",
+  //     "items": [
+  //       {
+  //         "id": "header-row-2-item-2",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Especiais",
+  //           "text": "Especiais"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-3",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Original - Rolha",
+  //           "text": "Original - Rolha"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-4",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Chocolate",
+  //           "text": "Chocolate"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-5",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Cremosa",
+  //           "text": "Cremosa"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-6",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Zero",
+  //           "text": "Zero"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Mastigáveis",
+  //           "text": "Mastigáveis"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Pamonha",
+  //           "text": "Pamonha"
+  //         }
+  //       }
+  //     ]
+  //   }
+  // },
+  // "menu-item#elettrodomestici": {
+  //   "props": {
+  //     "id": "menu-item",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "#",
+  //       "noFollow": false,
+  //       "tagTitle": "Alettrodomestici",
+  //       "text": "Eletrodoméstico"
+  //     }
+  //   },
+  //   "blocks": ["vtex.menu@2.x:submenu#elettrodomestici"]
+  // },
+  // "vtex.menu@2.x:submenu#elettrodomestici": {
+  //   "children": ["vtex.menu@2.x:menu#subElettrodomestici"]
+  // },
+  // "vtex.menu@2.x:menu#subElettrodomestici": {
+  //   "children": ["flex-layout.row#subElettrodomestici"]
+  // },
+  // "flex-layout.row#subElettrodomestici": {
+  //   "props": {
+  //     "blockClass": "",
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "flex-layout.col#subElettrodomestici-submenu-1"
+  //   ]
+  // },
+  // "flex-layout.col#subElettrodomestici-submenu-1": {
+  //   "props": {
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "rich-text#subElettrodomestici-submenu-1",
+  //     "vtex.menu@2.x:menu#subElettrodomestici-submenu-1"
+  //   ]
+  // },
+  // "rich-text#subElettrodomestici-submenu-1": {
+  //   "props": {
+  //     "text": ""
+  //   }
+  // },
+  // "vtex.menu@2.x:menu#subElettrodomestici-submenu-1": {
+  //   "props": {
+  //     "orientation": "vertical",
+  //     "blockClass": "menu-item-tab",
+  //     "items": [
+  //       {
+  //         "id": "header-row-2-item-2",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Especiais",
+  //           "text": "Especiais"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-3",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Original - Rolha",
+  //           "text": "Original - Rolha"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-4",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Chocolate",
+  //           "text": "Chocolate"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-5",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Cremosa",
+  //           "text": "Cremosa"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-6",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Zero",
+  //           "text": "Zero"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Mastigáveis",
+  //           "text": "Mastigáveis"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Pamonha",
+  //           "text": "Pamonha"
+  //         }
+  //       }
+  //     ]
+  //   }
+  // },
+  // "menu-item#auto": {
+  //   "props": {
+  //     "id": "menu-item",
+  //     "type": "custom",
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "#",
+  //       "noFollow": false,
+  //       "tagTitle": "Auto e moto",
+  //       "text": "Carro e moto"
+  //     }
+  //   },
+  //   "blocks": ["vtex.menu@2.x:submenu#auto"]
+  // },
+  // "vtex.menu@2.x:submenu#auto": {
+  //   "children": ["vtex.menu@2.x:menu#subAuto"]
+  // },
+  // "vtex.menu@2.x:menu#subAuto": {
+  //   "children": ["flex-layout.row#subAuto"]
+  // },
+  // "flex-layout.row#subAuto": {
+  //   "props": {
+  //     "blockClass": "",
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "flex-layout.col#subAuto-submenu-1"
+  //   ]
+  // },
+  // "flex-layout.col#subAuto-submenu-1": {
+  //   "props": {
+  //     "preventHorizontalStretch": true
+  //   },
+  //   "children": [
+  //     "rich-text#subAuto-submenu-1",
+  //     "vtex.menu@2.x:menu#subAuto-submenu-1"
+  //   ]
+  // },
+  // "rich-text#subAuto-submenu-1": {
+  //   "props": {
+  //     "text": ""
+  //   }
+  // },
+  // "vtex.menu@2.x:menu#subAuto-submenu-1": {
+  //   "props": {
+  //     "orientation": "vertical",
+  //     "blockClass": "menu-item-tab",
+  //     "items": [
+  //       {
+  //         "id": "header-row-2-item-2",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Especiais",
+  //           "text": "Especiais"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-3",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Original - Rolha",
+  //           "text": "Original - Rolha"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-4",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Chocolate",
+  //           "text": "Chocolate"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-5",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Cremosa",
+  //           "text": "Cremosa"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-6",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Zero",
+  //           "text": "Zero"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Mastigáveis",
+  //           "text": "Mastigáveis"
+  //         }
+  //       },
+  //       {
+  //         "id": "header-row-2-item-7",
+  //         "type": "custom",
+  //         "highlight": false,
+  //         "itemProps": {
+  //           "type": "internal",
+  //           "href": "#",
+  //           "noFollow": false,
+  //           "tagTitle": "Pamonha",
+  //           "text": "Pamonha"
+  //         }
+  //       }
+  //     ]
+  //   }
+  // },
+  // "rich-text#titleLinkUtili": {
+  //   "props": {
+  //     "blockClass": "sidebar-TitleLinkUtili",
+  //     "text": "Link útil"
+  //   }
+  // },
+  // "link#storeLocator": {
+  //   "props": {
+  //     "href": "#",
+  //     "label": "Localização da loja"
+  //   }
+  // },
+  // "link#doveIlMio": {
+  //   "props": {
+  //     "href": "#",
+  //     "label": "Onde está o meu pedido ?"
+  //   }
+  // },
+  // "link#effetuareUnReso": {
+  //   "props": {
+  //     "href": "#",
+  //     "label": "Devolução"
+  //   }
+  // },
+  // "link#FAQ": {
+  //   "props": {
+  //     "href": "#",
+  //     "label": "FAQ e contato"
+  //   }
+  // }
+}

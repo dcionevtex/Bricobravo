@@ -1,0 +1,39 @@
+.link {
+  &--header-small-logo {
+    display: block;
+    padding-top: 18px;
+  }
+
+  &--header-institutional-link {
+    font-size: 1rem;
+    color: #111;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #e30613;
+    }
+  }
+
+  &--wishlist-header {
+    background: transparent;
+    border: none;
+    text-transform: capitalize;
+    padding: 4px 5px 0;
+
+    &:hover {
+      background: none;
+      border: none;
+    }
+
+    .label {
+      display: none;
+    }
+  }
+
+  &--menu-header-mobile-home {
+    z-index: 1000;
+  }
+}

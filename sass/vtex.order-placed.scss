@@ -1,0 +1,210 @@
+.orderPlacedHeader,
+.orderPlacedMainWrapper,
+.section--bank-invoice {
+    width: 100% !important;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.orderPlacedWrapper{
+  padding: 4rem 0.8rem 0;
+}
+
+.orderPlacedMainWrapper,
+.section--bank-invoice {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 32px 20px;
+    margin-bottom: 32px;
+
+}
+@media screen and (max-width: 760px)  {
+  :global(.vtex-flex-layout-0-x-flexRowContent--confirmationButtons){
+    display: flex;
+}
+
+
+}
+
+.orderPlacedHeader {
+  :global(.vtex-button) {
+      background: #291660;
+      border: none;
+      color: #fff;
+      transition: .2s ease-in-out;
+      font-size: 14px;
+      text-transform: none;
+      padding: 12px 20px;
+
+      &:hover {
+          background: #1B0E41;
+      }
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--order-notices) {
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #ccc;
+    background: #FFF;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 32px;
+  }
+  :global(.vtex-store-components-3-x-container){
+    padding: 0;
+  }
+  :global(.vtex-rich-text-0-x-container--order-placed-message-border) {
+    border-bottom: 1px solid #8e8e8e;
+  }
+  :global(.vtex-rich-text-0-x-container--order-placed-message) {
+    min-width: 50vw;
+    padding: 8px 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.section--notices {
+    border: 2px solid #ccc;
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 32px;
+
+    .noticesList {
+        background: #fff;
+        border-radius: 8px;
+        padding: 12px;
+
+        :global(.vtex-button) {
+            margin-top: 30px;
+        }
+    }
+}
+.section--bank-invoice {
+    text-align: center;
+
+    .bankInvoiceEmbedBackground {
+        background: #fff;
+    }
+
+    .barCodeContainer,
+    .printHintWrapper {
+        justify-content: center;
+    }
+
+    .printHintWrapper {
+        margin: 24px auto;
+    }
+
+    .bankInvoiceEmbedWrapper {
+        border: none;
+
+        :global(.vtex-button) {
+            background: #fff;
+            color: #111;
+            border-radius: 0;
+            font-size: 16px;
+            padding: 0;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.orderPlacedMainWrapper {
+    .orderWrapper {
+        .orderOptionsWrapper {
+            .updateOrderButton,
+            .myOrdersButton {
+                :global(.vtex-button) {
+                    background: #fff;
+                    border: 2px solid #fff;
+                    transition: .2s ease-in-out;
+
+                    &:hover {
+                        border: 2px solid #111;
+                    }
+                }
+            }
+
+            .cancelOrderButton {
+                display: none;//remove button  Annulla L´ordine
+                :global(.vtex-button) {
+                    background: #fff;
+                    border: 2px solid #fff;
+                    transition: .2s ease-in-out;
+                    color: #E30613;
+
+                    &:hover {
+                        border: 2px solid #E30613;
+                    }
+                }
+            }
+        }
+    }
+
+    .section--paymentMethods {
+        position: relative;
+
+        .orderPaymentItem {
+            padding-bottom: 5rem;
+
+            :global(.vtex-button) {
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%);
+                background: #fff;
+                color: #111;
+                border: 2px solid #fff;
+                transition: .2s ease-in-out;
+
+                &:hover {
+                    border: 2px solid #111;
+                }
+            }
+        }
+    }
+
+    .totalListWrapper {
+        display: block;
+
+        .totalList {
+            width: auto;
+            .totalListItem--Items,
+            .totalListItem--Shipping {
+                .totalListItemLabel,
+                .totalListItemValue {
+                    font-style: normal;
+                    font-weight: 300 !important;
+                    font-size: 16px !important;
+                    line-height: 32px;
+                    letter-spacing: 0.01em;
+                    text-transform: capitalize;
+                    color: #111;
+                }
+            }
+        }
+
+        .totalListItem {
+
+            .totalListItemLabel {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: 0.01em;
+                text-transform: capitalize;
+                color: #111;
+            }
+
+            .totalListItemValue {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: 0.01em;
+                text-transform: capitalize;
+                color: #111;
+            }
+        }
+    }
+
+}

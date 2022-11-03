@@ -1,0 +1,106 @@
+{
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#newsletter",
+      "flex-layout.row#FooterLinksMobile",
+      "flex-layout.row#footerPaymentMethods",
+      "flex-layout.row#bottomFooterDesktop"
+    ],
+    "props": {
+      "htmlId": "Footer layout Mobile"
+    },
+    "title": "Footer layout Mobile"
+  },
+  "flex-layout.row#FooterLinksMobile": {
+    "children": ["flex-layout.col#FooterLinksMobile"],
+    "props": {
+      "blockClass": "footer-upperFooterMobile",
+      "htmlId": "Footer links"
+    },
+    "title": "Footer links"
+  },
+  "flex-layout.col#FooterLinksMobile": {
+    "children": [
+      "flex-layout.row#upperFooterCol3",
+      "flex-layout.row#upperFooterCol2Mobile",
+      "flex-layout.row#upperFooterCol1Mobile",
+      "flex-layout.col#upperFooterCol4"
+    ]
+  },
+  "flex-layout.row#upperFooterCol2Mobile": {
+    "children": ["disclosure-layout#upperFooterCol2Mobile"],
+    "props": {
+      "blockClass": "footer-containerDisclosure",
+      "htmlId": "Footer colonna superiore 2"
+    },
+    "title": "Footer colonna superiore 2"
+  },
+  "disclosure-layout#upperFooterCol2Mobile": {
+    "children": [
+      "disclosure-trigger#upperFooterCol2Mobile",
+      "disclosure-content#upperFooterCol2Mobile"
+    ]
+  },
+  "disclosure-trigger#upperFooterCol2Mobile": {
+    "children": [
+      "rich-text#upperFooterTitleCol1",
+      "disclosure-state-indicator#icons"
+    ],
+    "props": {
+      "blockClass": "footer-disclosureTrigger"
+    }
+  },
+  "disclosure-content#upperFooterCol2Mobile": {
+    "children": ["flex-layout.row#upperFooterLinksCol1"],
+    "props": {
+      "blockClass": "footer-disclosureContent"
+    }
+  },
+  "flex-layout.row#upperFooterCol1Mobile": {
+    "children": ["disclosure-layout#upperFooterCol1Mobile"],
+    "props": {
+      "blockClass": "footer-containerDisclosure",
+      "htmlId": "Footer colonna superiore 1"
+    },
+    "title": "Footer colonna superiore 1"
+  },
+  "disclosure-layout#upperFooterCol1Mobile": {
+    "children": [
+      "disclosure-trigger#upperFooterCol1Mobile",
+      "disclosure-content#upperFooterCol1Mobile"
+    ]
+  },
+  "disclosure-trigger#upperFooterCol1Mobile": {
+    "children": [
+      "rich-text#upperFooterTitleCol2",
+      "disclosure-state-indicator#icons"
+    ],
+    "props": {
+      "blockClass": "footer-disclosureTrigger"
+    }
+  },
+  "disclosure-content#upperFooterCol1Mobile": {
+    "children": ["flex-layout.col#upperFooterLinksCol2"],
+    "props": {
+      "blockClass": "footer-disclosureContent"
+    }
+  },
+  "disclosure-state-indicator#icons": {
+    "props": {
+      "Show": "image#Icondown",
+      "Hide": "image#IconUp"
+    }
+  },
+  "image#Icondown": {
+    "props": {
+      "src": "assets/icons/down-arrow-footer.svg",
+      "width": "14px"
+    }
+  },
+  "image#IconUp": {
+    "props": {
+      "src": "assets/icons/up-arrow-footer.svg",
+      "width": "14px"
+    }
+  }
+}

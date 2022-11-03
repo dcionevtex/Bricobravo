@@ -1,0 +1,83 @@
+@import '../variables';
+
+.link {
+  &--upperFooterCTA {
+    text-align: center;
+    border: 2px solid $secondary-default;
+    border-radius: 8px;
+    max-width: 217px;
+    margin: 0 auto;
+    padding: 14px 45px;
+    color: $secondary-default;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+
+    &:hover {
+      color: #fff;
+      background-color: $secondary-default;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      max-width: unset;
+      line-height: 16px;
+    }
+  }
+
+  &--attendanceCTA {
+    background: #e30613;
+    max-width: 216px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    line-height: 24px;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background: #bd000b;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      max-width: unset;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  &--supportCTA {
+    max-width: 216px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    line-height: 24px;
+    border: 2px solid #e30613;
+    color: #e30613;
+    margin-top: 8px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+
+    &:hover {
+      color: #fff;
+      background-color: $secondary-default;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      max-width: unset;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}

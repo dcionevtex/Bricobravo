@@ -1,0 +1,8 @@
+{
+  "flex-layout.row#shipping-simulator": {
+    "props": {
+      "blockClass": "shipping-container"
+    },
+    "children": ["shipping-simulator"]
+  }
+}

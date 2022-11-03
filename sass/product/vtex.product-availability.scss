@@ -1,0 +1,21 @@
+@import '../_variables.scss';
+@import '../_media-queries.scss';
+
+.lowStockText,
+.lowStockHighlight,
+.highStockText {
+  font-size: $paragraph-small-medium;
+  color: $system-alert-default;
+  line-height: 1rem;
+  font-weight: 600;
+}
+
+.container--count-availability {
+  padding: 0;
+
+  @include mobile {
+    display: inherit;
+    padding: 1rem 0;
+    text-align: center;
+  }
+}

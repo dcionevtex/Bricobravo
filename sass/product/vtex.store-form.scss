@@ -1,0 +1,9 @@
+@import '../_variables.scss';
+@import '../_media-queries.scss';
+
+.formSubmitButton {
+  &--pdp-faq {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "header-layout.desktop": {
+    "children": ["sticky-layout#desktop-header"],
+    "props": {
+      "htmlId": "Header layout Desktop"
+    },
+    "title": "Header layout Desktop"
+  },
+  "sticky-layout#desktop-header": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      "flex-layout.row#header-promotion",
+      "flex-layout.row#header-desktop-upper"
+    ]
+  },
+  "flex-layout.row#header-promotion": {
+    "children": [
+      "rich-text#emptySpace",
+      "rich-text#promotion",
+      "flex-layout.col#moreInfoPromotion"
+    ],
+    "props": {
+      "blockClass": "header-containerPromotion",
+      "htmlId": "Riga di promozione"
+    },
+    "title": "Riga di promozione"
+  },
+  "rich-text#emptySpace": {
+    "props": {
+      "text": ""
+    }
+  },
+  "rich-text#promotion": {
+    "props": {
+      "blockClass": "header-titlePromotion",
+      "text": "OFFERTA SPECIALE sui prodotti per arredare il tuo giardino",
+      "htmlId": "Promozione"
+    },
+    "title": "Promozione"
+  },
+  "flex-layout.col#moreInfoPromotion": {
+    "children": ["disclosure-layout#moreInfoPromotion"]
+  },
+  "disclosure-layout#moreInfoPromotion": {
+    "children": [
+      "disclosure-trigger#moreInfoPromotion",
+      "disclosure-content#moreInfoPromotion"
+    ]
+  },
+  "disclosure-trigger#moreInfoPromotion": {
+    "children": [
+      "rich-text#moreInfoPromotion",
+      "disclosure-state-indicator#moreInfoPromotion"
+    ],
+    "props": {
+      "blockClass": "header-disclosureTrigger"
+    }
+  },
+  "rich-text#moreInfoPromotion": {
+    "props": {
+      "text": "Scopri di più",
+      "htmlId": "Promozione - Maggiori informazioni"
+    },
+    "title": "Promozione - Maggiori informazioni"
+  },
+  "disclosure-state-indicator#moreInfoPromotion": {
+    "props": {
+      "Show": "image#arrowDown",
+      "Hide": "image#arrowUp"
+    }
+  },
+  "image#arrowDown": {
+    "props": {
+      "src": "assets/icons/chevron-down.svg",
+      "width": "20px"
+    }
+  },
+  "image#arrowUp": {
+    "props": {
+      "src": "assets/icons/chevron-up.svg",
+      "width": "20px"
+    }
+  },
+  "disclosure-content#moreInfoPromotion": {
+    "children": ["rich-text#InfoPromotion"],
+    "props": {
+      "blockClass": "header-disclosureContent"
+    }
+  },
+  "rich-text#InfoPromotion": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "htmlId": "Info promozione"
+    },
+    "title": "Info promozione"
+  },
+  "flex-layout.row#header-desktop-upper": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": false,
+      "fullWidth": true,
+      "blockClass": "header-desktop-upper",
+      "htmlId": "Header superiore"
+    },
+    "children": [
+      "flex-layout.col#header-logo",
+      "flex-layout.col#searchBar",
+      "flex-layout.col#header-icons"
+    ],
+    "title": "Header superiore"
+  },
+
+  "flex-layout.col#header-logo": {
+    "children": ["link#logo"],
+    "props": {
+      "blockClass": "header-logo",
+      "verticalAlign": "middle"
+    }
+  },
+  "link#logo": {
+    "props": {
+      "href": "/",
+      "label": ""
+    },
+    "children": ["image#header-logo"]
+  },
+  "image#header-logo": {
+    "props": {
+      "src": "assets/icons/logo2.svg"
+    },
+    "title": "Logotipo Header"
+  },
+
+  "flex-layout.col#searchBar": {
+    "props": {
+      "blockClass": "header-containerSearchBar"
+    },
+    "children": ["drawer#menu-desktop", "search-bar#desktop"]
+  },
+
+  "drawer#menu-desktop": {
+    "children": ["header-mega-menu"],
+    "props": {
+      "blockClass": "drawer-desktop",
+      "maxWidth": 400
+    }
+  },
+
+  "flex-layout.col#header-icons": {
+    "children": ["login", "link#wishlist", "minicart.v2"],
+    "props": {
+      "blockClass": "header-containerIcons",
+      "verticalAlign": "middle"
+    }
+  },
+  "login": {
+    "blocks": ["icon-profile#profile"],
+    "props": {
+      "emailPlaceholder": "E-mail",
+      "passwordPlaceholder": "Senha",
+      "logInButtonBehavior": "link",
+      "showPasswordVerificationIntoTooltip": true,
+      "showIconProfile": true,
+      "iconLabel": " ",
+      "blockClass": "login"
+    }
+  },
+  "icon-profile#profile": {
+    "props": {
+      "viewBox": "0 0 26 26",
+      "size": 29
+    }
+  },
+  "link#wishlist": {
+    "props": {
+      "href": "/account/#/wishlist",
+      "label": "",
+      "displayMode": "button",
+      "blockClass": "wishlist-header"
+    },
+    "children": ["image#wishlist"]
+  },
+  "image#wishlist": {
+    "props": {
+      "src": "assets/icons/heart-icon.svg",
+      "width": "40px"
+    }
+  }
+}

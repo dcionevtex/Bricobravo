@@ -1,0 +1,120 @@
+@import '../_media-queries.scss';
+@import '../_variables.scss';
+
+.sliderLayoutContainer {
+  .sliderArrows {
+    &.sliderLeftArrow {
+      &--home-services,
+      &--home-blog,
+      &--homeBottomSectionBrands,
+      &--homeBottomSectionCategories {
+        position: absolute;
+        top: -68px;
+        right: 2rem;
+        left: auto;
+      }
+    }
+
+    &.sliderRightArrow {
+      &--home-services,
+      &--home-blog,
+      &--homeBottomSectionBrands,
+      &--homeBottomSectionCategories {
+        position: absolute;
+        top: -68px;
+      }
+    }
+
+    .caretIcon {
+      &--home-services,
+      &--home-blog,
+      &--homeBottomSectionBrands,
+      &--homeBottomSectionCategories {
+        height: 16px;
+        color: $blue-dark;
+      }
+    }
+  }
+  :global(.vtex-product-summary-2-x-container--summaryComplete) {
+    height: 360px;
+  }
+}
+
+.sliderLayoutContainer--mobile-home-categories-showcase-slider {
+  transform: translateY(-12px);
+}
+
+.slideChildrenContainer {
+  &--home-blog {
+    max-width: 12.5rem;
+    width: 100%;
+  }
+
+  &--mobile-home-categories-showcase {
+    height: 8.5rem;
+    align-items: flex-start;
+  }
+  &--shelf-also-view {
+    :global(.vtex-product-summary-2-x-container--summaryComplete) {
+      @include breakpoint("mobile") {
+        min-width: 200px;
+      }
+    }
+  }
+}
+
+.slide {
+  &--mobile-home-categories-showcase {
+    margin: 0;
+  }
+
+  &--home-services {
+    @include breakpoint('mobile') {
+      margin: 0 0.625rem !important;
+      min-width: 224px;
+    }
+  }
+
+  &--home-blog--visible {
+    @include breakpoint('mobile') {
+      margin-inline: 10px !important;
+      transform: translateX(34px);
+    }
+  }
+
+//   &--homeBottomSectionBrandsMobile {
+//     @include breakpoint('mobile') {
+//       margin: 0 0.625rem !important;
+//     }
+//   }
+
+//   &--homeBottomSectionCategoriesMobile {
+//     @include breakpoint('mobile') {
+//       margin: 0 2rem !important;
+//     }
+//   }
+}
+
+.sliderTrack {
+  // &--home-services {
+  //   @include breakpoint('mobile') {
+  //     transform: translate3d(-8.8125%, 0, 0) !important;
+  //   }
+  // }
+
+  // &--homeBottomSectionBrandsMobile {
+  //   @include breakpoint('mobile') {
+  //     transform: translate3d(-18.75%, 0, 0) !important;
+  //   }
+  // }
+
+  // &--homeBottomSectionCategoriesMobile {
+  //   @include breakpoint('mobile') {
+  //     transform: translate3d(-8.6%, 0, 0) !important;
+  //   }
+  // }
+
+  &--mobile-home-categories-showcase-slider {
+    height: 170px;
+  }
+}

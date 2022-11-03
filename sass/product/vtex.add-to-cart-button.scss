@@ -1,0 +1,21 @@
+@import '../_media-queries.scss';
+@import '../_variables.scss';
+
+.buttonText--pdp {
+    font-size: 14px;
+    &::after {
+        content: ' al carrello';
+    }
+}
+
+@include breakpoint('mobile') {
+    .buttonText--pdp::after {
+        content: url('assets/icons/cart-buy-button-icon.svg');
+        padding-left: 14px;
+    }
+    .buttonText--pdp {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+    }
+}

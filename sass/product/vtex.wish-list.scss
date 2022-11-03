@@ -1,0 +1,70 @@
+@import '../_variables.scss';
+@import '../_media-queries.scss';
+
+.outline {
+  background-image: url(/arquivos/heartIcon.svg);
+  padding-right: 14px;
+  padding-bottom: 10px;
+
+  &:hover {
+    background-image: url('assets/icons/icon-wishlist-solid.svg');
+    transform: translateY(4px) translateX(2px);
+  }
+}
+
+.fill {
+  background-image: url('assets/icons/icon-wishlist-solid.svg');
+  padding-right: 14px !important;
+  padding-bottom: 10px !important;
+}
+
+.wishlistIconContainer {
+  &--pdp {
+    .iconSize {
+      width: 28px;
+      height: 28px;
+    }
+  }
+  :global(.vtex-button) {
+    background: none !important;
+    border: none !important;
+
+    &:hover {
+      background: none !important;
+      border: none !important;
+    }
+  }
+  :global(.vtex-button__label) {
+    padding: 0 !important;
+  }
+}
+
+.wishlistIcon {
+  &--pdp {
+    &::after {
+      content: 'Aggiungi alla lista dei desideri';
+      color: #1b0e41;
+      font-size: 14px;
+      line-height: 1rem;
+      text-transform: initial;
+      width: 13rem;
+      height: 1rem;
+      position: absolute;
+      top: 10px;
+      left: 33px;
+      text-align: left;
+      margin-left: 8px;
+
+      &:hover {
+        color: #291660;
+      }
+    }
+
+      @include mobile {
+        &::after {
+        content: '';
+        width: 0;
+      }
+    }
+  }
+}

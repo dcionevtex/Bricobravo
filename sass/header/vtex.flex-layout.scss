@@ -1,0 +1,304 @@
+@import '../_variables.scss';
+@import '../_media-queries.scss';
+
+.flexRow {
+  &--header-containerPromotion {
+    background-color: $background-blue-black;
+    .flexRowContent--header-containerPromotion {
+      @include container-main;
+
+      position: relative;
+      //height: 36px;
+      .stretchChildrenWidth:last-child {
+        .flexCol {
+      //     justify-content: center;
+
+          :global(.vtex-disclosure-layout-1-x-trigger--header-disclosureTrigger) {
+            height: 36px;
+          }
+        }
+      }
+    }
+  }
+  &--header-desktop-upper {
+    box-shadow: 0 4px 7px 0 rgba(0,0,0,0.15);
+
+    &::after {
+      width: 100%;
+      content: '';
+      height: 1px;
+      background: #ddd;
+      display: block;
+      margin: 0 auto;
+      position: absolute;
+      z-index: 2;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .flexRowContent--header-desktop-upper {
+      @include container-main;
+
+      justify-content: space-between;
+      padding: 15px 0 10px;
+    }
+    .flexCol--header-containerIcons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &--header-mobile {
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,0.3);
+  }
+
+  &--header-menu-mobile {
+    position: fixed;
+    bottom: 0;
+    background: $white;
+    width: 100%;
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.2);
+    padding: 0 15px;
+    height: 60px;
+    transition: all ease-in-out;
+    z-index: 5;
+  }
+
+  &--header-categories {
+    background-color: #F4F7FA;
+    @include breakpoint("mobile"){
+      display: none;
+    }
+    .flexRowContent--header-categories {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 10px 10px;
+      max-width: 1376px;
+      margin: 0 auto;
+      .stretchChildrenWidth {
+        max-width: max-content;
+      }
+      :global(.vtex-store-link-0-x-link--header-category) {
+        text-decoration: none;
+        white-space: nowrap;
+        color: $primary-text-dark;
+        display: flex;
+        :global(.vtex-store-link-0-x-label--header-category) {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+
+.flexRowContent--header-mobile-teste {
+  background-color: $white;
+  padding: 0px 10px 0px;
+
+  &--shrink {
+    padding: 0px 8px 0px;
+    display: flex;
+  }
+}
+
+.flexRowContent--minicart-footer {
+  background-color: #F4F7FA;
+}
+
+.flexRowContent--productInfoNameMinicart {
+  display: block;
+  margin-bottom: 14px;
+  justify-content: space-between;
+
+  @include breakpoint("mobile"){
+    margin-bottom: 8px;
+  }
+}
+
+.flexCol {
+  &--header-small-logo {
+    max-width: 0px;
+    margin: 0px;
+    transition: all 0.3s ease-in-out;
+    display: none;
+
+
+    &--shrink {
+      max-width: 38px;
+      max-height: unset;
+      width: 38px !important;
+      margin-right: 11px;
+      margin-left: 7px;
+      display: block;
+    }
+  }
+
+  &--active {
+    display: none;
+  }
+
+  &--header-logo {
+    align-items: center;
+    justify-content: center;
+
+    @include breakpoint ("mobile") {
+      padding-top: 15px;
+      padding-bottom: 5px;
+    }
+
+    &--shrink {
+      padding: 0;
+      height: 0;
+    }
+  }
+
+  &--menu-container-icons {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    :global(.vtex-store-drawer-0-x-openIconContainer--drawer-desktop) {
+      padding-top: 6px;
+      &::after {
+        display: none;
+      }
+    }
+
+    :global(.vtex-login-2-x-profile) {
+      color: transparent;
+      width: 1px;
+      margin: 8px 1px;
+      visibility: hidden;
+
+      &::after {
+        width: 40px !important;
+        left: -98px;
+        top: -1px;
+        background-position: 4px 1px !important;
+        visibility: visible;
+        transform: translateX(82px);
+        background-size: 50px !important;
+      }
+    }
+    :global(.vtex-login-2-x-label) {
+      color: transparent;
+      width: 40px;
+      visibility: hidden;
+      &::after {
+        position: absolute;
+        left: 0;
+        visibility: visible;
+        background-size: 46px !important;
+      }
+    }
+    :global(.vtex-minicart-2-x-minicartContainer--minicart-background) {
+      :global(.vtex-minicart-2-x-openIconContainer--minicart-background) {
+        padding-top: 20px;
+        &::before {
+          background-size: 26px 26px !important;
+        }
+        :global(.vtex-minicart-2-x-minicartIconContainer--minicart-background) {
+          :global(.vtex-minicart-2-x-minicartQuantityBadge) {
+            top: -1.2rem;
+            right: -0.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.flexColChild--header-drawer-menu-col {
+  margin-bottom: 0;
+}
+
+.flexColChild--drawer-menu-departments {
+  margin-bottom: 4px;
+}
+
+.flexColChild--minicartProductImage {
+  display: flex;
+  align-items: center;
+  max-width: 110px;
+
+  @include breakpoint("mobile"){
+    width: 80px;
+  }
+}
+
+.flexCol--minicartProductInfo {
+  margin-right: 16px;
+  @include breakpoint("mobile"){
+    margin-left: 4px;
+  }
+}
+
+:global(.vtex-styleguide-9-x-container) {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+:global(.vtex-checkout-summary-0-x-price) {
+  font-size: 20px;
+  color: #111;
+  font-weight: bold;
+}
+
+:global(.vtex-checkout-summary-0-x-summarySmallDisclaimer) {
+  display: flex;
+  justify-content: center;
+  font-size: 0;
+  font-weight: 300;
+  color: #111;
+
+  &::before {
+    font-size: 14px;
+    content: 'Spese di spedizione calcolate al momento del pagamento!';
+  }
+}
+
+.flexColChild {
+  &--header-mobile {
+    max-width: 100vw;
+    overflow: hidden;
+  }
+  .flexCol--header-mobile-searchBar {
+    :global(.vtex-input-prefix__group) {
+      border: 1.5px solid $blue-dark;
+      border-radius: 4px;
+    }
+  }
+}
+
+
+
+.flexCol--header-mobile-searchBar--shrink {
+  width: calc(100vw - 72px) !important;
+  margin-right: auto;
+}
+
+.flexCol--header-containerSearchBar {
+  flex-direction: row;
+  align-items: center;
+  .flexColChild--header-containerSearchBar {
+    height: max-content !important;
+    :global(.vtex-store-drawer-0-x-openIconContainer--drawer-desktop) {
+      display: flex;
+      align-items: center;
+      padding: 0;
+      border: 1.5px solid $blue-dark;
+      border-radius: 4px 0 0 4px;
+      border-right: 0;
+      &::after {
+        content: "|";
+        font-size: 2rem;
+        font-weight: 200;
+        color: $blue-dark;
+        margin-left: 5px;
+        margin-bottom: 1px;
+      }
+    }
+  }
+}

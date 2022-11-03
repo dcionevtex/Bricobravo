@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="21px" viewBox="0 0 35 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>DC5B23F7-885D-4692-A3A6-763B7D869A29</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="D/-3.0.2-PDP-open-info" transform="translate(-952.000000, -1089.000000)">
+            <g id="d/row-6-products" transform="translate(64.000000, 1013.500000)">
+                <g id="m/-card-prodotto-copy-12" transform="translate(885.000000, 68.000000)">
+                    <g id="icon/-tag-copy-4" transform="translate(3.000000, 8.000000)">
+                        <path d="M1,0 L26.2369562,0 C26.5011859,0.000718449265 26.7543933,0.105981067 26.9387129,0.295340873 C32.3129043,5.68167284 35,8.91655922 35,10 C35,11.0945987 32.3129043,14.3296839 26.9387129,19.7052557 C26.7542225,19.8942907 26.5010751,19.999376 26.2369562,20 L1,20 C0.44771525,20 6.76353751e-17,19.5522847 0,19 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z" id="Rectangle" fill="#4320A8"></path>
+                        <text id="%" font-family="Roboto-Medium, Roboto" font-size="16" font-weight="400" fill="#FFFFFF">
+                            <tspan x="8.875" y="15">%</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

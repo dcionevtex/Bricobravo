@@ -1,0 +1,54 @@
+@import '../_media-queries.scss';
+@import '../_variables.scss';
+
+.container {
+  &--editorial-title {
+    width: 100%;
+  }
+}
+
+.wrapper {
+  &--editorial-title {
+    color: #332C32;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    @include breakpoint('mobile') {
+      font-size: 22px;
+    }
+  }
+  &--editorial-paragraph {
+    font-size: 1rem;
+    color: #332C32;
+    padding-right: 0.8rem;
+    // @include breakpoint('mobile') {
+    // }
+  }
+}
+
+.paragraph {
+  &--editorial-carroselTitle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    @include breakpoint("mobile") {
+      margin-left: 10px;
+    }
+  }
+  &--editorial-subTitle {
+    text-align: center;
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+  }
+  &--editorial-titleSection {
+    font-size: 24px;
+    font-weight: 500;
+    color: $blue-dark-text;
+    margin-bottom: 1rem;
+  }
+  &--editorial-labelText {
+    color: $blue-dark-text;
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+}

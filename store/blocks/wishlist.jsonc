@@ -1,0 +1,72 @@
+{
+  "my-account-link.wishlist-link": {
+    "props": {
+      "label": "My Wishlist"
+    }
+  },
+  "my-account-page.wishlist-page": {
+    "props": {
+      "title": "La mia lista dei desideri"
+    },
+    "children": ["list-context.wishlist"]
+  },
+  "store.wishlist": {
+    "blocks": ["flex-layout.row#top", "list-context.wishlist"]
+  },
+  "flex-layout.row#top": {
+    "children": ["flex-layout.col#title"],
+    "props": {
+      "htmlId": "Superiore"
+    },
+    "title": "Superiore"
+  },
+  "flex-layout.col#title": {
+    "children": ["rich-text#title"],
+    "props": {
+      "blockClass": "titleWishlist",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#title": {
+    "props": {
+      "text": "### Wishlist",
+      "htmlId": "Titolo"
+      },
+    "title": "Titolo"
+  },
+  "list-context.wishlist": {
+    "blocks": ["product-summary.shelf#wishlist"],
+    "children": ["slider-layout#wishlist"],
+    "props": {
+      "blockClass": "wishlistProduct"
+    }
+  },
+  "product-summary.shelf#wishlist": {
+    "children": [
+      "flex-layout.row#summary-discount-wishIcon",
+      "flex-layout.row#stackSavings",
+      "flex-layout.row#summary-prices",
+      "product-summary-name",
+      // "flex-layout.row#productReviews",
+      "product-installments",
+      "flex-layout.row#add-to-cart"
+    ],
+    "props": {
+      "blockClass": "wishlistProductItem"
+    }
+  },
+  "slider-layout#wishlist": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "infinite": false,
+      "fullWidth": true,
+      "blockClass": "shelf"
+    }
+  }
+}

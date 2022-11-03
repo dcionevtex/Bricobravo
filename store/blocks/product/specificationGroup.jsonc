@@ -1,0 +1,29 @@
+{
+  "disclosure-layout-group#specificationGroup": {
+    "children": ["disclosure-layout#product-specification"],
+    "props": {
+      "blockClass": "descriptionGroupt-container"
+    }
+  },
+  "disclosure-layout#product-specification": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#product-specification",
+      "disclosure-content#product-specification"
+    ]
+  },
+  "disclosure-trigger#product-specification": {
+    "children": ["rich-text#spec-title"],
+    "props": {
+      "blockClass": "disclosure-trigger"
+    }
+  },
+  "disclosure-content#product-specification": {
+    "children": ["product-specification-group#table-mobile"],
+    "props": {
+      "blockClass": "specification"
+    }
+  }
+}

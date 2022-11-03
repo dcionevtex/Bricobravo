@@ -1,0 +1,78 @@
+{
+  "flex-layout.row#availability": {
+    "children": ["flex-layout.col#availability", "modal-trigger#availabilty"],
+    "props": {
+      "blockClass": "availability-subscriber",
+      "colSizing": "auto"
+    }
+  },
+
+  "flex-layout.col#availability": {
+    "children": [
+      "rich-text#availability-modal-title",
+      "rich-text#availability-modal-description"
+    ],
+    "props": {
+      "blockClass": "availability-subscriber",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#availability-modal-title": {
+    "props": {
+      "text": "Prodotto al momento non disponibile",
+      "blockClass": "availability-modal-title"
+    }
+  },
+  "rich-text#availability-modal-description": {
+    "props": {
+      "text": "Desideri sapere quando questo prodotto tornerà disponibile?",
+      "blockClass": "availability-modal-description"
+    }
+  },
+
+  "modal-trigger#availabilty": {
+    "children": [
+      "link#availability-modal-trigger",
+      "modal-layout#availability"
+    ],
+    "props": {
+      "blockClass": "availability-modal"
+    }
+  },
+
+  "link#availability-modal-trigger": {
+    "props": {
+      "label": "AVVISAMI",
+      "blockClass": "availability-modal-trigger"
+    }
+  },
+
+  "modal-layout#availability": {
+    "children": ["modal-header#availability", "modal-content#availability"],
+    "props": {
+      "blockClass": "availability-modal"
+    }
+  },
+  "modal-header#availability": {
+    "props": {
+      "blockClass": "availability-modal-header",
+      "iconCloseSize": 25
+    }
+  },
+  "modal-content#availability": {
+    "children": ["availability-subscriber", "modal-actions.close#availability"],
+    "props": {
+      "blockClass": "availability-modal-content"
+    }
+  },
+  "modal-actions.close#availability": {
+    "props": {
+      "blockClass": "availability-modal-close"
+    }
+  },
+  "availability-subscriber": {
+    "props": {
+      "blockClass": "availability-subscriber"
+    }
+  }
+}

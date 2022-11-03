@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="41px" viewBox="0 0 40 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>D78BD058-29BB-4ECA-B93E-D2D1A6084AA5</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="223.258696%" id="linearGradient-1">
+            <stop stop-color="#744AC5" offset="0%"></stop>
+            <stop stop-color="#402493" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-123.788999%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#744AC5" offset="0%"></stop>
+            <stop stop-color="#402493" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="M/-10-Error-404-opzione-2" transform="translate(-230.000000, -1549.000000)">
+            <g id="m/-nav-bar" transform="translate(0.000000, 1539.500000)">
+                <g id="icona-profilo-logged" transform="translate(230.000000, 10.000000)">
+                    <rect id="safe-area" x="0" y="0" width="40" height="40"></rect>
+                    <g id="icon-/-profile" transform="translate(11.000000, 9.000000)">
+                        <g id="icona-profilo" transform="translate(0.999434, -0.000000)">
+                            <path d="M12.9926515,4.44915286 C12.9926515,1.99588576 10.9751883,0 8.49563937,0 C6.01520272,0 3.99773947,1.99588576 3.99773947,4.44915286 C3.99773947,6.90154208 6.01520272,8.89654995 8.49563937,8.89654995 C10.9751883,8.89654995 12.9926515,6.90154208 12.9926515,4.44915286 Z" id="Fill-3" fill="url(#linearGradient-1)"></path>
+                            <path d="M14.75097,19.770111 C15.1325693,19.770111 15.4662838,19.770111 16.0035202,19.770111 C16.3377901,19.770111 16.9903894,19.9492982 16.9903894,18.7831661 C16.9903894,14.4218184 13.1796263,10.873561 8.49603394,10.873561 C3.8107647,10.873561 0,14.4218024 0,18.7831661 C0,19.5149149 0.0223502228,19.5558255 0.203642357,19.6737449 C0.509053674,19.8723962 0.646813471,19.770111 1.94839198,19.770111 C3.39589297,19.770111 5.92189543,19.770111 8.49603394,19.770111" id="Combined-Shape" fill="url(#linearGradient-2)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

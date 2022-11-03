@@ -1,0 +1,301 @@
+@import '../variables';
+@import '../media-queries';
+
+.flexRow {
+  &--footer-upperFooterMobile {
+    background: $background-footer;
+    z-index: 2;
+    position: relative;
+    margin: 0;
+
+    @media screen and (max-width: 768px) {
+      //padding: 48px 24px 0;
+      padding: 48px 15px 0;
+    }
+  }
+  &--footer-upperFooterDesktop {
+    background: $background-footer;
+    z-index: 2;
+    position: relative;
+    margin: 0;
+
+    @media screen and (max-width: 768px) {
+      padding: 48px 24px;
+    }
+  }
+
+  &--upperFooterDesktop,
+  &--footer-upperFooterDesktop {
+    :global(.vtex-store-components-3-x-container) {
+      @include container-main;
+    }
+  }
+  &--footer-PaymentMethods {
+    padding: 0 30px 0 20px;
+    background-color: $background-footer;
+    @include breakpoint('mobile') {
+      //padding: 0 28px;
+      padding: 0 15px;
+    }
+  }
+  &--bottomFooterDesktop {
+    background-color: $background-bottom-footer;
+    padding: 0 20px 0 40px;
+    .stretchChildrenWidth:nth-child(even){
+      @include breakpoint('mobile') {
+        justify-content: flex-start;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      padding: 0 15px 32px;
+    }
+  }
+
+  &--newsletterRow {
+    background-color: $blue-active;
+  }
+
+  &--quemSomos-main {
+    margin-bottom: 5rem;
+  }
+
+  &--upperFooterDesktop {
+    padding-bottom: 2.5rem;
+    background-color: #f6f6f6;
+  }
+
+  &--upperFooterBrands {
+    margin-bottom: 1rem;
+  }
+
+  &--upperFooterMobile {
+    @include breakpoint('mobile') {
+      margin: 1.25rem 0 0 1.25rem;
+    }
+  }
+}
+
+.flexRowContent {
+  &--footer-upperFooterCol3 {
+    @include breakpoint('mobile') {
+      margin-bottom: 2rem;
+      display: flex;
+    }
+  }
+  &--footer-upperFooterDesktop {
+    align-items: center;
+    padding: 0 10px 5px;
+    justify-content: space-between;
+
+    .stretchChildrenWidth {
+      width: max-content !important;
+    }
+    :global(.vtex-store-link-0-x-link) {
+      text-decoration: none;
+      color: $white;
+      font-size: 16px;
+      line-height: 20px;
+      white-space: nowrap;
+      margin-right: 30px;
+    }
+  }
+  &--footer-containerDisclosure {
+    border-bottom: 1px solid $white;
+    .stretchChildrenWidth {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &--footer-PaymentMethodsRow {
+    .stretchChildrenWidth {
+      width: auto !important;
+    }
+    @include breakpoint('mobile') {
+      display: flex;
+      flex-flow: row wrap;
+      //max-width: 85vw;
+      .stretchChildrenWidth {
+        width: max-content !important;
+        margin: 1px;
+      }
+    }
+  }
+  &--footer-PaymentImagesRow  {
+    max-width: 532px;
+    justify-content: space-between;
+
+    @include breakpoint('mobile') {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      //justify-content: center !important;
+      column-gap: 10px;
+      row-gap: 10px;
+      .stretchChildrenWidth {
+        width: max-content !important;
+       // margin: 1px;
+      }
+      :global(.vtex-store-components-3-x-imageElement) {
+        max-width: 58px;
+      }
+    }
+  }
+
+  &--newsletterRow {
+    @include container-main;
+
+    padding: 40px 23px;
+    justify-content: space-between;
+    align-items: center;
+
+    @include breakpoint('desktop') {
+      .stretchChildrenWidth {
+        width: max-content !important;
+      }
+    }
+
+    @include breakpoint('mobile') {
+      margin-top: 10px;
+      padding: 40px 40px;
+      justify-content: center;
+    }
+  }
+
+  &--newsletterForm {
+    max-width: 564px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 20px;
+    .stretchChildrenWidth {
+      width: max-content !important;
+    }
+    @include breakpoint('mobile') {
+      justify-content: center;
+      margin: 0
+    }
+  }
+
+  &--newsletter-containerShareLinks {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .stretchChildrenWidth {
+      width: max-content !important;
+      margin: 0 17px;
+    }
+    @include breakpoint('mobile') {
+      justify-content: center;
+      margin-top: 30px;
+    }
+  }
+
+  &--footer-PaymentMethods {
+    @include container-main;
+    @include breakpoint('desktop') {
+      border-top: 1px solid white;
+    }
+  }
+
+  &--bottomFooterDesktop {
+    @include container-main;
+
+    justify-content: space-between;
+  }
+
+  &--bottomFooter3 {
+    display: flex;
+    @media screen and (max-width: 768px) {
+      max-width: 75%;
+      margin: 30px auto 0;
+    }
+  }
+}
+
+.flexCol {
+  &--footer-PaymentMethods {
+    flex-direction: row;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &--footerSocialMedia {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    @include breakpoint('mobile') {
+      margin-bottom: 12px;
+      justify-content: center;
+    }
+  }
+
+  &--footer-upperFooterCol1,
+  &--footer-upperFooterCol2 {
+    padding: 32px;
+    padding-left: 20px;
+    @media screen and (max-width: 768px) {
+      padding: 0;
+      margin-bottom: 24px;
+    }
+  }
+  &--footer-upperFooterCol2{
+    height: 234px;
+    @media screen and (max-width: 768px) {
+      height: auto;
+    }
+  }
+  &--bottomFooterTechnology {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    @include breakpoint('mobile') {
+      margin-bottom: 12px;
+      justify-content: center;
+    }
+  }
+
+  &--bottomFooter1 {
+    @media screen and (max-width: 768px) {
+      max-width: 100px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &--bottomFooter2 {
+    @media screen and (max-width: 768px) {
+      align-items: center;
+    }
+  }
+
+  .flexColChild {
+    &--upperFooterCol3 {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &--footer-PaymentMethods {
+      @media screen and (max-width: 768px) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .flexCol--footer-upperFooterCol4 {
+    :global(.vtex-store-link-0-x-link) {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding-left: 7px;
+      margin-top: 10px;
+      font-weight: 500;
+    }
+  }
+}

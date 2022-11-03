@@ -1,0 +1,24 @@
+@import '../_variables.scss';
+
+.slide--editorial-carroselLastBanners {
+  padding: 0 0.4rem 2rem;
+}
+
+.paginationDotsContainer.paginationDotsContainer--editorial-carroselLastBanners {
+  bottom: 10px;
+}
+
+.paginationDot.paginationDot--editorial-carroselLastBanners {
+  width: 10px !important;
+  height: 10px !important;
+  margin-top: 10px;
+
+  &--isActive {
+    background-color: $blue-active;
+  }
+}
+
+.sliderRightArrow.sliderRightArrow--editorial-carroselLastBanners,
+.sliderLeftArrow.sliderLeftArrow--editorial-carroselLastBanners {
+  top: 120px;
+}

@@ -1,0 +1,59 @@
+{
+  "flex-layout.row#product-main-mobile": {
+    "children": [
+      "flex-layout.col#product-images-mobile",
+      "flex-layout.col#product-main-infos-mobile"
+    ],
+    "props": {
+      "blockClass": "product-main-content"
+    }
+  },
+  "flex-layout.col#product-main-infos-mobile": {
+    "children": [
+      "flex-layout.row#pdp-product-name",
+      "flex-layout.row#pdp-rating-mobile",
+      "flex-layout.row#pdp-price-and-installments",
+      "condition-layout.product#availability",
+      "flex-layout.row#pdp-product-and-shipping-description",
+      "flex-layout.row#pdp-quantity-and-add-to-cart-fixed"
+    ],
+    "props": {
+      "blockClass": "product-main-infos",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#product-images-mobile": {
+    "children": [
+      "product-price-savings#discount",
+      "add-to-list-btn#pdp",
+      "product-images#mobile"
+    ],
+    "props": {
+      "blockClass": "product-images",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "product-images#mobile": {
+    "props": {
+      "blockClass": "pdp-mobile",
+      "aspectRatio": "1:1",
+      "thumbnailAspectRatio": "3:4",
+      "thumbnailsOrientation": "horizontal",
+      "thumbnailVisibility": "visible",
+      "displayThumbnailsArrows": false,
+      "showNavigationArrows": false,
+      "showPaginationDots": false,
+      "maxHeight": 400
+    }
+  },
+
+  "flex-layout.row#pdp-rating-mobile": {
+    "children": ["product-rating-inline#pdp"],
+    "props": {
+      "blockClass": "pdp-rating-mobile",
+      "preventVerticalStretch": true
+    }
+  }
+}

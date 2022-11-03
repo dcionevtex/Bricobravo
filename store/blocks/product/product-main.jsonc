@@ -1,0 +1,68 @@
+{
+  "flex-layout.row#product-main": {
+    "children": [
+      "flex-layout.col#product-images",
+      "flex-layout.col#product-main-infos"
+    ],
+    "props": {
+      "blockClass": "product-main-content"
+    }
+  },
+  "flex-layout.col#product-images": {
+    "title": "immagine prodotta",
+    "children": ["product-price-savings#discount", "product-images#desktop"],
+    "props": {
+      "blockClass": "product-images",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "product-images#desktop": {
+    "props": {
+      "blockClass": "pdp",
+      "aspectRatio": "1:1",
+      "thumbnailAspectRatio": "3:4",
+      "thumbnailsOrientation": "horizontal",
+      "displayThumbnailsArrows": true,
+      "showNavigationArrows": false,
+      "showPaginationDots": false,
+      "zoomMode": "in-place-hover",
+      "maxHeight": 600,
+      "zoomFactor": 2
+    }
+  },
+
+  "product-identifier.product": {
+    "props": {
+      "label": "custom",
+      "customLabem": "Cód"
+    }
+  },
+  // LINK DE DESCRIÇÃO COMPLETA
+  "flex-layout.row#complete-description-anchor": {
+    "children": ["link#complete-description"],
+    "props": {
+      "blockClass": "completeDescriptionCol"
+    }
+  },
+  "link#complete-description": {
+    "props": {
+      "scrollTo": "completeDescription",
+      "href": "#completeDescription",
+      "label": "Ver descrição completa",
+      "blockClass": "completeDescriptionAnchor"
+    }
+  },
+
+  "condition-layout.product#availability": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.row#pdp-quantity-and-add-to-cart",
+      "Else": "flex-layout.row#availability"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "disclosure-layout-group#descriptionGroup": {
+    "children": ["disclosure-layout#product-description"],
+    "props": {
+      "blockClass": "descriptionGroup-container"
+    }
+  },
+  "disclosure-layout#product-description": {
+    "children": [
+      "disclosure-trigger#product-description",
+      "disclosure-content#product-description"
+    ]
+  },
+  "disclosure-trigger#product-description": {
+    "children": ["rich-text#product-description"],
+    "props": {
+      "blockClass": ["disclosure-trigger", "product-description"]
+    }
+  },
+  "disclosure-content#product-description": {
+    "children": ["product-description"],
+    "props": {
+      "blockClass": "description"
+    }
+  },
+  "rich-text#product-description": {
+    "props": {
+      "text": "Descrição do Produto",
+      "blockClass": "descriptionGroup-title"
+    }
+  }
+}

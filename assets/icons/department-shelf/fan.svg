@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>F28EE00A-071F-4225-B7C1-4E392A62709D</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="70" height="70"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="D/Homepage-unlogged" transform="translate(-365.000000, -563.000000)">
+            <g id="d/-highlights-categories" transform="translate(137.000000, 538.000000)">
+                <g id="2_cat" transform="translate(200.000000, 0.000000)">
+                    <g id="icon" transform="translate(3.000000, 0.000000)">
+                        <g transform="translate(25.000000, 25.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="safe-area"></g>
+                            <g id="option-1" mask="url(#mask-2)" stroke="#291660" stroke-linejoin="round" stroke-width="2">
+                                <g transform="translate(6.000000, 6.000000)">
+                                    <path d="M34,29 C34,31.76125 31.76125,34 29,34 C26.23875,34 24,31.76125 24,29 C24,26.23875 26.23875,24 29,24 C31.76125,24 34,26.23875 34,29 Z" id="Stroke-1"></path>
+                                    <path d="M26.9,20 C24.95,16.557436 23,10.2677076 23,6.88547043 C23,2.53931533 27.5097,1.06524221 30.8,0.328205649 C34.3048,-0.457354672 36,-0.0835905796 36,4.26256452 C36,7.64611315 34.0227,16.1744917 32.1,20" id="Stroke-3" stroke-linecap="round"></path>
+                                    <path d="M40,2 C44.7157146,3.90191278 48.8366304,7.02815608 52,11" id="Stroke-5" stroke-linecap="round"></path>
+                                    <path d="M39,8 C41.6258762,9.26802721 43.9909874,10.9659864 46,13" id="Stroke-7"></path>
+                                    <path d="M32.1,38 C34.05,41.442564 36,47.7322924 36,51.1145296 C36,55.4606847 31.4903,56.9347578 28.2,57.6717944 C24.6952,58.4573547 23,58.0835906 23,53.7374355 C23,50.3538869 24.9773,41.8255083 26.9,38" id="Stroke-9" stroke-linecap="round"></path>
+                                    <path d="M19,56 C14.2842854,54.0980872 10.1633696,50.9718439 7,47" id="Stroke-11" stroke-linecap="round"></path>
+                                    <path d="M19,50 C16.3741238,48.7319728 14.0090126,47.0340136 12,45" id="Stroke-13"></path>
+                                    <path d="M20,32.1 C16.557436,34.05 10.2677076,36 6.88547043,36 C2.53931533,36 1.06524221,31.4903 0.328205649,28.2 C-0.457354672,24.6965 -0.0835905796,23 4.26256452,23 C7.64611315,23 16.1744917,24.9773 20,26.9" id="Stroke-15" stroke-linecap="round"></path>
+                                    <path d="M2,19 C3.90191278,14.2842854 7.02815608,10.1633696 11,7" id="Stroke-17" stroke-linecap="round"></path>
+                                    <path d="M8,19 C9.26802721,16.3741238 10.9659864,14.0076107 13,12" id="Stroke-19"></path>
+                                    <path d="M38,26.9 C41.442564,24.95 47.7322924,23 51.1145296,23 C55.4606847,23 56.9347578,27.5097 57.6717944,30.8 C58.4573547,34.3048 58.0835906,36 53.7374355,36 C50.3538869,36 41.8255083,34.0227 38,32.1" id="Stroke-21" stroke-linecap="round"></path>
+                                    <path d="M56,40 C54.0980872,44.7157146 50.9718439,48.8366304 47,52" id="Stroke-23" stroke-linecap="round"></path>
+                                    <path d="M50,39 C48.7319728,41.6258762 47.0340136,43.9909874 45,46" id="Stroke-25"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+@import '../variables';
+
+.trigger--footer-disclosureTrigger {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content--footer-disclosureContent {
+  line-height: 24px;
+  margin-bottom: 10px;
+  :global(.vtex-store-link-0-x-link) {
+    text-decoration: none;
+    font-size: 14px;
+    color: $white;
+  }
+}

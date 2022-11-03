@@ -1,0 +1,59 @@
+@import '_variables.scss';
+@import '_media-queries.scss';
+
+
+.changeLocationAddressContainer {
+    visibility: hidden;
+}
+
+.changeLocationContainer {
+    width: 100% !important;
+    display: block;
+    transform: translateY(-100px);
+}
+
+.changeLocationMapContainer {
+    display: none;
+}
+
+.changeLocationFormContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 30%;
+    transform: translateY(-31px);
+
+    @include mobile {
+        width: 90%;
+    }
+}
+
+.changeLocationSubmitContainer {
+    visibility: hidden;
+    :global(.vtex-button) {
+        transform: translate(224px, 95px);
+    }
+}
+
+.changeLocationGeoContainer {
+    background: transparent;
+    transform: translateY(-50px);
+    :global(.vtex-button) {
+        background-color: transparent;
+        border: none;
+    }
+    :global(.vtex-button__label) {
+        flex-direction: row-reverse;
+        &::after {
+            content: url("assets/icons/icon_location.svg");
+        }
+        &::before {
+            position: absolute;
+            color: #291660;
+            margin-left: 40px;
+            font-size: 14px;
+            font-weight: 400;
+            content: "Utilizza la tua posizione attuale";
+            text-transform: none;
+        }
+    }
+}

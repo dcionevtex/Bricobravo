@@ -1,0 +1,19 @@
+@import '../_media-queries.scss';
+@import '../_variables.scss';
+
+.flexRow--our-stores-main {
+    max-width: 1313px;
+    @include breakpoint('mobile') {
+        max-width: 328px;
+    } 
+}
+
+.flexRowContent--our-stores-main {
+    margin-bottom: 25px;
+}
+
+.flexRow--containerStore {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0;
+}

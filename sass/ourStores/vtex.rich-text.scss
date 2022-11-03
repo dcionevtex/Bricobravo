@@ -1,0 +1,53 @@
+@import '../_media-queries.scss';
+@import '../_variables.scss';
+
+.headingLevel1--our-stores-title {
+    color: #332C32;
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 33px;
+    margin: 16px 0 23px;
+    @include breakpoint('mobile') {
+        margin-bottom: 55px;
+    }
+}
+
+.headingLevel3--our-stores-subtitle {
+    color: #332C32;
+    font-family: Roboto;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+    font-weight: normal;
+    max-width: 1091px;
+    margin: 0 0 69px;
+}
+
+.headingLevel4--our-stores-text {
+    color: #332C32;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 19px;
+    margin: 0 0 5px;
+}
+
+.paragraph--our-stores-text {
+    color: #332C32;
+    font-family: Roboto;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin: 0 0 25px;
+}
+
+.container--our-stores-text {
+    @include breakpoint('mobile') {
+        margin-bottom: 19px;
+        border-bottom: 1px solid #D8D8D8;
+    }
+}

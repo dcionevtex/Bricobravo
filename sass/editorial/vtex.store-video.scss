@@ -1,0 +1,9 @@
+@import '../_media-queries.scss';
+
+.videoContainer {
+  max-height: 400px;
+  
+  @include breakpoint("mobile"){
+    min-height: 360px;
+  }
+}

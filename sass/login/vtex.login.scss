@@ -1,0 +1,569 @@
+@import '../_media-queries.scss';
+@import '../_variables.scss';
+
+.content {
+  margin-top: 10px;
+  justify-content: center;
+  max-width: 1440px;
+  width: auto;
+  padding: 0 0 14rem 0;
+
+  &--emailAndPassword,
+  &--emailVerification {
+    flex-direction: row-reverse;
+    @include breakpoint("mobile"){
+        padding: 0;
+        align-items: center;
+        flex-direction: column-reverse;
+      }
+  }
+
+  .loginOptionsContainer,
+  .contentForm {
+    padding: 24px 60px;
+    @include breakpoint("mobile"){
+        padding:0px;
+      }
+  }
+
+  .loginOptionsContainer {
+    margin-top: 25px;
+    min-height: 240px !important;
+    max-width: 427px;
+    border-radius: 4px;
+    background-color: #F4F7FA;
+    @include breakpoint("mobile"){
+			margin-top: 8rem;
+			width: 100%;
+			max-width: 344px;
+			padding: 2rem 1rem;
+    }
+    .optionsSticky {
+        .formTitle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0;
+
+            @include breakpoint("mobile"){
+                transform: translateX(0px);
+            }
+
+            &::after {
+                content: "Non hai ancora un account?";
+                display: block;
+                height: 24px;
+                width: 250px;
+                color: #332C32;
+                font-family: Roboto;
+                font-size: 20px;
+                font-weight: 500;
+                letter-spacing: 0;
+                line-height: 24px;
+                margin-bottom: 1rem;
+            }
+      
+        }
+
+        .optionsList {
+            margin: 0;
+
+            .optionsListItem {
+                :global(.vtex-button) {
+                    font-size: 14px;
+                    width: 319px;
+                    height: 40px;
+                    border-radius: 0px;
+                    transition: .2s ease-in-out;
+
+                    :global(.vtex-button__label) {
+                        width: 280px;
+                    }
+                }
+
+                .emailPasswordOptionBtn,
+                .accessCodeOptionBtn {
+
+                    &::after {
+                         content: "Registrati ed entra a far parte della community del bricolage più grande d'Italia";
+                         height: 60px;
+                         width: 340px;
+                         color: #332C32;
+                         font-family: Roboto;
+                         font-size: 16px;
+                         letter-spacing: 0;
+                         line-height: 20px;
+                         position: absolute;
+                         transform: translateY(-8px);
+                         @include breakpoint("mobile"){
+                            width: 100%;
+                            position: static;
+                            display: inline-block;
+                         }
+                    }
+                    :global(.vtex-button) {
+                        display: none;
+                    }
+
+                }
+            }
+        }
+    }
+  }
+ .facebookOptionBtn,
+ .googleOptionBtn{
+    :global(.vtex-button) {
+        display: block;
+    }
+ }
+  .contentForm {
+    min-width: 15.125rem;
+      .emailForm .inputContainerEmail {
+          :global(.vtex-input-prefix__group) {
+              margin: 0 auto;
+          }
+      }
+
+      .emailVerification {
+          .formTitle {
+              display: flex;
+              flex-direction: column;
+              font-size: 0;
+              text-align: left;
+              font-style: normal;
+              font-weight: 300;
+              color: #111;
+              padding: 0;
+              margin-bottom: 22px;
+              @include breakpoint("mobile"){
+                margin-bottom: 10px;
+             }
+              &::before {
+                  content: "Ricevi il codice di accesso via email";
+                  font-size: 28px !important;
+                  font-weight: 700;
+                  text-align: center;
+              }
+              &::after {
+                content: "";
+                font-size: 0;
+              }
+          }
+          .inputContainerPassword {
+              :global(.vtex-styleguide-9-x-input) {
+                  padding-right: 50px;
+              }
+
+              :global(.vtex-input__suffix) {
+                  padding: 0;
+
+                  .eyeIcon--invisible,
+                  .eyeIcon--visible {
+                      position: absolute;
+                      right: 20px;
+                  }
+              }
+          }
+
+          .forgotPasswordLink {
+            font-size: 0px;
+            &::after {
+                content: 'Password dimenticata?';
+                font-size: 14px;
+                color: $blue-active;
+                font-weight: 600;
+            }
+          }
+
+          .formFooter {
+              :global(.t-small) {
+                  font-size: 0;
+
+                  &::after {
+                      content: "ACCEDI";
+                      font-size: 16px !important;
+                  }
+              }
+          }
+          &.emailAndPasswordForm {
+              .formTitle {
+                  font-size: 24px;
+                  font-weight: 700;
+                  text-align: center;
+                  &::before {
+                      content: "";
+                  }
+              }
+              @include breakpoint("mobile"){
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+          }
+      }
+
+      .inputContainer {
+          :global(.vtex-input-prefix__group) {
+              border: none;
+              width: 319px !important;
+              height: 48px !important;
+
+              :global(.vtex-styleguide-9-x-input) {
+                  background: #FFF;
+                  border: 1px solid #CCC;
+                  box-sizing: border-box;
+                  border-radius: 3px;
+                  width: 319px;
+                  height: 48px;
+              }
+          }
+      }
+
+      .codeConfirmation {
+          .formFooter {
+              .sendButton {
+                  :global(.t-small) {
+                      font-size: 0;
+  
+                      &::after {
+                          content: "Entrar";
+                          font-size: 16px !important;
+                      }
+                  }
+              }
+              .sendButtonActive {
+                :global(.vtex-button) {
+                    background-color: #291660;
+                    transition: 1s;
+                    &:hover {
+                        background: #1B0E41;
+                    }
+                }
+              }
+          }
+      }
+
+      .formFooter {
+          text-align: center;
+          padding: 0;
+          border: none;
+          width: 319px;
+          margin: 16px auto 0;
+
+          .sendButton {
+              min-width: 131px;
+
+              :global(.vtex-button) {
+                border-radius: 2px;
+                background-color: #8E8E8E;
+                  border: none;
+                  width: 100%;
+                  height: 48px;
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 14px;
+                  text-transform: initial;
+                  transition: 1s ease-in-out;
+
+                  &--buttonActive {
+                    background: #291660;
+                  }
+                  
+                  &:hover {
+                    background: #1B0E41;
+                }
+              }
+          }
+
+          .sendButtonActive {
+            :global(.vtex-button) {
+                background-color: #291660;
+                transition: 1s;
+                &:hover {
+                    background: #1B0E41;
+                }
+            }
+          }
+
+          .backButton {
+              :global(.vtex-button) {
+                  color: #8E8E8E;
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 14px;
+  
+                  &:hover {
+                      color: #1B0E41;
+                      background: #fff;
+                  }
+
+                  :global(.vtex-button__label) {
+                      padding: 0 !important;
+                  }
+              }
+          }
+      }
+
+      .dontHaveAccount {
+        font-size: 16px;
+        color: white;
+        padding: 18px;
+        position: absolute;
+        transform: translate(437px,-125px);
+        box-sizing: border-box;
+        height: 40px;
+        width: 360px;
+        border: 1.5px solid #291660;
+        border-radius: 2px;
+        background-color: #FFFFFF !important;
+
+        &::after{
+            content: "registrati";
+                height: 16px;
+                width: 78px;
+                color: #291660;
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 500;
+                letter-spacing: 0;
+                line-height: 16px;
+                text-align: center;
+                position: absolute;
+                bottom: 10px;
+                left: 144px;
+                text-transform: uppercase;
+                background-color: #FFFFFF !important;
+                @include breakpoint("mobile"){
+                    transform: translateX(-48px);
+                }
+        }
+        &:hover{
+            background-color: white;
+            opacity: inherit !important;
+            border: 1.5px solid #1B0E41;
+            border-radius: 2px;
+            background-color: #FFFFFF;
+           
+        }
+        @include breakpoint("mobile"){
+            width: 279px;
+            transform: translateY(-2rem);
+            bottom: 0;
+        }
+      }
+
+  }
+
+
+}
+
+.content--beginCreatePass {
+  .emailPasswordOptionBtn,
+  .loginOptionsContainer {
+      display: none;
+  }
+
+  .backButton {
+      :global(.t-small) {
+          font-size: 16px !important;
+
+          &::after {
+              content: none !important;
+          }
+      }
+  }
+}
+
+.content--codeConfirmation {
+  .formTitle {
+      display: flex;
+      flex-direction: column;
+      font-size: 0;
+      text-align: left;
+      font-style: normal;
+      font-weight: 300;
+      color: #111;
+      padding: 0;
+      margin-bottom: 59px;
+      width: 222px;
+      height: 6px;
+
+      &::after {
+          content: "Digite o código de acesso enviado para o seu e-mail:";
+          font-size: 18px !important;
+      }
+  }
+
+  .accessCodeOptionBtn {
+      display: none;
+  }
+}
+
+.facebookOptionBtn {
+  :global(.vtex-button) {
+      background-color: #FFF;
+      border: 2px solid #2B126B;
+      transition: background-color 0.2s ease-in;
+
+      &:hover {
+          filter: brightness(0.9);
+          background-color: #FFF;
+          :global(.vtex-button__label) {
+              .oauthLabel::before {
+                  color: #2B126B !important;
+              }
+        }
+      }
+
+      :global(.vtex-button__label) {
+          svg {
+              width: 20px;
+              margin-left: 10px;
+          }
+
+
+          &::before {
+            content: "";
+            width: 0;
+            height: 0;
+          }
+
+          .oauthLabel {
+              font-size: 0;
+              &::before {
+                  content: "Accedi con Facebook";
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 14px !important;
+                  line-height: 100%;
+                  color: #2B126B;
+                  text-transform: uppercase;
+
+              }
+          }
+      }
+  }
+}
+
+.googleOptionBtn {
+  :global(.vtex-button) {
+      border: 2px solid #2B126B;
+      transition: background-color 0.2s ease-in;
+
+
+      &:hover {
+        background-color: #FFF;
+        filter: brightness(0.9);
+          
+          :global(.vtex-button__label) {
+              .oauthLabel::before {
+                  color: #2B126B !important;
+              }
+          }
+      }
+
+      :global(.vtex-button__label) {
+          .oauthLabel {
+              font-size: 0;
+
+              &::before {
+                  content: "Accedi con Google";
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 14px !important;
+                  line-height: 100%;
+                  text-align: center;
+                  color: #2B126B;
+                  text-transform: uppercase;
+
+              }
+          }
+      }
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  .loginOptionsContainer {
+      padding: 24px 0;
+      text-align: center;
+      border: none;
+
+      .formTitle {
+          text-align: center !important;
+      }
+  }
+}
+
+.arrowUp {
+  margin-right: 1.5rem;
+}
+
+.facebookOptionBtn, .googleOptionBtn {
+    position: absolute;
+    left: 50%;
+    transform: translateX( calc(-50% - 214px));
+    bottom: 147px;
+
+    @include breakpoint("mobile") {
+        top: calc(50% + 1rem);
+        transform: translate(-50%, -50%);
+        bottom: inherit;
+        left: 50%;
+    }
+}
+.googleOptionBtn {
+    bottom: 94px;
+
+    @include breakpoint("mobile") {
+        top: calc(50% + 4rem);
+        bottom: inherit;
+    }
+}
+
+//login account 
+
+.formLinkContainer {
+    @include breakpoint("mobile") {
+        justify-content: center;
+    }
+}
+.emailVerification {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
+ @include breakpoint("mobile") {
+    margin-bottom: 52px;
+    padding: 24px 14px;
+ }
+}
+
+.forgotPasswordForm{
+    position: absolute;
+    width: 800px;
+    background-color: white;
+    transform: translateX(-529px);
+    display: flex;
+    align-items: center;
+    padding-bottom: 52px;
+    top: -2px;
+    @include mobile() {
+        transform: translateX(-63px);
+        width: 356px;
+        padding: 24px 14px;
+     }
+     :global(.pa2){
+        padding-bottom: 0px;
+     }
+}
+
+:global(.vtex-login-2-x-content--accountOptions){
+   padding-bottom: 0 !important;
+
+   .contentFormVisible{
+    padding: 0px !important;
+   }
+}
+
+

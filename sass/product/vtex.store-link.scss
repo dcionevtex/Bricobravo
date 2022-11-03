@@ -1,0 +1,47 @@
+@import '../_variables.scss';
+@import '../_media-queries.scss';
+
+.link {
+  &--pdp-faq-ask-more {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    height: 1.25rem;
+    color: #1b0e41;
+    font-size: $headline-h4;
+    font-weight: 500;
+    line-height: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  &--pdp-disclosure-see-more {
+    text-decoration: none;
+    height: 1.25rem;
+    color: #1b0e41;
+    font-size: $cta-medium;
+    font-weight: 500;
+    line-height: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  &--availability-modal-trigger {
+    text-decoration: none;
+    color: $white;
+    background-color: $blue-active;
+    font-size: $cta-medium;
+    font-weight: 500;
+    line-height: 1rem;
+    text-align: center;
+    padding: 0.75rem 4.25rem;
+    border-radius: 2px;
+
+    &:hover {
+      background-color: $blue-hover;
+      color: $white;
+    }
+
+    @include breakpoint('mobile') {
+      width: 100%;
+    }
+  }
+}

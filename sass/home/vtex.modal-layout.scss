@@ -1,0 +1,29 @@
+.paper--modal-video-2 {
+  background-color: transparent;
+
+  .headerContainer {
+    border: 0;
+    position: relative;
+    .headerContent {
+      border: 0;
+      width: 638px;
+      height: 440px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .closeButtonContainer {
+      position: absolute;
+      top: -4px;
+      right: 4px;
+
+      .closeIcon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: white;
+      }
+    }
+  }
+}

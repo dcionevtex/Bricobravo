@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>364F3EF0-34DB-4381-84AF-5557B271850C</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="70" height="70"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="D/Homepage-unlogged" transform="translate(-1208.000000, -563.000000)">
+            <g id="d/-highlights-categories" transform="translate(137.000000, 538.000000)">
+                <g id="6_cat" transform="translate(1025.500000, 0.000000)">
+                    <g id="icon" transform="translate(20.500000, 0.000000)">
+                        <g transform="translate(25.000000, 25.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="safe-area"></g>
+                            <g id="Group-7" mask="url(#mask-2)" stroke="#291660" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                <g transform="translate(8.000000, 8.000000)">
+                                    <path d="M0.576,50.1285 C-0.192,49.3605 -0.192,48.1145 0.576,47.3475 L14.348,33.5755 C15.116,32.8085 16.362,32.8085 17.129,33.5755 L20.425,36.8705 C21.192,37.6385 21.192,38.8845 20.425,39.6515 L6.652,53.4235 C5.885,54.1905 4.639,54.1905 3.871,53.4235 L0.576,50.1285 Z" id="Stroke-1"></path>
+                                    <path d="M28.8401,0.607 C29.2291,0.217 29.7571,0 30.3061,0 C30.8561,0 31.3841,0.217 31.7731,0.607 L53.3931,22.228 C54.2031,23.039 54.2031,24.351 53.3931,25.161 L47.1611,31.392 C46.3521,32.203 45.0381,32.203 44.2291,31.393 L22.6081,9.772 C21.7981,8.962 21.7981,7.65 22.6081,6.839 L28.8401,0.607 Z" id="Stroke-3"></path>
+                                    <path d="M18.7703,35.2203 L23.0403,30.9603 C23.6203,30.3803 23.8103,29.4993 23.5103,28.7393 L15.4903,8.2593 C15.1903,7.4993 15.3803,6.6203 15.9603,6.0403 L20.5303,1.4703 C21.3403,0.6593 22.6603,0.6593 23.4703,1.4703 L25.7203,3.7203" id="Stroke-5"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

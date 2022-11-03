@@ -1,0 +1,140 @@
+@import '../_variables.scss';
+@import '../_media-queries.scss';
+
+.title {
+  // font-size: var(--headline--h3);
+  line-height: 1.75rem;
+  // color: var(--darkgrey--dark);
+  margin: 0;
+  margin-bottom: 1rem;
+  font-weight: 600;
+
+  @media (max-width: 64rem) {
+    // font-size: var(--headline--h4);
+    line-height: 1.5rem;
+  }
+}
+
+.priceContainer {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.totalPrice {
+  // font-size: var(--headline--h3);
+  // color: var(--darkgrey--dark);
+  line-height: 28px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.discountText {
+  text-transform: uppercase;
+  // color: var(--secondary--dark);
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+}
+
+.productNameText {
+  // font-size: var(--cta--medium);
+  color: #000;
+}
+
+.productInfoContainer {
+  // font-size: var(--cta--large);
+  color: #000;
+  font-weight: 600;
+}
+
+.summaryContainer {
+  min-width: 332px;
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+
+  @media (max-width: 64rem) {
+    max-width: 425px;
+  }
+}
+
+.summaryContainer :global(.vtex-button) {
+  width: 100%;
+  // background: var(--primary--default);
+  // font-size: var(--cta--medium);
+  font-weight: 700;
+  // color: var(--white);
+  line-height: 1.5rem;
+  border: none;
+  border-radius: 4px;
+  transition: all 300ms;
+  height: 48px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  @media (max-width: 64rem) {
+    min-width: initial;
+    width: 100%;
+  }
+}
+
+.discountValue {
+  // font-size: var(--paragraph--small--bold);
+  font-weight: 500;
+  // color: var(--darkgrey--light) !important;
+  text-decoration: line-through;
+}
+
+.selectContainer {
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  height: 40px;
+}
+
+.textObject {
+  // font-size: var(--paragraph--medium--regular);
+  // color: var(--darkgrey--light);
+  font-weight: 400;
+}
+
+.dropdownText {
+  // font-size: var(--paragraph--medium--regular);
+  color: #000;
+  font-weight: 500;
+}
+
+.productContainer {
+  @media (max-width: 64rem) {
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    max-width: 425px;
+  }
+}
+
+.dropdownArrow {
+  // color: var(--primary--dark);
+}
+
+.buyOutterWrapper {
+  @media (min-width: 64rem) {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 31px;
+    margin-top: 20px;
+  }
+}
+
+.cardsContainer {
+  margin-bottom: 16px;
+}

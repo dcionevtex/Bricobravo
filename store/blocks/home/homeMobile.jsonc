@@ -1,0 +1,225 @@
+{
+  "responsive-layout.mobile#home-categories-showcase": {
+    "children": ["flex-layout.row#mobile-home-categories-showcase"],
+    "props": {
+      "htmlId": "Categorie showcase Mobile"
+    },
+    "title": "Categorie showcase Mobile"
+  },
+
+  "flex-layout.row#mobile-home-categories-showcase": {
+    "children": ["slider-layout#mobile-home-categories-showcase"],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "mobile-home-categories-showcase-main",
+      "htmlId": "Categorie showcase"
+    },
+    "title": "Categorie showcase"
+  },
+
+  "slider-layout#mobile-home-categories-showcase": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 3
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "fullWidth": true,
+      // "centerMode": "to-the-left",
+      "blockClass": "mobile-home-categories-showcase-slider"
+    },
+    "children": [
+      "flex-layout.col#mobile-home-categories-showcase-01",
+      "flex-layout.col#mobile-home-categories-showcase-02",
+      "flex-layout.col#mobile-home-categories-showcase-03",
+      "flex-layout.col#mobile-home-categories-showcase-04",
+      "flex-layout.col#mobile-home-categories-showcase-05",
+      "flex-layout.col#mobile-home-categories-showcase-06"
+    ]
+  },
+
+  "flex-layout.col#mobile-home-categories-showcase-01": {
+    "children": [
+      "image#mobile-home-categories-showcase-01",
+      "link#mobile-home-categories-showcase-01"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "blockClass": "mobile-home-categories-showcase"
+    }
+  },
+
+  "image#mobile-home-categories-showcase-01": {
+    "props": {
+      "src": "assets/icons/department-shelf/plant.svg",
+      "link": {
+        "url": "#"
+      },
+      "blockClass": "mobile-home-categories-showcase"
+    }
+  },
+
+  "link#mobile-home-categories-showcase-01": {
+    "props": {
+      "label": "Giardinaggio",
+      "blockClass": "mobile-home-categories-showcase-cta",
+      "href": "#"
+    }
+  },
+
+  "flex-layout.col#mobile-home-categories-showcase-02": {
+    "children": [
+      "image#mobile-home-categories-showcase-02",
+      "link#mobile-home-categories-showcase-02"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "blockClass": "mobile-home-categories-showcase"
+    }
+  },
+
+  "image#mobile-home-categories-showcase-02": {
+    "props": {
+      "src": "assets/icons/department-shelf/fan.svg",
+      "link": {
+        "url": "#"
+      },
+      "blockClass": "mobile-home-categories-showcase"
+    }
+  },
+
+  "link#mobile-home-categories-showcase-02": {
+    "props": {
+      "label": "Climatizzazione",
+      "blockClass": "mobile-home-categories-showcase-cta",
+      "href": "#"
+    }
+  },
+
+  "flex-layout.col#mobile-home-categories-showcase-03": {
+    "children": [
+      "image#mobile-home-categories-showcase-03",
+      "link#mobile-home-categories-showcase-03"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "blockClass": "mobile-home-categories-showcase"
+    }
+  },
+
+  "image#mobile-home-categories-showcase-03": {
+    "props": {
+      "src": "assets/icons/department-shelf/dumbbell.svg",
+      "link": {
+        "url": "#"
+      },
+      "blockClass": "mobile-home-categories-showcase"
+    }
+  },
+
+  "link#mobile-home-categories-showcase-03": {
+    "props": {
+      "label": "Fitness e benessere",
+      "blockClass": "mobile-home-categories-showcase-cta",
+      "href": "#"
+    }
+  },
+
+  "flex-layout.col#mobile-home-categories-showcase-04": {
+    "children": [
+      "image#mobile-home-categories-showcase-04",
+      "link#mobile-home-categories-showcase-04"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "blockClass": "mobile-home-categories-showcase"
+    }
+  },
+
+  "image#mobile-home-categories-showcase-04": {
+    "props": {
+      "src": "assets/icons/department-shelf/arredo-giardino.svg",
+      "link": {
+        "url": "#"
+      },
+      "blockClass": "mobile-home-categories-showcase"
+    }
+  },
+
+  "link#mobile-home-categories-showcase-04": {
+    "props": {
+      "label": "Arredo giardino",
+      "blockClass": "mobile-home-categories-showcase-cta",
+      "href": "#"
+    }
+  },
+
+  "flex-layout.col#mobile-home-categories-showcase-05": {
+    "children": [
+      "image#mobile-home-categories-showcase-05",
+      "link#mobile-home-categories-showcase-05"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "blockClass": "mobile-home-categories-showcase"
+    }
+  },
+
+  "image#mobile-home-categories-showcase-05": {
+    "props": {
+      "src": "assets/icons/department-shelf/pool.svg",
+      "link": {
+        "url": "#"
+      },
+      "blockClass": "mobile-home-categories-showcase"
+    }
+  },
+
+  "link#mobile-home-categories-showcase-05": {
+    "props": {
+      "label": "Piscine e accessori",
+      "blockClass": "mobile-home-categories-showcase-cta",
+      "href": "#"
+    }
+  },
+
+  "flex-layout.col#mobile-home-categories-showcase-06": {
+    "children": [
+      "image#mobile-home-categories-showcase-06",
+      "link#mobile-home-categories-showcase-06"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "blockClass": "mobile-home-categories-showcase"
+    }
+  },
+
+  "image#mobile-home-categories-showcase-06": {
+    "props": {
+      "src": "assets/icons/department-shelf/paint-roller.svg",
+      "link": {
+        "url": "#"
+      },
+      "blockClass": "mobile-home-categories-showcase"
+    }
+  },
+
+  "link#mobile-home-categories-showcase-06": {
+    "props": {
+      "label": "Bricolage e Fai da te",
+      "blockClass": "mobile-home-categories-showcase-cta",
+      "href": "#"
+    }
+  }
+}

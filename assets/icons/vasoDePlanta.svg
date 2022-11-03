@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>AE95B1CB-A0FD-4467-8702-ECCFA9F59C63</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="25" height="25"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="D/Menu" transform="translate(-64.000000, -143.000000)">
+            <g id="icon-copy-28" transform="translate(64.000000, 143.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="safe-area"></g>
+                <g id="icon-copy-29" mask="url(#mask-2)" stroke-linecap="round" stroke-linejoin="round">
+                    <g transform="translate(3.000000, 2.000000)" id="Group-13">
+                        <polygon id="Stroke-1" stroke="#291660" points="2.23529412 15.4 15.6470588 15.4 15.6470588 13.2 2.23529412 13.2"></polygon>
+                        <g id="Group-12" stroke="#291660">
+                            <path d="M14.7248741,16.0416046 L13.8988615,21.2226586 C13.8276126,21.6699966 13.4286186,22 12.9598006,22 L5.09011865,22 C4.62130068,22 4.22230667,21.6699966 4.15105773,21.2226586 L3.32504512,16.0416046" id="Stroke-2"></path>
+                            <path d="M10.3836292,8.37292055 C7.13467798,2.58090188 13.4877077,0 19,0 C16.803158,2.11385535 17.66337,10.4716507 10.3836292,8.37292055 Z" id="Stroke-4"></path>
+                            <path d="M7.1799923,9.18184148 C8.90516642,4.66629444 5.07957381,3.01490224 0,4.06128814 C1.97027045,5.18467484 0.383794243,11.3021136 7.1799923,9.18184148 Z" id="Stroke-6"></path>
+                            <path d="M9.02495963,13.291576 C9.88612171,5.56216211 15.199867,2.74979948 15.199867,2.74979948" id="Stroke-8"></path>
+                            <path d="M4.27503087,6.41650434 C4.27503087,6.41650434 7.86360205,8.34152439 9.02495963,13.291576" id="Stroke-10"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

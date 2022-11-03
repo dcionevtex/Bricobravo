@@ -1,0 +1,310 @@
+@import '../_media-queries.scss';
+@import '../_variables.scss';
+.flexRow {
+  &--home-page-main-slider {
+    :global(.vtex-store-components-3-x-container) {
+      @include container-main;
+
+      padding: 0;
+      width: 100%;
+      max-width: 82rem;
+    }
+  }
+
+  &--home-categories {
+    @include container-main;
+
+    position: relative;
+    margin-bottom: 6.5rem;
+
+    @include breakpoint('mobile') {
+      margin-bottom: 8.5rem;
+    }
+
+    :global(.vtex-store-components-3-x-container) {
+      position: absolute;
+      top: -7rem;
+
+      @include breakpoint('mobile') {
+        top: -4rem;
+      }
+    }
+  }
+
+  &--home-shelf-01 {
+    @include container-main;
+  }
+  &--home-shelf-02 {
+    background-image: url(assets/images/bg-home-section2-desktop.svg);
+    background-repeat: no-repeat;
+    padding: 0;
+    width: 100%;
+    height: 600px;
+    background-color: #f6f6f6;
+
+    @include breakpoint('mobile') {
+      background-image: url(assets/images/bg-home-section2-mobile.svg);
+      height: 554px;
+      max-width: 100vw;
+    }
+    :global(.vtex-store-components-3-x-container){
+      @include container-main;
+    }
+
+  }
+  &--home-shelf-03 {
+    @include container-main;
+    @include mobile {
+      margin-top: 30px;
+    }
+  }
+
+  &--categories-showcase {
+    :global(.vtex-store-components-3-x-container) {
+      @include container-main;
+    }
+  }
+
+  &--home-categories-showcase,
+  &--categories-showcase {
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+      overflow: scroll;
+      padding-bottom: 12px;
+    }
+  }
+
+  &--mobile-home-categories {
+    border: 2px solid #f2f2f2;
+    border-radius: 0.5rem;
+  }
+
+  &--home-blog {
+    background-color: #f6f6f6;
+  }
+
+  &--home-services {
+    margin-bottom: 1.75rem;
+
+    @include breakpoint('mobile') {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &--homeBottomSection {
+    background: #f6f6f6;
+  }
+
+  &--quemSomos-main {
+    margin-bottom: 5rem;
+  }
+
+  &--homeBottomSectionDesktop {
+    padding-bottom: 2.5rem;
+    background-color: #f6f6f6;
+  }
+
+  &--homeBottomSectionBrands {
+    margin-bottom: 1rem;
+  }
+
+  &--homeBottomSectionMobile {
+    @include breakpoint('mobile') {
+      margin: 1.25rem 0 0 1.25rem;
+    }
+  }
+
+  .flexRowContent {
+
+    &--home-categories-showcase,
+    &--mobile-home-categories-showcase,
+    &--categories-showcase {
+      justify-content: space-around;
+      @media screen and (max-width: 768px) {
+        display: flex;
+        flex-wrap: nowrap;
+        width: max-content;
+      }
+    }
+
+    &--mobile-home-categories {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: center;
+      align-items: center;
+      overflow: scroll;
+      height: 4rem;
+    }
+
+    &--home-services,
+    &--home-blog,
+    &--homeBottomSection {
+      @include container-main;
+    }
+
+    &--home-blog {
+      margin-bottom: 2rem;
+      :global(.vtex-store-components-3-x-imageElement--home-blog-image) {
+        margin-bottom: 0;
+      }
+    }
+    &--home-section06-title {
+      display: flex;
+      align-items: center;
+      padding-top: 28px;
+    }
+    &--home-shelf-02-title{
+      :global(.vtex-rich-text-0-x-container){
+        @include breakpoint('mobile'){
+          justify-content: center;
+        }
+      }
+      :global(.vtex-rich-text-0-x-headingLevel2) {
+        color: $background-blue-black;
+        font-weight: 500;
+        font-size: 40px;
+        @include breakpoint('mobile') {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+
+.flexCol {
+  &--home-categories-showcase {
+    &:first-child {
+      height: 7.5rem;
+      width: 7.5rem;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      background-color: #dde3e9;
+      box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+
+      &:hover {
+        opacity: 0.95;
+        transition: ease-in-out 0.2s;
+      }
+    }
+  }
+
+  &--mobile-home-categories-showcase {
+    margin: 0;
+    position: relative;
+
+    &:first-child {
+      height: 5rem !important;
+      width: 5rem !important;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      background-color: #dde3e9;
+      box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+
+      &:hover {
+        opacity: 0.95;
+        transition: ease-in-out 0.2s;
+      }
+    }
+  }
+
+  &--home-services-col {
+    height: 15rem;
+    max-width: 15rem;
+    width: 100%;
+    border: 1px solid #ececec;
+    border-radius: 2px;
+
+    @include breakpoint('mobile') {
+      padding: 15px;
+    }
+  }
+
+  &--home-blog,
+  &--home-blog-shelf {
+    margin: 2rem 0;
+    height: auto;
+  }
+
+  &--home-blog {
+    @include breakpoint('mobile') {
+      align-items: center;
+    }
+  }
+
+  .flexColChild {
+    &--home-categories-showcase,
+    &--categories-showcase,
+    &--mobile-home-categories-showcase {
+      display: flex;
+      position: relative;
+      @include breakpoint('mobile') {
+        transform: translateY(14px);
+      }
+
+      :global(.vtex-store-components-3-x-imageElement) {
+        margin: 0 auto;
+      }
+    }
+
+    &--home-categories-showcase {
+      &:first-child {
+        height: 7.5rem !important;
+      }
+      &:last-child {
+        height: 0 !important;
+        width: 10.5rem;
+      }
+    }
+
+    &--mobile-home-categories-showcase {
+      &:first-child {
+        height: 5rem !important;
+        display: flex;
+        align-items: center;
+      }
+      &:last-child {
+        transform: translateY(25px);
+        text-align: center;
+      }
+    }
+
+    &--home-services-col,
+    &--home-blog-col {
+      max-width: 200px;
+      width: 100%;
+    }
+
+    &--home-blog-col {
+      height: auto !important;
+      @include breakpoint('mobile'){
+        max-height: 178px;
+      }
+    }
+
+    &--homeBottomSectionColMobile:nth-child(odd) {
+      @include breakpoint('mobile') {
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+}
+
+.flexRowContent--home-shelf-02-title {
+  :global(.vtex-rich-text-0-x-headingLevel2) {
+    font-size: 40px;
+    font-weight: 500;
+    @include mobile {
+      font-size: 28px;
+      color: #291660;
+    }
+  }
+  :global(.vtex-rich-text-0-x-container) {
+    @include mobile {
+      justify-content: center;
+    }
+  }
+}
+// .flexRow--buyButtonContainer{
+//   display: none;
+// }

@@ -1,0 +1,90 @@
+@import '_variables.scss';
+@import '_media-queries.scss';
+
+.wrapper--titleStoreLocator {
+    text-align: center;
+    width: 100%;
+}
+
+.container--subHeaderStoreLocator {
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #332C32;
+}
+
+.heading--titleStoreLocator{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33px;
+    color: #332C32;
+
+    @include mobile {
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 500;
+    }
+}
+
+.container--seeAllStores {
+    max-width: 1202px;
+    @include mobile {
+        justify-content: center;
+      }
+}
+
+.link--seeAllStores {
+    font-size: 14px;
+    color: #291660;
+    text-decoration: none;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+.heading-level-3 {
+    display: none;
+}
+
+.container--breadcrumb2 {
+    margin-left: -1210px;
+
+    @include mobile {
+        padding-left: 52px;
+        margin-left: 0;
+        transform: translateY(-57px);
+    }
+}
+
+.link--breadcrumb2 {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 16px;
+    color: #332c32;
+    font-weight: 500;
+}
+
+.link--breadcrumb1 {
+    visibility: hidden;
+
+    &::before {
+        visibility: visible;
+        content: '';
+        background-image: url("data:image/svg+xml,%3Csvg width='15px' height='16px' viewBox='0 0 15 16' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EDC8B4D04-E53D-444C-86F2-EF5F363FFBF5%3C/title%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg id='D/-2.0-PLP-(default)' transform='translate(-63.000000, -131.000000)' stroke='%238e8e8e'%3E%3Cg id='d/breadcrumb' transform='translate(64.000000, 126.000000)'%3E%3Cg id='home-2' transform='translate(0.000000, 6.000000)'%3E%3Cpath d='M0,4.9 L6.3,0 L12.6,4.9 L12.6,12.6 C12.6,13.3731986 12.3927441,14 11.6195455,14 L0.904589489,14 C0.131390839,14 0,13.3731986 0,12.6 L0,4.9 Z' id='Path'%3E%3C/path%3E%3Cpolyline id='Path' points='4.2 14 4.2 7 8.4 7 8.4 14'%3E%3C/polyline%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+        transform: translate(31px, 1px);
+        height: 1rem;
+        width: 1rem;
+        display: inline-block;
+    }
+}
+
+@include mobile {
+    .container--titleStoreDetail {
+        display: none;
+    }
+    .container--subHeaderDetail {
+        display: none;
+    }
+}

@@ -1,0 +1,1085 @@
+{
+  "store.home": {
+    "blocks": [
+      "flex-layout.row#submenu-categories",
+      "flex-layout.row#home-main-slider",
+      //"product-card-logged",
+      "flex-layout.row#home-categories",
+      "flex-layout.row#home-shelf-01",
+      "flex-layout.row#home-shelf-02",
+      "flex-layout.row#home-shelf-03",
+      "flex-layout.row#home-blog",
+      // "flex-layout.row#home-reviews",
+      "flex-layout.row#home-services",
+      "flex-layout.row#homeBottomSection"
+    ]
+  },
+  "flex-layout.row#submenu-categories": {
+    "children": [
+      "flex-layout.row#category1",
+      "flex-layout.row#category2",
+      "flex-layout.row#category3",
+      "flex-layout.row#category4"
+    ],
+    "props": {
+      "blockClass": "header-categories",
+      "htmld": "Sottomenu categorie"
+    },
+    "title": "Sottomenu categorie"
+  },
+  "flex-layout.row#category1": {
+    "children": ["image#category1", "link#category1"]
+  },
+  "image#category1": {
+    "props": {
+      "src": "data:image/png;base64,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",
+      "width": "40px",
+      "height": "40px"
+    }
+  },
+  "link#category1": {
+    "props": {
+      "href": "#",
+      "blockClass": "header-category",
+      "label": "Lorem ipsum dolor sit amet"
+    }
+  },
+
+  "flex-layout.row#category2": {
+    "children": ["image#category2", "link#category2"]
+  },
+  "image#category2": {
+    "props": {
+      "src": "data:image/png;base64,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",
+      "width": "40px",
+      "height": "40px"
+    }
+  },
+  "link#category2": {
+    "props": {
+      "href": "#",
+      "blockClass": "header-category",
+      "label": "Lorem ipsum dolor sit amet"
+    }
+  },
+
+  "flex-layout.row#category3": {
+    "children": ["image#category3", "link#category3"]
+  },
+  "image#category3": {
+    "props": {
+      "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANgAAADpCAMAAABx2AnXAAAAflBMVEX///8AAAD+/v7X19cEBARFRUX7+/s2NjaZmZmTk5OgoKC6urppaWnq6urGxsZVVVV/f3/j4+MrKysfHx/09PQ9PT2mpqZLS0vR0dHd3d0QEBCLi4s7Ozt6enpaWlrp6em/v79jY2OxsbF8fHxwcHBQUFAoKCiFhYUWFhYjIyMfXB8vAAAM7klEQVR4nO2dDUO6PheGDwOOKC9JTYSURMT49/2/4LOzDUTrZ2Ug1LO7VFAYuzhjO4y9ABgZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGRkZGf2figFj4tVjgD2Hd7OITMamJwFOhIuhjE5v4UGvwd2uQRIO9h3gDZLnN170qWQHEzAaRSF9sHrVQzwJMuRBv1yWtc5gdDBxfNulyDj9cTnW2la57ahkTIH1BOdQII51HJ+sC9aHHMV2zMa+zlqw2drtQbPG7opsRLQWLGLYgxJlNEfnIOORMQUmYhL1Uq6WymD0RjnI6GBCxc88Rh1e0rncHigHGc1xPCXFH0ZB+tJnYPI6+5Ng1lH4IGN5jj2DledZ/4g2G9RiFpXUOE4OMqjFHOWD/AWw6MINEbl+PE5a7AuMybAge+9viruYMdB6Bgtf3oGJHARHyBv7BKMiPrHe3yWIvPH+OUhv15gKDbL1Oy7Hesjun4H8A+xWL49h8nyZFEXeOEIO8jHYD/xyrN6BUQ6y6yW239A/wG4PDuBd/kFk+b1zj4/AhLkw/rJ4txJA1gVv3pokeNI6Y/etLPgITOTO2ezxi3pLGJ5iLCKPwIvq6dJqrj0+GBNg9tcrdhZnYEzm7GHk7bePr2+vr6+PT9MBE6/0Xd72oSi1Lc7yUF1QA4Y7nVT9yYBRarK/BkZKkJ3IEJob6hYimg6YWLLfnr6o56TD1dQmMtSBt37xFMDok5f+pyrLkt5kfXazLzYBtD7WhMD6DB2mB/bd+qmPQ58UWL8POKcH9vcs1sSpj9AnCPajQE8L0wJDFgc/UNwpOaYERmVR+mXH4wOlEwUji33RV3wv4T0+TxWMcjrhKzo3SYT0bE8UjI7/N5MiIuwO+fIWHZb14TDVzKOP+sV2bUpg8JMosLOmVNMCU3f3t9UqUT0QVS20QU0JTDDhzRWmkuy0OikwSdXc439TQI0qOqFPCkx8JyJ3o8Wa/2Z1UmAiLXG/+Lxu4F9VBrzDOSkw+KMFNF0rN/uKQpP1FWVznb/oBFOt4B9NigD2ww9kn0KfFJgsw3a78BbtxF/Mmgr8iYHJYvYnYaIO5d5g8mFI8/AAO2B9S5K1YJKSXbrJPWJh++gA5CFasAEOpSxG99Vue1vd9SX7PZwwE7LWYmivVVbGbnQPr1pMgYk/kRRRnlBprWFMpgj0CkInKfZ+JKaetjhtUoTuM6e+Je3ULqMEcwZJiu015jRJUeYgP8uaruks4EwnxaEOZqukmHW/G8RmlD744cwN+omb8ZmeL9pFCOX881jeAiYM5g+J8rlKwEHKNITNsFa6LseawyCFNSOwEbkcqx7EYpTrzkcEE9oMA8bGTYrOUElxbDBx6IEsNm5SpDNKYEOUZTjuNeYYMANmwAzYrwJre1l2Vpulz4s/2Vv46nYjWux6tC7W9U3J89Pb29N/+qtPQh8LzLHe8rqul48UxaBeiuU63za/urVSt3n9LNgkRRQV5bxylWWdf+ONmRRd6tjAXihy+s4aN00H57kOpdMHbh61t45oJ6+fJNoxwVYxPfx7ocWU6ssQFYcAeyrU89hTr8VZJOufENVgLlTt5ThTBLMITByZn8AESDRTF8+My4exJzDXlvWvOmhCy9yrJhvzGlvFtJm8ilLZigDUsB90zckgWNvPVA/egWHq+2lIpkRIH6/lP+NajHXAGKjqBGmFRFdMCjCK/JMv66wz1Z/lNQllytXbThxMJMpQ7FOqvhzUszkGdY2RAalNCIvcpgBbhnRBRtdMNhkwxnal2CuTQ1o8k8ESilYijRJR5WvsaguJV0mVlvbqSmk2HTCIK0qOR4pTIPbe7RWYiPqbrLGudYxl9+DCC9az599gMYRwxfVFZvlUKzkjM0mLUX0T8KaIuwSYPBjfFqCfS8dEONOZh2MVlGMWmkG6G07rdEwejAF3l3RpibUjFwvVrM0VYwrN+yS0qYKJtOa6tJfIIjbCvYiPqxaMOMUlpowzW7nij+S+/gYwxvj6TZRPZBlKktGrew52UGBPBSeF9Da3fkNSFGBWSZmjNbNldtgBI0ejVh7Um3rEJp+KeVfuXaYFVtOl9poLEH7ogIWoKGhLBYbSA7t2gMmAAYHtufAoqrkAitcNmKUf8BZqp6cCKRXKJ+rX8pOpgIklASZ8eMSSPJD0uQVzLI9KNK52ej4G+/3+hTb8FWCUBtfWf3SRcZFX0I2Z25ZjR/lU6qGbUUSUFH8PmLCNuo3kldW5xqyQFm0VYZVfRIT6K64xBVaF6gkJf+yAURzFz7h41lG2rEf712QeCmxrqyYaZJ1TUrS2dBsDPJmpHf9bRnK4lflvcIIVmFWoVlALatvQgInYHzhl8ZglL6vV3ku5akTi/Y7bFgm2UHU1Dx0wdUutGvogypweqXUKvh/UY7JgjijJKDbMOoFpr2kegmxkgUz3Q+Dp8Vqt6Zhg7k6BOcoJxqNYepKDqNgKDLoD8+1TVa2oohpGy+nWBM/8NE0j2RYpSaM0Wsk0l0ZRKv3ClR2lqW5SQRfac56kO6oSwKxIqs/q98e02PNsu51t/yOIx61YpHZDtDRbPcl22qvtdvXagMn31TGo8mq/fvwk5HHBPjzn1/Lv89VPTDbu8zHnYsHpvN5H3flwcXpgzumz/b/A7bBdVuRM1mLfbtvyzR3Mo1oDZsAMmAG7F9jmdBD9Pmj7xcvA54N0lbhoiOk4nxWovaCd+SYbDdav0eiJ4+bMl3CGt1kX6wTWr5h8PuLov9Y9t9oP5+zjg6++8NG8nWyllp22Bqh/UZVE/MGJvKNi3e2ldzTG4oWnNPfqR4mVi8UhtFC9TV6Xp69imRL7b+x8MS2T7rQzQG8kJdVBd93ttIMDWYzUziBx6srYx5wS56ImH21XRlpV396lCyqDe43WB4MZ6R+HHg5MVR1fdj4FuEu34fuNr3hXe52BDVBoXvSDvot0x1c2aD/oafVc7zX0KYD1nhRVgTkumCMt1n9anEBSLAbpqjaRpNi3xXAKYIN18E5HAgN9jVXefBB51Uhg2O9UeP/S/T0PGB7MGQGMtbctw3Ld32LAwp4nPv0Y7d7TgNB93+XUWoMoubvBhCPlz4bW1r8zFtw+ROR3dXcyIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjI6PfL9XAjjVT+siv1NenJv/tu26fwZpN9EZNsw21fJopVe9yajzSBN8esBNo/2BMzU+qWgE3U4KqqYWQ6W9lA1FomvaquTX1O+ozI4fHkXuyZsooOSJt2yZYBdBMx6RCw6HaLTbTj2FayvHM2r5BsosNqhavikW/eBK2jWHlOWjMp1fVvFtNf1I8O1Kz2C7x89U+wVQnIYCyBp3EeMJhHsvTjzqWbB6qeePEK6zisznkJBVCawRArxTfxWKzZF3x8nHlrqAUS8A3BXiz1dplm+2sXMxWris2yYeagYzsFIasXPIQuTg6z4KMv6QcxTrjYYj0/5AhfYoteVxlyMk4PBRbiz2RxhoMeTPQLuazhEHovWb2MUxoIOFoGT2Eiwor+gHAP+AmlIcu6iIIN9UgWPIUly/Vzl/nbrzYgOfVs8P8MfCjPPfCw15Eqsq81ypN9sGCe/uln8eLuYj/rgo2/BDsC3tVHZZBIAzMbUrVRbFgUC42Wb0AfqQB/bJlAqHLo7Kk81Fl4Uth02in1a4qIZwNAiazsPk8Br9CzyvnAoyLVLMOw2CZrKO8gHkdIzzw7IXv8sWLMGhVLeW4RjXj/h6iKjqKPeGYCtM8yjHSigWkOXpx7gMcORQbDMSSK3ah0XX9Dedzb+/TEuwjYEOBif9dWWd+DclGgC28MODghllVRml8yCD06xSPPKrENZLndJ6XFUVfWAGEheOqeIFFSVGEMJV5hgDbz5broBJ2WiOvCzgkwCWYsGod0TZ+AOEhhcqH3XYgLgY85nUiwYqcV/NwH8M62wljRXFug809D904W++ywF/HYZHvAhqA0A8wTV3u59G+AQM5XyCBhbtwGdlHnuRg5xyiF74QVxsNXBiJ1TCFegPRhmMUcC8fBozy9MQNsJhD6WHwUCeY73elW8TVbM7nGfhusIP6JUvXxwii9b7Y7HiVLnc439Yo9oztCkof8rQZ/3K/Wu2F5ZJM5IVByGoaTS1xK4777TbAjTgB2X5VozQdeu5AE6t15nvEi0/9+/tvmxkW219Z419Qoac2xE5PWYZnRRpj7QasKSuG0MkfUIWutmLT5bUpp/XPqrxufInG/dDfQONzKO9FkaJelYHqwwBrSj4Gt04P/omUE0RHlicb1Ymkd9T+kRypv/En1UbQQsqToDpTK3dLk2kC2WcMETo/SyxUY8Ohnp90CLBOxLA5s41jJMmgiZaKpPYZQaPLeRhU+lMXmN6NqQlAUfnD2uHFtkNLk0pAmfEb+h/Qw/ZdZ3a/sAAAAABJRU5ErkJggg==",
+      "width": "40px",
+      "height": "40px"
+    }
+  },
+  "link#category3": {
+    "props": {
+      "href": "#",
+      "blockClass": "header-category",
+      "label": "Lorem ipsum dolor sit amet"
+    }
+  },
+
+  "flex-layout.row#category4": {
+    "children": ["image#category4", "link#category4"]
+  },
+  "image#category4": {
+    "props": {
+      "src": "data:image/png;base64,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",
+      "width": "40px",
+      "height": "40px"
+    }
+  },
+  "link#category4": {
+    "props": {
+      "href": "#",
+      "blockClass": "header-category",
+      "label": "Lorem ipsum dolor sit amet"
+    }
+  },
+
+  "flex-layout.row#home-main-slider": {
+    "children": ["flex-layout.col#home-main-slider"],
+    "props": {
+      "blockClass": "home-page-main-slider",
+      "htmlId": "Cursore principale"
+    },
+    "title": "Cursore principale"
+  },
+
+  "flex-layout.col#home-main-slider": {
+    "children": ["list-context.image-list#home-main-slider"],
+    "props": {
+      "blockClass": "home-main-slider-col"
+    }
+  },
+
+  "list-context.image-list#home-main-slider": {
+    "children": ["slider-layout#home-main-slider-images"],
+    "props": {
+      "height": 612,
+      "images": [
+        {
+          "image": "https://dummyimage.com/1312x483/4320A8/ffffff&text=Banner+01",
+          "mobileImage": "https://dummyimage.com/360x270/4320A8/ffffff&text=Banner+01",
+          "description": "Banner 01"
+        },
+        {
+          "image": "https://dummyimage.com/1312x483/4320A8/ffffff&text=Banner+02",
+          "mobileImage": "https://dummyimage.com/360x270/4320A8/ffffff&text=Banner+02",
+          "description": "Banner 02"
+        }
+      ],
+      "blockClass": "home-main-slider"
+    }
+  },
+  "slider-layout#home-main-slider-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "blockClass": "home-main-slider-images",
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
+      "autoplay": {
+        "timeout": 2000,
+        "stopOnHover": true
+      }
+    }
+  },
+
+  "flex-layout.row#home-categories": {
+    "children": ["flex-layout.col#home-categories"],
+    "props": {
+      "blockClass": "home-categories",
+      "htmlId": "Menu di categoria"
+    },
+    "title": "Menu di categoria"
+  },
+
+  "flex-layout.col#home-categories": {
+    "children": [
+      "responsive-layout.desktop#home-categories-showcase",
+      "responsive-layout.mobile#home-categories-showcase"
+    ],
+    "props": {
+      "blockClass": "home-categories"
+    }
+  },
+
+  "responsive-layout.desktop#home-categories-showcase": {
+    "children": ["flex-layout.row#home-categories-showcase"],
+    "props": {
+      "htmlId": "Categorie showcase Desktop"
+    },
+    "title": "Categorie showcase Desktop"
+  },
+
+  "flex-layout.row#home-categories-showcase": {
+    "children": [
+      "flex-layout.col#home-categories-showcase-01",
+      "flex-layout.col#home-categories-showcase-02",
+      "flex-layout.col#home-categories-showcase-03",
+      "flex-layout.col#home-categories-showcase-04",
+      "flex-layout.col#home-categories-showcase-05",
+      "flex-layout.col#home-categories-showcase-06"
+    ],
+    "props": {
+      "horizontalAlign": "around",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "home-categories-showcase",
+      "htmlId": "Categorie showcase"
+    },
+    "title": "Categorie showcase"
+  },
+
+  "flex-layout.col#home-categories-showcase-01": {
+    "children": [
+      "image#home-categories-showcase-01",
+      "link#home-categories-showcase-01"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "home-categories-showcase"
+    }
+  },
+
+  "image#home-categories-showcase-01": {
+    "props": {
+      "src": "assets/icons/department-shelf/plant.svg",
+      "link": {
+        "url": "#"
+      },
+      "blockClass": "home-categories-showcase"
+    }
+  },
+
+  "link#home-categories-showcase-01": {
+    "props": {
+      "label": "Giardinaggio",
+      "blockClass": "home-categories-showcase-cta",
+      "href": "#"
+    }
+  },
+
+  "flex-layout.col#home-categories-showcase-02": {
+    "children": [
+      "image#home-categories-showcase-02",
+      "link#home-categories-showcase-02"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "home-categories-showcase"
+    }
+  },
+
+  "image#home-categories-showcase-02": {
+    "props": {
+      "src": "assets/icons/department-shelf/fan.svg",
+      "link": {
+        "url": "#"
+      },
+      "blockClass": "home-categories-showcase"
+    }
+  },
+
+  "link#home-categories-showcase-02": {
+    "props": {
+      "label": "Climatizzazione",
+      "blockClass": "home-categories-showcase-cta",
+      "href": "#"
+    }
+  },
+
+  "flex-layout.col#home-categories-showcase-03": {
+    "children": [
+      "image#home-categories-showcase-03",
+      "link#home-categories-showcase-03"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "home-categories-showcase"
+    }
+  },
+
+  "image#home-categories-showcase-03": {
+    "props": {
+      "src": "assets/icons/department-shelf/dumbbell.svg",
+      "link": {
+        "url": "#"
+      },
+      "blockClass": "home-categories-showcase"
+    }
+  },
+
+  "link#home-categories-showcase-03": {
+    "props": {
+      "label": "Fitness e benessere",
+      "blockClass": "home-categories-showcase-cta",
+      "href": "#"
+    }
+  },
+
+  "flex-layout.col#home-categories-showcase-04": {
+    "children": [
+      "image#home-categories-showcase-04",
+      "link#home-categories-showcase-04"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "home-categories-showcase"
+    }
+  },
+
+  "image#home-categories-showcase-04": {
+    "props": {
+      "src": "assets/icons/department-shelf/arredo-giardino.svg",
+      "link": {
+        "url": "#"
+      },
+      "blockClass": "home-categories-showcase"
+    }
+  },
+
+  "link#home-categories-showcase-04": {
+    "props": {
+      "label": "Arredo giardino",
+      "blockClass": "home-categories-showcase-cta",
+      "href": "#"
+    }
+  },
+
+  "flex-layout.col#home-categories-showcase-05": {
+    "children": [
+      "image#home-categories-showcase-05",
+      "link#home-categories-showcase-05"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "home-categories-showcase"
+    }
+  },
+
+  "image#home-categories-showcase-05": {
+    "props": {
+      "src": "assets/icons/department-shelf/pool.svg",
+      "link": {
+        "url": "#"
+      },
+      "blockClass": "home-categories-showcase"
+    }
+  },
+
+  "link#home-categories-showcase-05": {
+    "props": {
+      "label": "Piscine e accessori",
+      "blockClass": "home-categories-showcase-cta",
+      "href": "#"
+    }
+  },
+
+  "flex-layout.col#home-categories-showcase-06": {
+    "children": [
+      "image#home-categories-showcase-06",
+      "link#home-categories-showcase-06"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "home-categories-showcase"
+    }
+  },
+
+  "image#home-categories-showcase-06": {
+    "props": {
+      "src": "assets/icons/department-shelf/paint-roller.svg",
+      "link": {
+        "url": "#"
+      },
+      "blockClass": "home-categories-showcase"
+    }
+  },
+
+  "link#home-categories-showcase-06": {
+    "props": {
+      "label": "Bricolage e Fai da te",
+      "blockClass": "home-categories-showcase-cta",
+      "href": "#"
+    }
+  },
+
+  "flex-layout.row#home-shelf-01": {
+    "children": ["flex-layout.col#home-shelf-01"],
+    "props": {
+      "blockClass": "home-shelf-01",
+      "htmlId": "Vetrina 1"
+    },
+    "title": "Vetrina 1"
+  },
+
+  "flex-layout.col#home-shelf-01": {
+    "children": [
+      "flex-layout.row#home-shelf-01-title",
+      "responsive-layout.desktop#shelf-also-view",
+      "responsive-layout.mobile#shelf-also-view"
+    ]
+  },
+
+  "flex-layout.row#home-shelf-01-title": {
+    "children": [
+      "rich-text#home-shelf-01-title",
+      "link#home-shelf-01-allProducts"
+    ],
+    "props": {
+      "blockClass": "home-shelf-01-title",
+      "htmlId": "Linha de titolo vetrina 1"
+    },
+    "title": "Linha de titolo vetrina 1"
+  },
+  "rich-text#home-shelf-01-title": {
+    "props": {
+      "blockClass": "home-section-title",
+      "text": "## Bricobravo consiglia",
+      "htmlId": "Titolo vetrina 1"
+    },
+    "title": "Titolo vetrina 1"
+  },
+  "link#home-shelf-01-allProducts": {
+    "props": {
+      "href": "#",
+      "blockClass": "home-shelf",
+      "label": "Mostra tutto"
+    },
+    "title": "Link vetrina 1"
+  },
+  "responsive-layout.desktop#shelf-also-view": {
+    "children": ["list-context.product-list#also-view"]
+  },
+  "responsive-layout.mobile#shelf-also-view": {
+    "children": ["list-context.product-list#also-view-mobile"]
+  },
+  "flex-layout.row#home-shelf-02": {
+    "children": ["flex-layout.col#home-shelf-02"],
+    "props": {
+      "blockClass": "home-shelf-02",
+      "htmlId": "Vetrina 2"
+    },
+    "title": "Vetrina 2"
+  },
+
+  "flex-layout.col#home-shelf-02": {
+    "children": [
+      "flex-layout.row#home-shelf-02-title",
+      "responsive-layout.desktop#shelf-also-view",
+      "responsive-layout.mobile#shelf-also-view"
+    ]
+  },
+
+  "flex-layout.row#home-shelf-02-title": {
+    "children": [
+      "rich-text#home-shelf-02-title",
+      "link#home-shelf-02-allProducts"
+    ],
+    "props": {
+      "blockClass": "home-shelf-02-title",
+      "htmlId": "Linha de titolo vetrina 2"
+    },
+    "title": "Linha de titolo vetrina 2"
+  },
+  "rich-text#home-shelf-02-title": {
+    "props": {
+      "blockClass": "title-2-test home-section-title",
+      "text": "Offert del mese",
+      "htmlId": "Titolo vetrina 2"
+    },
+    "title": "Titolo vetrina 2"
+  },
+  "link#home-shelf-02-allProducts": {
+    "props": {
+      "href": "#",
+      "blockClass": "home-shelf",
+      "label": "Mostra tutto"
+    },
+    "title": "Link vetrina 2"
+  },
+
+  "flex-layout.row#home-shelf-03": {
+    "children": ["flex-layout.col#home-shelf-03"],
+    "props": {
+      "blockClass": "home-shelf-03",
+      "htmlId": "Vetrina 3"
+    },
+    "title": "Vetrina 3"
+  },
+
+  "flex-layout.col#home-shelf-03": {
+    "children": [
+      "flex-layout.row#home-shelf-03-title",
+      "responsive-layout.desktop#shelf-also-view",
+      "responsive-layout.mobile#shelf-also-view"
+    ]
+  },
+
+  "flex-layout.row#home-shelf-03-title": {
+    "children": [
+      "rich-text#home-shelf-03-title",
+      "link#home-shelf-03-allProducts"
+    ],
+    "props": {
+      "blockClass": "home-shelf-03-title",
+      "htmlId": "Linha de titolo vetrina 3"
+    },
+    "title": "Linha de titolo vetrina 3"
+  },
+  "rich-text#home-shelf-03-title": {
+    "props": {
+      "blockClass": "home-section-title",
+      "text": "## I prodotti più venduti",
+      "htmlId": "Titolo vetrina 3"
+    },
+    "title": "Titolo vetrina 3"
+  },
+  "link#home-shelf-03-allProducts": {
+    "props": {
+      "href": "#",
+      "blockClass": "home-shelf",
+      "label": "Mostra tutto"
+    },
+    "title": "Link vetrina 3"
+  },
+
+  "flex-layout.row#home-blog": {
+    "children": [
+      "flex-layout.col#home-blog",
+      "flex-layout.col#home-blog-shelf"
+    ],
+    "props": {
+      "blockClass": "home-blog",
+      "preventVerticalStretch": false,
+      "htmlId": "Blog"
+    },
+    "title": "Blog"
+  },
+  "flex-layout.col#home-blog": {
+    "children": [
+      "image#home-blog",
+      "rich-text#home-blog-subtitle",
+      "link#home-blog-link"
+    ],
+    "props": {
+      "blockClass": "home-blog",
+      "width": "40%",
+      "preventVerticalStretch": false
+    }
+  },
+  "image#home-blog": {
+    "props": {
+      "src": "assets/icons/blog/blog-title.svg",
+      "blockClass": "home-blog-image"
+    }
+  },
+  "rich-text#home-blog-subtitle": {
+    "props": {
+      "blockClass": "home-blog-subtitle",
+      "text": "Qui troverai tante **idee creative** e **ispirazioni, consigli utili, tutorial** e molto altro per la tua casa!",
+      "htmlId": "Sottotitolo del blog"
+    },
+    "title": "Sottotitolo del blog"
+  },
+  "link#home-blog-link": {
+    "props": {
+      "label": "Vai al blog",
+      "blockClass": "home-blog-link",
+      "href": "#"
+    }
+  },
+  "flex-layout.col#home-blog-shelf": {
+    "children": [
+      "rich-text#home-blog-shelf-title",
+      "slider-layout#home-blog-shelf"
+    ],
+    "props": {
+      "blockClass": "home-blog-shelf"
+    }
+  },
+  "rich-text#home-blog-shelf-title": {
+    "props": {
+      "blockClass": "home-blog-title",
+      "text": "Gli articoli più recenti",
+      "htmlId": "Titolo di vetrina del blog"
+    },
+    "title": "Titolo di vetrina del blog"
+  },
+  "slider-layout#home-blog-shelf": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
+      "autoplay": true,
+      // "infinity": false,
+      "navigationStep": 1,
+      "fullWidth": true,
+      "centerMode": "to-the-left",
+      "blockClass": "home-blog"
+    },
+    "children": [
+      "flex-layout.col#home-blog-01",
+      "flex-layout.col#home-blog-02",
+      "flex-layout.col#home-blog-03",
+      "flex-layout.col#home-blog-04",
+      "flex-layout.col#home-blog-05"
+    ]
+  },
+
+  "flex-layout.col#home-blog-01": {
+    "children": [
+      "image#home-blog-01",
+      "link#home-blog-01-cta",
+      "rich-text#home-blog-01-text"
+    ],
+    "props": {
+      "blockClass": "home-blog-col",
+      "horizontalAlign": "center",
+      "preventVerticalStretch": false
+    }
+  },
+  "rich-text#home-blog-01-text": {
+    "props": {
+      "blockClass": "home-blog-text",
+      "text": "Idee e accessori per ottimizzare gli spazi dell’armadio"
+    }
+  },
+  "image#home-blog-01": {
+    "props": {
+      "src": "https://dummyimage.com/200x160/4320A8/ffffff",
+      "blockClass": "home-blog-image",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "link#home-blog-01-cta": {
+    "props": {
+      "blockClass": "home-blog-cta",
+      "href": "#",
+      "label": "CASA E DESIGN"
+    }
+  },
+
+  "flex-layout.col#home-blog-02": {
+    "children": [
+      "image#home-blog-02",
+      "link#home-blog-02-cta",
+      "rich-text#home-blog-02-text"
+    ],
+    "props": {
+      "blockClass": "home-blog-col",
+      "horizontalAlign": "center",
+      "preventVerticalStretch": false
+    }
+  },
+  "rich-text#home-blog-02-text": {
+    "props": {
+      "blockClass": "home-blog-text",
+      "text": "Tante idee per arredare e abbellire un gazebo da giardino"
+    }
+  },
+  "image#home-blog-02": {
+    "props": {
+      "src": "https://dummyimage.com/200x160/4320A8/ffffff",
+      "blockClass": "home-blog-image",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "link#home-blog-02-cta": {
+    "props": {
+      "blockClass": "home-blog-cta",
+      "href": "#",
+      "label": "FAI DA TE"
+    }
+  },
+
+  "flex-layout.col#home-blog-03": {
+    "children": [
+      "image#home-blog-03",
+      "link#home-blog-03-cta",
+      "rich-text#home-blog-03-text"
+    ],
+    "props": {
+      "blockClass": "home-blog-col",
+      "horizontalAlign": "center",
+      "preventVerticalStretch": false
+    }
+  },
+  "rich-text#home-blog-03-text": {
+    "props": {
+      "blockClass": "home-blog-text",
+      "text": "Come funziona il condizionatore portatile e perché sceglierlo"
+    }
+  },
+  "image#home-blog-03": {
+    "props": {
+      "src": "https://dummyimage.com/200x160/4320A8/ffffff",
+      "blockClass": "home-blog-image",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "link#home-blog-03-cta": {
+    "props": {
+      "blockClass": "home-blog-cta",
+      "href": "#",
+      "label": "GUIDE ALL'ACQUISTO"
+    }
+  },
+
+  "flex-layout.col#home-blog-04": {
+    "children": [
+      "image#home-blog-04",
+      "link#home-blog-04-cta",
+      "rich-text#home-blog-04-text"
+    ],
+    "props": {
+      "blockClass": "home-blog-col",
+      "horizontalAlign": "center",
+      "preventVerticalStretch": false
+    }
+  },
+  "rich-text#home-blog-04-text": {
+    "props": {
+      "blockClass": "home-blog-text",
+      "text": "Come recintare un giardino: idee e consigli"
+    }
+  },
+  "image#home-blog-04": {
+    "props": {
+      "src": "https://dummyimage.com/200x160/4320A8/ffffff",
+      "blockClass": "home-blog-image",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "link#home-blog-04-cta": {
+    "props": {
+      "blockClass": "home-blog-cta",
+      "href": "#",
+      "label": "FAI DA TE"
+    }
+  },
+
+  "flex-layout.col#home-blog-05": {
+    "children": [
+      "image#home-blog-05",
+      "link#home-blog-05-cta",
+      "rich-text#home-blog-05-text"
+    ],
+    "props": {
+      "blockClass": "home-blog-col",
+      "horizontalAlign": "center",
+      "preventVerticalStretch": false
+    }
+  },
+  "rich-text#home-blog-05-text": {
+    "props": {
+      "blockClass": "home-blog-text",
+      "text": "Come recintare un giardino: idee e consigli"
+    }
+  },
+  "image#home-blog-05": {
+    "props": {
+      "src": "https://dummyimage.com/200x160/4320A8/ffffff",
+      "blockClass": "home-blog-image",
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "link#home-blog-05-cta": {
+    "props": {
+      "blockClass": "home-blog-cta",
+      "href": "#",
+      "label": "FAI DA TE"
+    }
+  },
+
+  "flex-layout.row#home-services": {
+    "children": ["flex-layout.col#home-services"],
+    "props": {
+      "blockClass": "home-services",
+      "htmlId": "Servizi"
+    },
+    "title": "Servizi"
+  },
+  "flex-layout.col#home-services": {
+    "children": [
+      "rich-text#home-services-title",
+      "slider-layout#home-services"
+    ],
+    "props": {
+      "blockClass": "home-services"
+    }
+  },
+  "rich-text#home-services-title": {
+    "props": {
+      "blockClass": "home-section-title",
+      "text": "## I nostri servizi a tua disposizione",
+      "htmlId": "Titolo dei servizi"
+    },
+    "title": "Titolo dei servizi"
+  },
+  "slider-layout#home-services": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 1
+      },
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
+      "autoplay": false,
+      "navigationStep": "page",
+      //"infinite": true,
+      "fullWidth": true,
+      "centerMode": "to-the-left",
+      "blockClass": "home-services"
+    },
+    "children": [
+      "flex-layout.col#home-services-01",
+      "flex-layout.col#home-services-02",
+      "flex-layout.col#home-services-03",
+      "flex-layout.col#home-services-04",
+      "flex-layout.col#home-services-05",
+      "flex-layout.col#home-services-06"
+    ]
+  },
+
+  "flex-layout.col#home-services-01": {
+    "children": [
+      "rich-text#home-services-01-text",
+      "image#home-services-01",
+      "link#home-services-01-cta"
+    ],
+    "props": {
+      "blockClass": "home-services-col",
+      "horizontalAlign": "center"
+    }
+  },
+  "rich-text#home-services-01-text": {
+    "props": {
+      "blockClass": "home-services-text",
+      "text": "Lorem ipsum dolor sit amet consectetur "
+    }
+  },
+  "image#home-services-01": {
+    "props": {
+      "src": "https://dummyimage.com/200x140/4320A8/ffffff",
+      "blockClass": "home-services-image",
+      "width": 200,
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "link#home-services-01-cta": {
+    "props": {
+      "blockClass": "home-services-cta",
+      "href": "#",
+      "label": "Scopri di più"
+    }
+  },
+
+  "flex-layout.col#home-services-02": {
+    "children": [
+      "rich-text#home-services-02-text",
+      "image#home-services-02",
+      "link#home-services-02-cta"
+    ],
+    "props": {
+      "blockClass": "home-services-col",
+      "horizontalAlign": "center"
+    }
+  },
+  "rich-text#home-services-02-text": {
+    "props": {
+      "blockClass": "home-services-text",
+      "text": "Lorem ipsum dolor sit amet consectetur "
+    }
+  },
+  "image#home-services-02": {
+    "props": {
+      "src": "https://dummyimage.com/200x140/4320A8/ffffff",
+      "blockClass": "home-services-image",
+      "width": 200,
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "link#home-services-02-cta": {
+    "props": {
+      "blockClass": "home-services-cta",
+      "href": "#",
+      "label": "Scopri di più"
+    }
+  },
+
+  "flex-layout.col#home-services-03": {
+    "children": [
+      "rich-text#home-services-03-text",
+      "image#home-services-03",
+      "link#home-services-03-cta"
+    ],
+    "props": {
+      "blockClass": "home-services-col",
+      "horizontalAlign": "center"
+    }
+  },
+  "rich-text#home-services-03-text": {
+    "props": {
+      "blockClass": "home-services-text",
+      "text": "Lorem ipsum dolor sit amet consectetur "
+    }
+  },
+  "image#home-services-03": {
+    "props": {
+      "src": "https://dummyimage.com/200x140/4320A8/ffffff",
+      "blockClass": "home-services-image",
+      "width": 200,
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "link#home-services-03-cta": {
+    "props": {
+      "blockClass": "home-services-cta",
+      "href": "#",
+      "label": "Scopri di più"
+    }
+  },
+
+  "flex-layout.col#home-services-04": {
+    "children": [
+      "rich-text#home-services-04-text",
+      "image#home-services-04",
+      "link#home-services-04-cta"
+    ],
+    "props": {
+      "blockClass": "home-services-col",
+      "horizontalAlign": "center"
+    }
+  },
+  "rich-text#home-services-04-text": {
+    "props": {
+      "blockClass": "home-services-text",
+      "text": "Lorem ipsum dolor sit amet consectetur "
+    }
+  },
+  "image#home-services-04": {
+    "props": {
+      "src": "https://dummyimage.com/200x140/4320A8/ffffff",
+      "blockClass": "home-services-image",
+      "width": 200,
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "link#home-services-04-cta": {
+    "props": {
+      "blockClass": "home-services-cta",
+      "href": "#",
+      "label": "Scopri di più"
+    }
+  },
+
+  "flex-layout.col#home-services-05": {
+    "children": [
+      "rich-text#home-services-05-text",
+      "image#home-services-05",
+      "link#home-services-05-cta"
+    ],
+    "props": {
+      "blockClass": "home-services-col",
+      "horizontalAlign": "center"
+    }
+  },
+  "rich-text#home-services-05-text": {
+    "props": {
+      "blockClass": "home-services-text",
+      "text": "Lorem ipsum dolor sit amet consectetur "
+    }
+  },
+  "image#home-services-05": {
+    "props": {
+      "src": "https://dummyimage.com/200x140/4320A8/ffffff",
+      "blockClass": "home-services-image",
+      "width": 200,
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "link#home-services-05-cta": {
+    "props": {
+      "blockClass": "home-services-cta",
+      "href": "#",
+      "label": "Scopri di più"
+    }
+  },
+
+  "flex-layout.col#home-services-06": {
+    "children": [
+      "rich-text#home-services-06-text",
+      "image#home-services-06",
+      "link#home-services-06-cta"
+    ],
+    "props": {
+      "blockClass": "home-services-col",
+      "horizontalAlign": "center"
+    }
+  },
+  "rich-text#home-services-06-text": {
+    "props": {
+      "blockClass": "home-services-text",
+      "text": "Lorem ipsum dolor sit amet consectetur "
+    }
+  },
+  "image#home-services-06": {
+    "props": {
+      "src": "https://dummyimage.com/200x140/4320A8/ffffff",
+      "blockClass": "home-services-image",
+      "width": 200,
+      "link": {
+        "url": "#"
+      }
+    }
+  },
+  "link#home-services-06-cta": {
+    "props": {
+      "blockClass": "home-services-cta",
+      "href": "#",
+      "label": "Scopri di più"
+    }
+  },
+
+  "flex-layout.row#homeBottomSection": {
+    "children": ["flex-layout.col#homeBottomSection"],
+    "props": {
+      "blockClass": "homeBottomSection",
+      "htmlId": "Sezione inferiore"
+    },
+    "title": "Sezione inferiore"
+  },
+
+  "flex-layout.col#homeBottomSection": {
+    "children": [
+      "responsive-layout.desktop#homeBottomSectionDesktop",
+      "responsive-layout.mobile#homeBottomSectionMobile"
+    ],
+    "props": {
+      "blockClass": "homeBottomSection"
+    }
+  },
+
+  "responsive-layout.desktop#homeBottomSectionDesktop": {
+    "children": ["flex-layout.row#homeBottomSectionDesktop"],
+    "props": {
+      "blockClass": "homeBottomSectionDesktop",
+      "htmlId": "Sezione inferiore Desktop"
+    },
+    "title": "Sezione inferiore Desktop"
+  },
+  "responsive-layout.mobile#homeBottomSectionMobile": {
+    "children": ["flex-layout.row#homeBottomSectionMobile"],
+    "props": {
+      "blockClass": "homeBottomSectionMobile",
+      "htmlId": "Sezione inferiore Mobile"
+    },
+    "title": "Sezione inferiore Mobile"
+  }
+}

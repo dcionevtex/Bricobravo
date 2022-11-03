@@ -1,0 +1,247 @@
+@import '../_variables.scss';
+@import '../_media-queries.scss';
+
+.container {
+
+  &--pdp-secure-payment {
+    width: 308px;
+  }
+
+  &--pdp-faq-title,
+  &--pdp-faq-ask-more {
+    justify-content: center;
+  }
+
+  &--pdp-estimate-shipping {
+    text-align: right;
+
+    @include breakpoint('mobile') {
+      justify-content: flex-end;
+    }
+  }
+}
+
+.paragraph {
+  &--pdp-secure-payment {
+    height: 1rem;
+    color: $blue-active;
+    font-size: $paragraph-medium-regular;
+    font-weight: 500;
+    line-height: 1rem;
+    margin: 0.75rem 2.25rem 0.5rem 0;
+
+    @include breakpoint('mobile') {
+      margin-right: 1.25rem;
+    }
+
+    &:hover {
+      color: $blue-hover;
+    }
+
+    &::after {
+      content: '';
+      background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='20px' height='22px' viewBox='0 0 20 22' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E838283C2-F22D-480B-B4DD-CE3A69D59DE4%3C/title%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='D/Homepage-unlogged' transform='translate(-233.000000, -4276.000000)' fill='%23291660' fill-rule='nonzero'%3E%3Cg id='d/-footer' transform='translate(0.000000, 4050.000000)'%3E%3Cg id='icon/-lock' transform='translate(233.000000, 226.000000)'%3E%3Cpath d='M4.8346056,7.19908467 L11.4503817,7.19908467 L11.4503817,4.85812357 C11.4503817,3.90160183 11.1323155,3.10450038 10.4961832,2.46681922 C9.86005089,1.82913806 9.0754877,1.51029748 8.14249364,1.51029748 C7.20949958,1.51029748 6.42493639,1.82913806 5.78880407,2.46681922 C5.15267176,3.10450038 4.8346056,3.90160183 4.8346056,4.85812357 L4.8346056,7.19908467 Z M10.1017812,21.1441648 L1.52671756,21.1441648 C1.1365564,21.1441648 0.784563189,20.9889397 0.470737913,20.6784897 C0.156912638,20.3680397 0,20.0198322 0,19.6338673 L0,8.70938215 C0,8.32341724 0.156912638,7.97520976 0.470737913,7.66475973 C0.784563189,7.35430969 1.1365564,7.19908467 1.52671756,7.19908467 L3.30788804,7.19908467 L3.30788804,4.85812357 C3.30788804,3.49885584 3.77438507,2.34935164 4.70737913,1.40961098 C5.6403732,0.469870328 6.78541137,0 8.14249364,0 C9.49957591,0 10.6446141,0.469870328 11.5776081,1.40961098 C12.5106022,2.34935164 12.9770992,3.49885584 12.9770992,4.85812357 L12.9770992,7.19908467 L14.7582697,7.19908467 C15.1484309,7.19908467 15.5004241,7.35430969 15.8142494,7.66475973 C16.1280746,7.97520976 16.2849873,8.32341724 16.2849873,8.70938215 L16.2849873,10.8993135 C16.0644614,10.8489703 15.8354538,10.8154081 15.5979644,10.798627 C15.360475,10.7818459 15.0805768,10.7734554 14.7582697,10.7734554 L14.7582697,8.70938215 C14.7582697,8.70938215 14.7582697,8.70938215 14.7582697,8.70938215 C14.7582697,8.70938215 14.7582697,8.70938215 14.7582697,8.70938215 L1.52671756,8.70938215 C1.52671756,8.70938215 1.52671756,8.70938215 1.52671756,8.70938215 C1.52671756,8.70938215 1.52671756,8.70938215 1.52671756,8.70938215 L1.52671756,19.6338673 C1.52671756,19.6338673 1.52671756,19.6338673 1.52671756,19.6338673 C1.52671756,19.6338673 1.52671756,19.6338673 1.52671756,19.6338673 L9.18575064,19.6338673 C9.30449534,19.9191457 9.4317218,20.1750572 9.56743003,20.4016018 C9.70313825,20.6281465 9.8812553,20.8756674 10.1017812,21.1441648 Z M15.0890585,12.2837529 C16.4291773,12.2837529 17.5826972,12.7620137 18.5496183,13.7185355 C19.5165394,14.6750572 20,15.8161709 20,17.1418764 C20,18.467582 19.5165394,19.6086957 18.5496183,20.5652174 C17.5826972,21.5217391 16.4291773,22 15.0890585,22 C13.7489398,22 12.5954198,21.5217391 11.6284987,20.5652174 C10.6615776,19.6086957 10.178117,18.467582 10.178117,17.1418764 C10.178117,15.8161709 10.6615776,14.6750572 11.6284987,13.7185355 C12.5954198,12.7620137 13.7489398,12.2837529 15.0890585,12.2837529 Z M17.7614858,14.6666667 L14.0078201,19.1602837 L12.2385142,17.0421986 L11.8181818,17.5453901 L14.0078201,20.1666667 L18.1818182,15.1698582 L17.7614858,14.6666667 Z' id='Shape'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+      display: inline-block;
+      width: 1rem;
+      height: 1rem;
+      margin-left: 1rem;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      position: absolute;
+    }
+  }
+
+  &--pdp-estimate-shipping {
+    height: 1.25rem;
+    color: $primary-default;
+    font-size: $paragraph-large-regular;
+    font-weight: 500;
+    line-height: 1.25rem;
+    text-align: right;
+    margin: 0 0.25rem 0 0;
+    width: max-content;
+
+    @include breakpoint('mobile') {
+      font-size: $paragraph-medium-regular;
+      line-height: 1rem;
+      height: auto;
+      width: 100%;
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+  &--pdp-product-info {
+    height: 1.25rem;
+    color: $primary-default;
+    font-size: $headline-h4;
+    font-weight: 500;
+    line-height: 1.25rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &--pdp-shipping-info {
+    color: $primary-default;
+    font-size: $paragraph-medium-regular;
+    font-weight: 300;
+    margin: 0;
+    line-height: 1.5;
+
+    .strong {
+      &--pdp-shipping-info {
+        font-weight: 500;
+      }
+    }
+  }
+
+  &--product-details {
+    height: 1.75rem;
+    color: $primary-default;
+    font-size: $headline-h2;
+    font-weight: 500;
+    line-height: 1.75rem;
+    margin: 1rem 0 2rem;
+
+    @include breakpoint('mobile') {
+      height: 1.5rem;
+      font-size: $headline-h3;
+      line-height: 1.5rem;
+    }
+  }
+
+  &--specification-title {
+    height: 1.5rem;
+    color: $primary-default;
+    font-size: $headline-h3;
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin: 0 0 1.25rem;
+
+    @include breakpoint('mobile') {
+      font-size: $headline-h3;
+      height: 1.25rem;
+      line-height: 1.25rem;
+    }
+  }
+
+  &--pdp-faq-ask-more {
+    height: 1.5rem;
+    color: $primary-default;
+    font-size: $headline-h4;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: center;
+    margin: 0 0 0.5rem;
+
+    @include breakpoint('mobile') {
+      font-size: $paragraph-large-regular;
+    }
+  }
+
+  &--pdp-faq-content {
+    color: $primary-default;
+    font-size: $paragraph-large-regular;
+    line-height: 1.5rem;
+    margin-top: 0;
+
+    @include breakpoint('mobile') {
+      font-size: $paragraph-medium-regular;
+      line-height: 1.25rem;
+    }
+  }
+
+  &--availability-modal-title {
+    height: 1.25rem;
+    color: $primary-default;
+    font-size: $paragraph-large-bold;
+    font-weight: bold;
+    line-height: 1.25rem;
+    margin: 0 0 1rem;
+
+    @include breakpoint('mobile') {
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  &--availability-modal-description {
+    height: 1rem;
+    color: $primary-default;
+    font-size: $paragraph-medium-regular;
+    line-height: 1rem;
+    margin: 0 0 0.75rem;
+
+    @include breakpoint('mobile') {
+      height: 1.5rem;
+    }
+  }
+
+  &--pdp-premium-shipping {
+    margin: 0.25rem 1rem 1.5rem;
+    color: $primary-default;
+    font-size: $paragraph-large-regular;
+    line-height: 1.25rem;
+
+    @include breakpoint('mobile') {
+      margin: 0.25rem 0 1.25rem;
+    }
+  }
+
+  &--pdp-secure-payment-modal,
+  &--pdp-faq {
+    margin: 0.25rem 0 1.25rem;
+    color: $primary-default;
+    font-size: $headline-h4;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+}
+
+.heading {
+  &--productShelfTitle,
+  &--product-shelf-title {
+    margin: 1.25rem 0;
+    height: 1.75rem;
+    color: $primary-default;
+    font-size: $headline-h2;
+    font-weight: 500;
+    line-height: 1.75rem;
+
+    @include breakpoint('mobile') {
+      height: 1.5rem;
+      font-size: $headline-h3;
+      line-height: 1.5rem;
+    }
+  }
+
+  &--pdp-faq-title {
+    margin: 1.25rem 0;
+    height: 1.75rem;
+    color: $primary-default;
+    font-size: $headline-h2;
+    font-weight: 500;
+    line-height: 1.75rem;
+    text-align: center;
+
+    @include breakpoint('mobile') {
+      height: 1.5rem;
+      font-size: $headline-h3;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+.wrapper {
+  &--pdp-estimate-shipping {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &--pdp-secure-payment {
+    cursor: pointer;
+  }
+}

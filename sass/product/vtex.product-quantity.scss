@@ -1,0 +1,38 @@
+@import '../_variables.scss';
+@import '../_media-queries.scss';
+
+.quantitySelectorContainer {
+  &--pdp {
+    align-items: flex-start;
+    margin: 0;
+  }
+}
+
+.quantitySelectorStepper {
+  &--pdp {
+    border: 1px solid $blue-active;
+    border-radius: 0.25rem;
+    width: 11.25rem;
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+
+    @include breakpoint('mobile') {
+      margin-right: 0.25rem;
+      width: auto;
+    }
+
+    :global(.vtex-numeric-stepper__input),
+    :global(.vtex-numeric-stepper__minus-button),
+    :global(.vtex-numeric-stepper__plus-button) {
+      font-size: $paragraph-large-regular;
+      border: none;
+      background-color: $white;
+      height: 2.5rem;
+
+      @include breakpoint('mobile') {
+        width: 33%;
+      }
+    }
+  }
+}

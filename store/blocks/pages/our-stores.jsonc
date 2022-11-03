@@ -1,0 +1,176 @@
+{
+  "store.custom#our-stores": {
+    "blocks": ["flex-layout.row#our-stores"]
+  },
+  "flex-layout.row#our-stores": {
+    "props": {
+      "width": "100%",
+      "htmlId": "I nostri negozi"
+    },
+    "children": ["flex-layout.row#main-container-our-stores"],
+    "title": "I nostri negozi"
+  },
+  "flex-layout.row#main-container-our-stores": {
+    "props": {
+      "blockClass": "our-stores-main",
+      "width": "100%",
+      "htmlId": "Contenitore principale"
+    },
+    "children": ["flex-layout.col#container-our-stores"],
+    "title": "Contenitore principale"
+  },
+  "flex-layout.col#container-our-stores": {
+    "children": [
+      "flex-layout.row#breadcrumbStoreLocator",
+      "flex-layout.row#our-stores-tilte",
+      "flex-layout.row#our-stores-subtitle",
+      "flex-layout.row#our-stores-content"
+    ]
+  },
+  "flex-layout.row#our-stores-tilte": {
+    "children": ["rich-text#our-stores-tilte"],
+    "props": {
+      "blockClass": "our-stores-title",
+      "htmlId": "Riga del titolo"
+    },
+    "title": "Riga del titolo"
+  },
+  "rich-text#our-stores-tilte": {
+    "props": {
+      "text": "# Tutti gli store",
+      "blockClass": "our-stores-title",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "htmlId": "Titolo"
+    },
+    "title": "Titolo"
+  },
+  "flex-layout.row#our-stores-subtitle": {
+    "children": ["rich-text#our-stores-subtitle"],
+    "props": {
+      "blockClass": "our-stores-subtitle",
+      "htmlId": "Riga del sottotitolo"
+    },
+    "title": "Riga del sottotitolo"
+  },
+  "rich-text#our-stores-subtitle": {
+    "props": {
+      "text": "### Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "blockClass": "our-stores-subtitle",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "htmlId": "Sottotitolo"
+    },
+    "title": "Sottotitolo"
+  },
+  "flex-layout.row#our-stores-content": {
+    "children": [
+      "flex-layout.col#our-stores-col1",
+      "flex-layout.col#our-stores-col2",
+      "flex-layout.col#our-stores-col3",
+      "flex-layout.col#our-stores-col4"
+    ],
+    "props": {
+      "htmlId": "Contenuto"
+    },
+    "title": "Contenuto"
+  },
+  "flex-layout.col#our-stores-col1": {
+    "children": [
+      "rich-text#our-stores-item1",
+      "rich-text#our-stores-item2",
+      "rich-text#our-stores-item3",
+      "rich-text#our-stores-item4",
+      "rich-text#our-stores-item5",
+      "rich-text#our-stores-item6"
+    ],
+    "props": {
+      "htmlId": "Colonna 1"
+    },
+    "title": "Colonna 1"
+  },
+  "flex-layout.col#our-stores-col2": {
+    "children": [
+      "rich-text#our-stores-item1",
+      "rich-text#our-stores-item2",
+      "rich-text#our-stores-item3",
+      "rich-text#our-stores-item4",
+      "rich-text#our-stores-item5",
+      "rich-text#our-stores-item6"
+    ],
+    "props": {
+      "htmlId": "Colonna 2"
+    },
+    "title": "Colonna 2"
+  },
+  "flex-layout.col#our-stores-col3": {
+    "children": [
+      "rich-text#our-stores-item1",
+      "rich-text#our-stores-item2",
+      "rich-text#our-stores-item3",
+      "rich-text#our-stores-item4",
+      "rich-text#our-stores-item5",
+      "rich-text#our-stores-item6"
+    ],
+    "props": {
+      "htmlId": "Colonna 3"
+    },
+    "title": "Colonna 3"
+  },
+  "flex-layout.col#our-stores-col4": {
+    "children": [
+      "rich-text#our-stores-item1",
+      "rich-text#our-stores-item2",
+      "rich-text#our-stores-item3",
+      "rich-text#our-stores-item4",
+      "rich-text#our-stores-item5",
+      "rich-text#our-stores-item6"
+    ],
+    "props": {
+      "htmlId": "Colonna 4"
+    },
+    "title": "Colonna 4"
+  },
+  "rich-text#our-stores-item1": {
+    "title": "Card-Item",
+    "props": {
+      "text": "#### Store lorem ipsum dolor sit amet \n Via dei Tigli 24, Roma 00159 (RM) \n +06 00000000 \n nomestore@mail.com",
+      "blockClass": "our-stores-text"
+    }
+  },
+  "rich-text#our-stores-item2": {
+    "title": "Card-Item",
+    "props": {
+      "text": "#### Store lorem ipsum dolor sit amet \n Via dei Tigli 24, Roma 00159 (RM) \n +06 00000000 \n nomestore@mail.com",
+      "blockClass": "our-stores-text"
+    }
+  },
+  "rich-text#our-stores-item3": {
+    "title": "Card-Item",
+    "props": {
+      "text": "#### Store lorem ipsum dolor sit amet \n Via dei Tigli 24, Roma 00159 (RM) \n +06 00000000 \n nomestore@mail.com",
+      "blockClass": "our-stores-text"
+    }
+  },
+  "rich-text#our-stores-item4": {
+    "title": "Card-Item",
+    "props": {
+      "text": "#### Store lorem ipsum dolor sit amet \n Via dei Tigli 24, Roma 00159 (RM) \n +06 00000000 \n nomestore@mail.com",
+      "blockClass": "our-stores-text"
+    }
+  },
+  "rich-text#our-stores-item5": {
+    "title": "Card-Item",
+    "props": {
+      "text": "#### Store lorem ipsum dolor sit amet \n Via dei Tigli 24, Roma 00159 (RM) \n +06 00000000 \n nomestore@mail.com",
+      "blockClass": "our-stores-text"
+    }
+  },
+  "rich-text#our-stores-item6": {
+    "title": "Card-Item",
+    "props": {
+      "text": "#### Store lorem ipsum dolor sit amet \n Via dei Tigli 24, Roma 00159 (RM) \n +06 00000000 \n nomestore@mail.com",
+      "blockClass": "our-stores-text"
+    }
+  }
+}

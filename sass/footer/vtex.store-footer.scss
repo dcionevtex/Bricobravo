@@ -1,0 +1,44 @@
+.footerLayout {
+  background: #fff;
+  border-radius: 16px 16px 0 0;
+}
+
+.footerLayoutSpacer {
+  padding-top: 0;
+}
+
+.socialNetworksContainer {
+  @media screen and (max-width: 768px) {
+    margin-left: 15px;
+  }
+  .socialNetworkLink {
+    margin: 0;
+    transition: all 300ms;
+    height: 32px;
+    width: 32px;
+    background-size: 15px 15px;
+    background-position: center;
+    display: block;
+    background-repeat: no-repeat;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &--facebook {
+      background-image: url('assets/icons/facebook.svg');
+    }
+
+    &--instagram {
+      background-image: url('assets/icons/instagram.svg');
+    }
+
+    &--youtube {
+      background-image: url('assets/icons/yt.svg');
+    }
+
+    .socialNetworkImage {
+      display: none;
+    }
+  }
+}

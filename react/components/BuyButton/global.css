@@ -1,0 +1,16 @@
+.devb8supernosso-store-theme-1-x-buttonText {
+  font-family: 'Roboto';
+  text-transform: lowercase;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.vtex-numeric-stepper-container {
+  justify-content: center;
+}
+
+.vtex-button.bg-disabled {
+  background-color: #979899!important;
+  border-color: #979899!important;
+  color: white!important;
+}

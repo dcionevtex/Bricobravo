@@ -1,0 +1,36 @@
+{
+  "flex-layout.row#buy-buttons": {
+    "children": ["flex-layout.col#buy-buttons"]
+  },
+  "flex-layout.col#buy-buttons": {
+    "children": ["flex-layout.row#buy-now", "flex-layout.row#add-to-cart"],
+    "props": {
+      "blockClass": "buy-buttons",
+      "rowGap": 0
+    }
+  },
+  "flex-layout.row#add-to-cart": {
+    "children": ["add-to-cart-button#custom-text"],
+    "props": {
+      "blockClass": "add-to-cart"
+    }
+  },
+  "flex-layout.row#buy-now": {
+    "children": ["add-to-cart-button#buy-now"],
+    "props": {
+      "blockClass": "buy-now"
+    }
+  },
+  "add-to-cart-button#buy-now": {
+    "props": {
+      "blockClass": "buy-now",
+      "isOneClickBuy": true,
+      "text": "Compre Agora!"
+    }
+  },
+  "add-to-cart-button#custom-text": {
+    "props": {
+      "text": "Adicionar ao carrinho"
+    }
+  }
+}

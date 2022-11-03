@@ -1,0 +1,128 @@
+{
+  "flex-layout.row#homeBottomSectionMobile": {
+    "children": ["flex-layout.col#homeBottomSectionColMobile"],
+    "props": {
+      "blockClass": "homeBottomSectionMobile",
+      "htmlId": "Sezione inferiore"
+    },
+    "title": "Sezione inferiore"
+  },
+
+  "flex-layout.col#homeBottomSectionColMobile": {
+    "children": [
+      "flex-layout.row#homeBottomSectionBrandsMobile",
+      "flex-layout.row#homeBottomSectionCategoriesMobile"
+    ],
+    "props": {
+      "blockClass": "homeBottomSectionColMobile",
+      "width": "100%"
+    }
+  },
+
+  "flex-layout.row#homeBottomSectionBrandsMobile": {
+    "children": ["flex-layout.col#homeBottomSectionBrandsMobile"],
+    "props": {
+      "blockClass": "homeBottomSectionBrandsMobile",
+      "htmlId": "Vetrina del brands"
+    },
+    "title": "Vetrina del brands"
+  },
+  "flex-layout.col#homeBottomSectionBrandsMobile": {
+    "children": [
+      "rich-text#homeBottomSectionBrandsTitleMobile",
+      "slider-layout#homeBottomSectionBrandsMobile"
+    ],
+    "props": {
+      "blockClass": "homeBottomSectionBrandsMobile"
+    }
+  },
+  "rich-text#homeBottomSectionBrandsTitleMobile": {
+    "props": {
+      "text": "I migliori marchi, a portata di click",
+      "blockClass": "homeBottomSectionBrandsMainTitle",
+      "htmlId": "Titolo di vetrina del brands"
+    },
+    "title": "Titolo di vetrina del brands"
+  },
+  "slider-layout#homeBottomSectionBrandsMobile": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 8,
+        "tablet": 3,
+        "phone": 3
+      },
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
+      "autoplay": false,
+      "infinity": false,
+      "navigationStep": 1,
+      "fullWidth": true,
+      "centerMode": "to-the-left",
+      "blockClass": "homeBottomSectionBrandsMobile"
+    },
+    "children": [
+      "image#homeBottomSectionBrands01",
+      "image#homeBottomSectionBrands02",
+      "image#homeBottomSectionBrands03",
+      "image#homeBottomSectionBrands04",
+      "image#homeBottomSectionBrands05",
+      "image#homeBottomSectionBrands06",
+      "image#homeBottomSectionBrands07",
+      "image#homeBottomSectionBrands08",
+      "image#homeBottomSectionBrands09"
+    ]
+  },
+
+  "flex-layout.row#homeBottomSectionCategoriesMobile": {
+    "children": ["flex-layout.col#homeBottomSectionCategoriesMobile"],
+    "props": {
+      "blockClass": "homeBottomSectionCategoriesMobile",
+      "htmlId": "Vetrina di categorie"
+    },
+    "title": "Vetrina di categorie"
+  },
+  "flex-layout.col#homeBottomSectionCategoriesMobile": {
+    "children": [
+      "rich-text#homeBottomSectionCategoriesTitleMobile",
+      "slider-layout#homeBottomSectionCategoriesMobile"
+    ],
+    "props": {
+      "blockClass": "homeBottomSectionCategoriesMobile"
+    }
+  },
+  "rich-text#homeBottomSectionCategoriesTitleMobile": {
+    "props": {
+      "text": "Esplora le nostre categorie",
+      "blockClass": "homeBottomSectionCategoriesMainTitle",
+      "htmlId": "Titolo di vetrina di categorie"
+    },
+    "title": "Titolo di vetrina di categorie"
+  },
+  "slider-layout#homeBottomSectionCategoriesMobile": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
+      "autoplay": false,
+      //"usePagination": false,
+      //"infinity": false,
+      "navigationStep": 1,
+      //"fullWidth": true,
+      "centerMode": "to-the-left",
+      "blockClass": "homeBottomSectionCategoriesMobile"
+    },
+    "children": [
+      "flex-layout.col#homeBottomSectionCategoriesPool",
+      "flex-layout.col#homeBottomSectionCategoriesGardenFurniture",
+      "flex-layout.col#homeBottomSectionCategoriesAC",
+      "flex-layout.col#homeBottomSectionCategoriesBeach",
+      "flex-layout.col#homeBottomSectionCategoriesDIY",
+      "flex-layout.col#homeBottomSectionCategoriesFitness",
+      "flex-layout.col#homeBottomSectionCategoriesFitness2"
+    ]
+  }
+}

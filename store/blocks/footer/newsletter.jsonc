@@ -1,0 +1,145 @@
+{
+  "flex-layout.row#newsletter": {
+    "title": "Newsletter",
+    "children": [
+      "flex-layout.col#newsTitle",
+      "flex-layout.col#submit",
+      "flex-layout.row#share"
+    ],
+    "props": {
+      "blockClass": "newsletterRow",
+      "htmlId": "Newsletter"
+    },
+    "title": "Newsletter"
+  },
+  "flex-layout.col#newsTitle": {
+    "children": ["rich-text#newsTitle", "rich-text#newsSubTitle"],
+    "props": {
+      "blockClass": "newsletterCol"
+    }
+  },
+  "rich-text#newsTitle": {
+    "props": {
+      "text": "Desideri conoscere le ultime novità e offerte?",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": "newsTitle",
+      "htmlId": "Titolo della newsletter"
+    },
+    "title": "Titolo della newsletter"
+  },
+  "rich-text#newsSubTitle": {
+    "props": {
+      "text": "Ti basterà inserire il tuo indirizzo email e riceverai **5€ di sconto** sul tuo primo ordine.",
+      "textPosition": "LEFT",
+      "textAlignment": "LEFT",
+      "blockClass": "newsSubTitle",
+      "htmlId": "Sottotitolo della newsletter"
+    },
+    "title": "Sottotitolo della newsletter"
+  },
+  "flex-layout.col#submit": {
+    "children": ["newsletter-form#footer"]
+  },
+  "newsletter-form#footer": {
+    "children": ["flex-layout.row#newsletter-form"],
+    "props": {
+      "blockClass": "footer-newsletter"
+    }
+  },
+
+  "flex-layout.row#newsletter-form": {
+    "children": [
+      "flex-layout.col#newsletter-input",
+      "flex-layout.col#newsletter-submit"
+    ],
+    "props": {
+      "blockClass": "newsletterForm",
+      "htmlId": "Newsletter form"
+    },
+    "title": "Newsletter form"
+  },
+
+  "flex-layout.col#newsletter-input": {
+    "children": ["newsletter-input-email"],
+    "props": {
+      "width": "72%"
+    }
+  },
+
+  "flex-layout.col#newsletter-submit": {
+    "children": ["newsletter-submit"],
+    "props": {
+      "width": "25%"
+    }
+  },
+
+  "newsletter-input-email": {
+    "props": {
+      "placeholderText": "Indirizzo e-mail",
+      "blockClass": "newsEmailInput"
+    }
+  },
+  "newsletter-submit": {
+    "props": {
+      "submitButtonLabel": ""
+    }
+  },
+  "flex-layout.row#share": {
+    "children": [
+      "link#facebook",
+      "link#instagram",
+      "link#youtube",
+      "link#linkedin"
+    ],
+    "props": {
+      "blockClass": "newsletter-containerShareLinks",
+      "htmlId": "Condividere"
+    },
+    "title": "Condividere"
+  },
+  "link#facebook": {
+    "props": {
+      "href": "#"
+    },
+    "children": ["image#facebook"]
+  },
+  "image#facebook": {
+    "props": {
+      "src": "assets/icons/social/Facebook.svg"
+    }
+  },
+  "link#instagram": {
+    "props": {
+      "href": "#"
+    },
+    "children": ["image#instagram"]
+  },
+  "image#instagram": {
+    "props": {
+      "src": "assets/icons/social/Instagram.svg"
+    }
+  },
+  "link#youtube": {
+    "props": {
+      "href": "#"
+    },
+    "children": ["image#youtube"]
+  },
+  "image#youtube": {
+    "props": {
+      "src": "assets/icons/social/YouTube.svg"
+    }
+  },
+  "link#linkedin": {
+    "props": {
+      "href": "#"
+    },
+    "children": ["image#linkedin"]
+  },
+  "image#linkedin": {
+    "props": {
+      "src": "assets/icons/social/Linkedin.svg"
+    }
+  }
+}

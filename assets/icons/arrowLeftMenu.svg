@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>F4B0CE16-5F14-4A75-B791-C49388F4B52C</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="M/-1.3-Menu-2" transform="translate(-16.000000, -71.000000)" stroke="#291660">
+            <g id="icon-/-arrow-left" transform="translate(16.500000, 72.000000)">
+                <g id="icon-/-arrow-right" transform="translate(8.500000, 7.500000) scale(-1, 1) translate(-8.500000, -7.500000) ">
+                    <line x1="0" y1="7.5" x2="16" y2="7.5" id="Path"></line>
+                    <polyline id="Path-Copy" stroke-linejoin="round" points="9 15 17 7.54050331 9 0"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
